@@ -1,0 +1,133 @@
+/* forgot underline  */
+
+.slide-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.slide-underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #0d6efd;
+  /* Bootstrap primary */
+  transition: width 0.3s ease;
+}
+
+.slide-underline:hover::after {
+  width: 100%;
+}
+
+/* scroll annimation */
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.4s ease-out forwards;
+}
+
+.nav-link {
+  position: relative;
+  color: black;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+
+.nav-link:hover {
+  color: black;
+  /* keep it black on hover */
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.hero-text h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* .palash-style1 {
+            font-family: 'Playfair Display', serif;
+
+        } */
+
+@font-face {
+  font-family: 'Palash';
+  src: url('./fonts/Palash.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.logo-wrapper {
+  /* background-color: #e0dfd6; */
+  /* match page color */
+  padding: 20px;
+}
+
+.main-logo {
+  font-family: 'Palash', serif;
+  font-size: 90px;
+  letter-spacing: 3px;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.sub-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 55px;
+  letter-spacing: 4px;
+  margin-top: 0;
+  font-weight: lighter;
+  line-height: 1.2;
+  padding-left: 160px;
+  /* <-- added */
+}
