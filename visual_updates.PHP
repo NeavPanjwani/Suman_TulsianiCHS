@@ -168,86 +168,75 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="./script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script>
     gsap.registerPlugin(ScrollTrigger);
 
-    // Animate Main Heading
+    // Animate heading
     gsap.from("h1.display-3", {
-      scrollTrigger: {
-        trigger: "h1.display-3",
-        start: "top 80%",
-      },
       y: 50,
       opacity: 0,
       duration: 1,
-      ease: "power2.out"
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: "h1.display-3",
+        start: "top 90%",
+      }
     });
 
-    // Animate Paragraph Texts
+    // Animate paragraphs below heading
     gsap.from(".col-12.col-md-8 p", {
+      opacity: 0,
+      x: 40,
+      duration: 1,
+      stagger: 0.2,
       scrollTrigger: {
         trigger: ".col-12.col-md-8",
-        start: "top 85%",
-      },
-      x: 50,
-      opacity: 0,
-      duration: 1,
-      stagger: 0.3,
-      ease: "power2.out"
+        start: "top 95%",
+      }
     });
 
-    // Animate Each Image One by One
-    gsap.utils.toArray(".row.text-center img").forEach((img, i) => {
-      gsap.from(img, {
-        scrollTrigger: {
-          trigger: img,
-          start: "top 90%",
-        },
-        scale: 0.8,
+    // Animate image cards
+    gsap.utils.toArray(".row.text-center .col-md-4").forEach((col, i) => {
+      gsap.from(col, {
         opacity: 0,
-        duration: 1,
-        ease: "back.out(1.7)",
-        delay: i * 0.1
+        y: 40,
+        duration: 0.8,
+        delay: i * 0.1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: col,
+          start: "top 95%",
+        }
       });
     });
 
-    // Animate Footer
+    // Animate footer
     gsap.from("footer", {
+      opacity: 0,
+      y: 80,
+      duration: 1,
+      ease: "power2.out",
       scrollTrigger: {
         trigger: "footer",
         start: "top 90%",
-      },
-      y: 60,
-      opacity: 0,
-      duration: 1.2,
-      ease: "power2.out"
+      }
     });
 
-    // Show/Hide Back to Top Button
+    // Back to top animation toggle
     const backToTop = document.getElementById("backToTop");
     window.addEventListener("scroll", () => {
       if (window.scrollY > 300) {
         gsap.to(backToTop, {
-          opacity: 1,
-          duration: 0.3,
-          display: "block"
+          autoAlpha: 1,
+          duration: 0.4
         });
       } else {
         gsap.to(backToTop, {
-          opacity: 0,
-          duration: 0.3,
-          display: "none"
+          autoAlpha: 0,
+          duration: 0.4
         });
       }
-    });
-
-    // Smooth scroll to top
-    backToTop.addEventListener("click", (e) => {
-      e.preventDefault();
-      gsap.to(window, {
-        scrollTo: 0,
-        duration: 1
-      });
     });
   </script>
 
