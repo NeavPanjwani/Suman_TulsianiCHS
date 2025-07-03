@@ -6,24 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SUMAN TULSIANI CHS LTD.</title>
 
-  <!-- style custom links -->
+  <!-- style custome links  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <link rel="icon" href="../pictures/logo-2.png" type="image/png">
+
   <style>
     body {
       background-color: #f0efe9;
       font-family: 'Georgia', serif;
     }
   </style>
+
+
 </head>
 
 <body style="background-color: #f9f8f3;">
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg border-bottom py-3" style="background-color: #e0dfd6;">
     <div class="container-fluid px-4">
+
       <div class="nav_logo" style="margin-left: 50px;">
         <a class="navbar-brand d-flex align-items-center gap-2" href="./index.PHP">
           <img src="../pictures/logo-2.png" alt="Logo" width="38" height="38">
@@ -31,11 +35,13 @@
         </a>
       </div>
 
+      <!-- Hamburger Button (only shows on small screens) -->
       <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
 
+      <!-- Desktop nav items -->
       <div class="collapse navbar-collapse d-none d-lg-block">
         <ul class="navbar-nav gap-3 ms-auto me-5">
           <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
@@ -44,10 +50,12 @@
           <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li>
           <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
           <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
+
           <li class="nav-item"><a class="nav-link" href="./login.php">Log Out</a></li>
         </ul>
       </div>
 
+      <!-- Offcanvas for mobile -->
       <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" style="width: 280px;">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title">Menu</h5>
@@ -59,18 +67,22 @@
             <li class="nav-item"><a class="nav-link" href="./PMC.php">PMC</a></li>
             <li class="nav-item"><a class="nav-link" href="./Notice&minutes_a.php">Notice & Minutes</a></li>
             <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li>
+
             <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
             <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
             <li class="nav-item"><a class="nav-link" href="./login.php">Log Out</a></li>
           </ul>
         </div>
       </div>
+
     </div>
   </nav>
+
 
   <!-- VISUAL UPDATES SECTION -->
   <section class="py-5">
     <div class="container">
+      <!-- Heading Row -->
       <div class="row mb-5">
         <div class="col-12">
           <h1 class="display-3 fw-semibold text-center text-md-start" style="font-family: 'Playfair Display', serif;">
@@ -82,8 +94,11 @@
           <p class="fs-6 mb-2">We’ve reimagined our visual space to tell stories, inspire clarity, and connect effortlessly.</p>
           <p class="fs-6 mb-0">Welcome to a refined, refreshed and redefined experience.</p>
         </div>
+
       </div>
 
+
+      <!-- Images Row -->
       <div class="row text-center g-4">
         <div class="col-md-4">
           <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="SGBM FOR" class="img-fluid rounded-4 shadow-sm">
@@ -101,10 +116,13 @@
     </div>
   </section>
 
+
+
   <!-- FOOTER -->
   <footer class="bg-light border-top border-muted">
     <div class="container py-5">
       <div class="row">
+        <!-- Left -->
         <div class="col-md-6 mb-4 mb-md-0">
           <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 100px;">
             <img src="../pictures/logo-2.png" alt="Logo" style="height: 100%; object-fit: contain;">
@@ -113,6 +131,7 @@
             EVEREST APARTMENTS CO-OP. HOUSING SOCIETY LTD. Located at Mount Pleasant Road, Malabar Hill, a prime residential area offering comfort and convenience.
           </p>
         </div>
+        <!-- Right -->
         <div class="col-md-6">
           <h5 class="mb-3">Contacts</h5>
           <ul class="list-unstyled small text-muted">
@@ -123,28 +142,36 @@
         </div>
       </div>
 
-      <div class="d-flex justify-content-center align-items-center pt-4 mt-4 border-top text-muted small " style="padding-left: 30%;">
-        <p class="mb-0">© 2025 RAJUL A-B APARTMENTS CHS LTD - DEVELOPED BY <a href="https://www.theveenagroup.com/" class="text-primary text-decoration-none"><span class="text-primary">Veena Infotech</span></a>.</p>
-        <div style="padding-left: 40%">
+      <!-- Bottom Bar -->
+      <div class="d-flex justify-content-center align-items-center pt-4 mt-4 border-top text-muted small " style="padding-left: 30%; ">
+        <p class="mb-0">© 2025 RAJUL A-B APARTMENTS CHS LTD - DEVELOPED BY <a href="https://www.theveenagroup.com/" class="text-primary text-decoration-none text-primary slide-underline" style="text-decoration: none;"><span class="text-primary">Veena Infotech</span></a>.</p>
+        <div class="" style=" padding-left: 40%">
           <a href="#top" id="backToTop"
-            class="btn btn-warning btn-sm rounded-pill px-3"
-            style="display: none;"
-            aria-label="Back to Top">↑</a>
+            class="btn  btn-warning btn-sm rounded-pill px-3 hidden fixed bottom-6 right-6  bg-yellow-400 text-black rounded-full shadow-lg hover:bg-yellow-300 transition-all duration-300 ease-in-out z-50 text-xl"
+            aria-label="Back to Top">
+            ↑
+          </a>
         </div>
+
+
+
       </div>
     </div>
   </footer>
 
-  <!-- Scripts -->
+
+
+
+
+
+  <!-- script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
-
+  <script src="./script.js"></script>
   <script>
-    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+    gsap.registerPlugin(ScrollTrigger);
 
-    // Heading animation
+    // Animate Main Heading
     gsap.from("h1.display-3", {
       scrollTrigger: {
         trigger: "h1.display-3",
@@ -156,7 +183,7 @@
       ease: "power2.out"
     });
 
-    // Paragraphs animation
+    // Animate Paragraph Texts
     gsap.from(".col-12.col-md-8 p", {
       scrollTrigger: {
         trigger: ".col-12.col-md-8",
@@ -169,7 +196,7 @@
       ease: "power2.out"
     });
 
-    // Image animation
+    // Animate Each Image One by One
     gsap.utils.toArray(".row.text-center img").forEach((img, i) => {
       gsap.from(img, {
         scrollTrigger: {
@@ -184,7 +211,7 @@
       });
     });
 
-    // Footer animation
+    // Animate Footer
     gsap.from("footer", {
       scrollTrigger: {
         trigger: "footer",
@@ -196,26 +223,25 @@
       ease: "power2.out"
     });
 
-    // Back to top logic
+    // Show/Hide Back to Top Button
     const backToTop = document.getElementById("backToTop");
     window.addEventListener("scroll", () => {
       if (window.scrollY > 300) {
-        backToTop.style.display = 'block';
         gsap.to(backToTop, {
           opacity: 1,
-          duration: 0.3
+          duration: 0.3,
+          display: "block"
         });
       } else {
         gsap.to(backToTop, {
           opacity: 0,
           duration: 0.3,
-          onComplete: () => {
-            backToTop.style.display = 'none';
-          }
+          display: "none"
         });
       }
     });
 
+    // Smooth scroll to top
     backToTop.addEventListener("click", (e) => {
       e.preventDefault();
       gsap.to(window, {
@@ -224,6 +250,8 @@
       });
     });
   </script>
+
+
 </body>
 
 </html>
