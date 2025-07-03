@@ -163,90 +163,61 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
   <!-- GSAP Animations -->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    // Navbar animation - logo and links fade in from top
-    gsap.from(".navbar-brand", {
-      y: -40,
-      opacity: 0,
-      duration: 0.8,
-      ease: "power4.out",
-      delay: 0.3
-    });
+   <script>
+  // Animate Navbar
+  gsap.from("nav", {
+    y: -100,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out"
+  });
 
-    gsap.from(".navbar-nav .nav-item", {
-      y: -20,
-      opacity: 0,
-      duration: 0.6,
-      stagger: 0.1,
-      delay: 0.4,
-      ease: "back.out(1.7)"
-    });
+  // Animate the Heading Text (line by line)
+  gsap.from("h1 span", {
+    y: 100,
+    opacity: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power3.out",
+    delay: 0.5
+  });
 
-    // Hero text animation - bounce in from left
-    gsap.from(".main-logo", {
-      x: -80,
-      opacity: 0,
-      duration: 1,
-      ease: "elastic.out(1, 0.6)",
-      delay: 0.7
-    });
+  // Animate the Image on the Right
+  gsap.from(".col-lg-6 img", {
+    scale: 1.2,
+    opacity: 0,
+    duration: 1.2,
+    ease: "power2.out",
+    delay: 0.8
+  });
 
-    gsap.from(".sub-logo", {
-      x: -60,
-      opacity: 0,
-      duration: 1,
-      ease: "elastic.out(1, 0.6)",
-      delay: 1
-    });
+  // Animate the Footer
+  gsap.from("footer", {
+    opacity: 0,
+    y: 100,
+    duration: 1.2,
+    delay: 1.2,
+    ease: "power2.out"
+  });
 
-    // Hero image zoom-in with slight upward movement
-    gsap.from(".col-md-6 img", {
-      scale: 0.85,
-      opacity: 0,
-      y: 40,
-      duration: 1.2,
-      stagger: 0.2,
-      ease: "power3.out",
-      delay: 1.2
-    });
+  // Back to Top Button - Smooth Show/Hide on Scroll
+  const backToTop = document.getElementById("backToTop");
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      gsap.to(backToTop, { opacity: 1, duration: 0.5, display: "block" });
+    } else {
+      gsap.to(backToTop, { opacity: 0, duration: 0.5, display: "none" });
+    }
+  });
 
-    // Animate contact section when scrolling into view
-    gsap.from("section.container-fluid .row > div", {
-      scrollTrigger: {
-        trigger: "section.container-fluid",
-        start: "top 80%",
-        toggleActions: "play none none none"
-      },
-      opacity: 0,
-      y: 40,
-      duration: 1,
-      stagger: 0.2,
-      ease: "power2.out"
-    });
-
-    // Footer slide up with fade
-    gsap.from("footer", {
-      scrollTrigger: {
-        trigger: "footer",
-        start: "top bottom"
-      },
-      y: 80,
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out"
-    });
-
-    // Back to Top Button pop-in
-    gsap.from("#backToTop", {
-      opacity: 0,
-      y: 20,
-      duration: 1,
-      delay: 2.5,
-      ease: "power2.out"
-    });
+  // Smooth Scroll to Top
+  backToTop.addEventListener("click", function (e) {
+    e.preventDefault();
+    gsap.to(window, { scrollTo: 0, duration: 1 });
   });
 </script>
+
+
 
 
   
