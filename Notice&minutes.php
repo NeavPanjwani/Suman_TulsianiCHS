@@ -131,12 +131,12 @@
             <div class="d-flex flex-column justify-content-between h-100" style="height: 350px;">
               <!-- Top Image -->
               <div class="mb-2" style="flex: 1;">
-                <img src="../pictures/room 4 (1).jpg" class="img-fluid rounded" style="height: 80%; width: 100%; object-fit: cover;" alt="" />
+                <img src="../Suman_TulsianiCHS/assets/images/room.jpg" class="img-fluid rounded" style="height: 80%; width: 100%; object-fit: cover;" alt="" />
                 <p class="text-center fw-semibold mt-2 mb-0">APPOINTMENT OF PMC</p>
               </div>
               <!-- Bottom Image -->
               <div style="flex: 1;">
-                <img src="../pictures/room 6.jpg" class="img-fluid rounded" style="height: 85%; width: 100%; object-fit: cover;" alt="" />
+                <img src="../Suman_TulsianiCHS/assets/images/room2.jpg" class="img-fluid rounded" style="height: 85%; width: 100%; object-fit: cover;" alt="" />
                 <p class="text-center fw-semibold mt-2 mb-0">CONSENT FOR REDEVELOPMENT</p>
               </div>
             </div>
@@ -145,7 +145,7 @@
           <!-- Right Column -->
           <div class="col-md-7">
             <div style="height: 500px;">
-              <img src="../pictures/room 5.jpg" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="" />
+              <img src="../Suman_TulsianiCHS/assets/images/vtry.jpeg" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="" />
               <p class="text-center fw-semibold mt-2 mb-0">REVISED DRAFT WITH LAWYER INPUTS</p>
             </div>
           </div>
