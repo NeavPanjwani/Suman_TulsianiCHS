@@ -92,7 +92,7 @@
       <div class="row align-items-center">
         <!-- LEFT: IMAGE WITH ARROWS -->
         <div class="col-md-6 position-relative">
-          <img id="carouselImage" src="..." class="img-fluid w-100 rounded-3" style="max-height: 80vh; object-fit: cover;" />
+          <img id="carouselImage" src="../Suman_TulsianiCHS/assets/images/room.jpg" class="img-fluid w-100 rounded-3" style="max-height: 80vh; object-fit: cover;" />
           <!-- Arrows -->
           <div class="position-absolute bottom-0 end-0 mb-3 me-3 d-flex gap-2">
             <button class="arrow-btn" onclick="prevImage()">❮</button>
@@ -170,9 +170,10 @@
 
   <script>
     const images = [
-      "...",
-      "...",
-      "..."
+      "../Suman_TulsianiCHS/assets/images/vtry.jpeg",
+      "../Suman_TulsianiCHS/assets/images/room.jpg",
+      "../Suman_TulsianiCHS/assets/images/room2.jpg",
+
     ];
     let currentIndex = 0;
 

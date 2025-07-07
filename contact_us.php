@@ -135,10 +135,10 @@
       <!-- Side Images -->
       <div class="col-lg-5 d-flex flex-column flex-lg-row gap-3 mt-4 mt-lg-0">
         <div class="w-50">
-          <img src="../pictures/room 5.jpg" class="w-100 h-100 rounded" style="object-fit: cover;" alt="Image 1">
+          <img src="../Suman_TulsianiCHS/assets/images/room-1.jpg" class="w-100 h-100 rounded" style="object-fit: cover;" alt="Image 1">
         </div>
         <div class="w-50">
-          <img src="../pictures/room 4 (1).jpg" class="w-100 h-100 rounded" style="object-fit: cover;" alt="Image 2">
+          <img src="../Suman_TulsianiCHS/assets/images/room-2.jpg" class="w-100 h-100 rounded" style="object-fit: cover;" alt="Image 2">
         </div>
       </div>
 
@@ -290,6 +290,89 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   <script src="./script.js"></script>
+  <script>
+  // GSAP Intro Animations
+  window.addEventListener("DOMContentLoaded", () => {
+    gsap.from("nav", {
+      y: -80,
+      opacity: 0,
+      duration: 1,
+      ease: "power3.out"
+    });
+
+    gsap.from(".display-1", {
+      x: -100,
+      opacity: 0,
+      duration: 1,
+      delay: 0.5,
+      ease: "power2.out"
+    });
+
+    gsap.from(".accordion", {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      delay: 0.8,
+      ease: "power2.out"
+    });
+
+    gsap.from(".col-lg-5 img", {
+      scale: 1.1,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.3,
+      delay: 1
+    });
+  });
+
+  // ScrollTrigger Animations
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from("#contactHeading", {
+    scrollTrigger: {
+      trigger: "#contactHeading",
+      start: "top 90%",
+    },
+    y: 50,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out"
+  });
+
+  gsap.from("#contactBlock", {
+    scrollTrigger: {
+      trigger: "#contactBlock",
+      start: "top 80%",
+    },
+    opacity: 0,
+    y: 80,
+    duration: 1.2,
+    ease: "power2.out"
+  });
+
+  gsap.from("#mapSection", {
+    scrollTrigger: {
+      trigger: "#mapSection",
+      start: "top 90%",
+    },
+    scale: 0.95,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out"
+  });
+
+  gsap.from("footer", {
+    scrollTrigger: {
+      trigger: "footer",
+      start: "top 95%",
+    },
+    y: 60,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out"
+  });
+</script>
+
 
 
 
