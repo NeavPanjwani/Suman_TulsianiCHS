@@ -247,28 +247,33 @@
     <div class="container py-5">
       <div class="row">
         <!-- Left -->
-        <div class="col-md-6 mb-4 mb-md-0">
-          <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 100px;">
-            <img src="../pictures/logo-2.png" alt="Logo" style="height: 100%; object-fit: contain;">
+       <div class="col-md-6 mb-4 mb-md-0 text-center">
+          <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 100px; width: 100%;">
+            <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo" style="height: 100%; object-fit: contain; max-width: 100%;">
           </div>
+
           <p class="text-muted small mb-0">
-            EVEREST APARTMENTS CO-OP. HOUSING SOCIETY LTD. Located at Mount Pleasant Road, Malabar Hill, a prime residential area offering comfort and convenience.
+            SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
+            NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
+            MAJIWADA, THANE WEST, MAHARASHTRA, INDIA
           </p>
         </div>
         <!-- Right -->
         <div class="col-md-6">
           <h5 class="mb-3">Contacts</h5>
           <ul class="list-unstyled small text-muted">
-            <li class="mb-2">- EVEREST APARTMENTS CO-OP. HOUSING SOCIETY LTD. OPP: MOUNT PLEASANT ROAD, MALABAR HILL</li>
-            <li class="mb-2">- RajulA-Bchs.in</li>
-            <li>- +91 91677 91508</li>
+            <li class="mb-2">-SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
+              NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
+              MAJIWADA, THANE WEST, MAHARASHTRA, INDIA</li>
+            <li class="mb-2">- SUMAN TULSANI.in</li>
+            <li>- +1 (123) 456-7890</li>
           </ul>
         </div>
       </div>
 
       <!-- Bottom Bar -->
       <div class="d-flex justify-content-center align-items-center pt-4 mt-4 border-top text-muted small " style="padding-left: 30%; ">
-        <p class="mb-0">© 2025 RAJUL A-B APARTMENTS CHS LTD - DEVELOPED BY <a href="https://www.theveenagroup.com/" class="text-primary text-decoration-none text-primary slide-underline" style="text-decoration: none;"><span class="text-primary">Veena Infotech</span></a>.</p>
+        <p class="mb-0">© 2025 Suman Tulsiani APARTMENTS CHS LTD - DEVELOPED BY <a href="https://www.theveenagroup.com/" class="text-primary text-decoration-none text-primary slide-underline" style="text-decoration: none;"><span class="text-primary">Veena Infotech</span></a>.</p>
         <div class="" style=" padding-left: 40%">
           <a href="#top" id="backToTop"
             class="btn  btn-warning btn-sm rounded-pill px-3 hidden fixed bottom-6 right-6  bg-yellow-400 text-black rounded-full shadow-lg hover:bg-yellow-300 transition-all duration-300 ease-in-out z-50 text-xl"
@@ -291,87 +296,87 @@
 
   <script src="./script.js"></script>
   <script>
-  // GSAP Intro Animations
-  window.addEventListener("DOMContentLoaded", () => {
-    gsap.from("nav", {
-      y: -80,
-      opacity: 0,
-      duration: 1,
-      ease: "power3.out"
+    // GSAP Intro Animations
+    window.addEventListener("DOMContentLoaded", () => {
+      gsap.from("nav", {
+        y: -80,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out"
+      });
+
+      gsap.from(".display-1", {
+        x: -100,
+        opacity: 0,
+        duration: 1,
+        delay: 0.5,
+        ease: "power2.out"
+      });
+
+      gsap.from(".accordion", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        delay: 0.8,
+        ease: "power2.out"
+      });
+
+      gsap.from(".col-lg-5 img", {
+        scale: 1.1,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.3,
+        delay: 1
+      });
     });
 
-    gsap.from(".display-1", {
-      x: -100,
-      opacity: 0,
-      duration: 1,
-      delay: 0.5,
-      ease: "power2.out"
-    });
+    // ScrollTrigger Animations
+    gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from(".accordion", {
-      opacity: 0,
+    gsap.from("#contactHeading", {
+      scrollTrigger: {
+        trigger: "#contactHeading",
+        start: "top 90%",
+      },
       y: 50,
+      opacity: 0,
       duration: 1,
-      delay: 0.8,
       ease: "power2.out"
     });
 
-    gsap.from(".col-lg-5 img", {
-      scale: 1.1,
+    gsap.from("#contactBlock", {
+      scrollTrigger: {
+        trigger: "#contactBlock",
+        start: "top 80%",
+      },
+      opacity: 0,
+      y: 80,
+      duration: 1.2,
+      ease: "power2.out"
+    });
+
+    gsap.from("#mapSection", {
+      scrollTrigger: {
+        trigger: "#mapSection",
+        start: "top 90%",
+      },
+      scale: 0.95,
       opacity: 0,
       duration: 1,
-      stagger: 0.3,
-      delay: 1
+      ease: "power2.out"
     });
-  });
 
-  // ScrollTrigger Animations
-  gsap.registerPlugin(ScrollTrigger);
-
-  gsap.from("#contactHeading", {
-    scrollTrigger: {
-      trigger: "#contactHeading",
-      start: "top 90%",
-    },
-    y: 50,
-    opacity: 0,
-    duration: 1,
-    ease: "power2.out"
-  });
-
-  gsap.from("#contactBlock", {
-    scrollTrigger: {
-      trigger: "#contactBlock",
-      start: "top 80%",
-    },
-    opacity: 0,
-    y: 80,
-    duration: 1.2,
-    ease: "power2.out"
-  });
-
-  gsap.from("#mapSection", {
-    scrollTrigger: {
-      trigger: "#mapSection",
-      start: "top 90%",
-    },
-    scale: 0.95,
-    opacity: 0,
-    duration: 1,
-    ease: "power2.out"
-  });
-
-  gsap.from("footer", {
-    scrollTrigger: {
-      trigger: "footer",
-      start: "top 95%",
-    },
-    y: 60,
-    opacity: 0,
-    duration: 1,
-    ease: "power2.out"
-  });
-</script>
+    gsap.from("footer", {
+      scrollTrigger: {
+        trigger: "footer",
+        start: "top 95%",
+      },
+      y: 60,
+      opacity: 0,
+      duration: 1,
+      ease: "power2.out"
+    });
+  </script>
 
 
 
