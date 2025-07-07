@@ -11,7 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="../pictures/logo-2.png" type="image/png">
+  <link rel="icon" href="../Suman_TulsianiCHS/assets/images/logo2.png" type="image/png">
 
   <style>
     body {
@@ -30,7 +30,7 @@
 
       <div class="nav_logo" style="margin-left: 50px;">
         <a class="navbar-brand d-flex align-items-center gap-2" href="./index.PHP">
-          <img src="../pictures/logo-2.png" alt="Logo" width="38" height="38">
+          <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo" width="38" height="38">
           <span class="logo-text">SUMAN TULSIANI CHS</span>
         </a>
       </div>
@@ -47,9 +47,10 @@
           <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
           <li class="nav-item"><a class="nav-link" href="./PMC.php">PMC</a></li>
           <li class="nav-item"><a class="nav-link" href="./Notice&minutes_a.php">Notice & Minutes</a></li>
-          <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li>
-          <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
           <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+
 
           <li class="nav-item"><a class="nav-link" href="./login.php">Log Out</a></li>
         </ul>
@@ -66,10 +67,10 @@
             <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
             <li class="nav-item"><a class="nav-link" href="./PMC.php">PMC</a></li>
             <li class="nav-item"><a class="nav-link" href="./Notice&minutes_a.php">Notice & Minutes</a></li>
-            <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li>
-
-            <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
             <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+
             <li class="nav-item"><a class="nav-link" href="./login.php">Log Out</a></li>
           </ul>
         </div>

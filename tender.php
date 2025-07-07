@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SUMAN TULSIANI CHS LTD.</title>
 
-  <!-- style custome links  -->
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
@@ -25,7 +25,7 @@
 </head>
 
 <body style="background-color: #f9f8f3;">
-  <!-- NAVBAR -->
+ 
   <nav class="navbar navbar-expand-lg border-bottom py-3" style="background-color: #e0dfd6;">
     <div class="container-fluid px-4">
 
@@ -36,13 +36,13 @@
         </a>
       </div>
 
-      <!-- Hamburger Button (only shows on small screens) -->
+      
       <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Desktop nav items -->
+      
       <div class="collapse navbar-collapse d-none d-lg-block">
         <ul class="navbar-nav gap-3 ms-auto me-5">
           <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
@@ -56,7 +56,7 @@
       </div>
 
 
-      <!-- Offcanvas for mobile -->
+     
       <div class="offcanvas offcanvas-end d-lg-none" tabindex="-1" id="offcanvasNavbar" style="width: 280px;">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title">Menu</h5>
@@ -78,11 +78,11 @@
     </div>
   </nav>
 
-  <!-- Main content -->
+ 
   <section class="container-fluid py-5" style="background-color: #f9f8f3;">
     <div class="row justify-content-center align-items-start px-4 px-lg-5">
 
-      <!-- LEFT: Steps -->
+     
       <div class="col-lg-4 mt-4">
         <ul class="list-unstyled">
           <li class="border-top border-dark py-3 d-flex align-items-center fw-semibold fs-5">
@@ -100,19 +100,19 @@
         </ul>
       </div>
 
-      <!-- CENTER: Paragraph -->
+     
       <div class="col-lg-4 mt-4 d-flex align-items-start justify-content-center">
         <p class="fs-6 text-center text-lg-start lh-lg" style="max-width: 300px;">
           Inviting proposals as per the defined scope. Bids will be reviewed on merit and compliance. The client may accept or reject any bid. Decision will be final.
         </p>
       </div>
 
-      <!-- RIGHT: Image -->
+      
       <div class="col-lg-4 mt-4">
         <img src="..." alt="Interior" class="img-fluid rounded-4 w-100" style="height: 500px; object-fit: cover;">
       </div>
 
-      <!-- Bottom Title -->
+      
       <div class="col-12 px-4 px-lg-5 mt-5">
         <h1 class="display-1" style="font-family: 'Prata', serif; font-weight: 400; line-height: 0.9;">TENDER<br>DOCUMENTS</h1>
       </div>
@@ -120,11 +120,11 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+ 
   <footer class="bg-light border-top border-muted">
     <div class="container py-5">
       <div class="row">
-        <!-- Left -->
+       
         <div class="col-md-6 mb-4 mb-md-0">
           <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 100px;">
             <img src="../pictures/logo-2.png" alt="Logo" style="height: 100%; object-fit: contain;">
@@ -133,7 +133,7 @@
             EVEREST APARTMENTS CO-OP. HOUSING SOCIETY LTD. Located at Mount Pleasant Road, Malabar Hill, a prime residential area offering comfort and convenience.
           </p>
         </div>
-        <!-- Right -->
+       
         <div class="col-md-6">
           <h5 class="mb-3">Contacts</h5>
           <ul class="list-unstyled small text-muted">
@@ -144,7 +144,7 @@
         </div>
       </div>
 
-      <!-- Bottom Bar -->
+      
       <div class="d-flex justify-content-center align-items-center pt-4 mt-4 border-top text-muted small " style="padding-left: 30%; ">
         <p class="mb-0">© 2025 RAJUL A-B APARTMENTS CHS LTD - DEVELOPED BY <a href="https://www.theveenagroup.com/" class="text-primary text-decoration-none text-primary slide-underline" style="text-decoration: none;"><span class="text-primary">Veena Infotech</span></a>.</p>
         <div class="" style=" padding-left: 40%">
@@ -165,7 +165,7 @@
 
 
 
-  <!-- script -->
+ 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="./script.js"></script>
@@ -175,7 +175,7 @@
 <script>
   gsap.registerPlugin(ScrollTrigger);
 
-  // Animate Steps with stagger as they come into view
+ 
   gsap.from(".col-lg-4 ul li", {
     scrollTrigger: {
       trigger: ".col-lg-4 ul",
@@ -188,7 +188,7 @@
     ease: "back.out(1.4)"
   });
 
-  // Paragraph text zoom in
+ 
   gsap.from(".col-lg-4 p", {
     scrollTrigger: {
       trigger: ".col-lg-4 p",
@@ -200,7 +200,7 @@
     ease: "elastic.out(1, 0.5)"
   });
 
-  // Image flips in on scroll
+ 
   gsap.from(".col-lg-4 img", {
     scrollTrigger: {
       trigger: ".col-lg-4 img",
@@ -212,7 +212,7 @@
     ease: "power3.out"
   });
 
-  // Animate large title with split movement
+  
   gsap.from("h1.display-1", {
     scrollTrigger: {
       trigger: "h1.display-1",
@@ -225,7 +225,7 @@
     ease: "expo.out"
   });
 
-  // Footer slides up softly
+  
   gsap.from("footer", {
     scrollTrigger: {
       trigger: "footer",
@@ -237,7 +237,7 @@
     ease: "power1.out"
   });
 
-  // Back to Top fade
+ 
   const backToTop = document.getElementById("backToTop");
   window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
@@ -256,4 +256,4 @@
 
 </body>
 
-</html>
+</html> -->

@@ -10,7 +10,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="../pictures/logo-2.png" type="image/png">
+  <link rel="icon" href="../Suman_TulsianiCHS/assets/images/logo2.png" type="image/png">
 
   <style>
     body {
@@ -37,7 +37,7 @@
 
       <div class="nav_logo" style="margin-left: 50px;">
         <a class="navbar-brand d-flex align-items-center gap-2" href="./index.PHP">
-          <img src="../pictures/logo-2.png" alt="Logo" width="38" height="38">
+          <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo" width="38" height="38">
           <span class="logo-text">SUMAN TULSIANI CHS</span>
         </a>
       </div>
@@ -54,9 +54,10 @@
           <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
           <li class="nav-item"><a class="nav-link" href="./PMC.php">PMC</a></li>
           <li class="nav-item"><a class="nav-link" href="./Notice&minutes_a.php">Notice & Minutes</a></li>
-          <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li>
-          <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+          <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
           <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+
 
           <li class="nav-item"><a class="nav-link" href="./login.php">Log Out</a></li>
         </ul>
@@ -73,10 +74,10 @@
             <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
             <li class="nav-item"><a class="nav-link" href="./PMC.php">PMC</a></li>
             <li class="nav-item"><a class="nav-link" href="./Notice&minutes_a.php">Notice & Minutes</a></li>
-            <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li>
-
-            <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+            <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
             <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+
             <li class="nav-item"><a class="nav-link" href="./login.php">Log Out</a></li>
           </ul>
         </div>
@@ -190,89 +191,89 @@
       showImage(currentIndex);
     }
   </script>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    // Slide in navbar from top with fade
-    gsap.from("nav", {
-      y: -80,
-      opacity: 0,
-      duration: 1.4,
-      ease: "expo.out"
-    });
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Slide in navbar from top with fade
+      gsap.from("nav", {
+        y: -80,
+        opacity: 0,
+        duration: 1.4,
+        ease: "expo.out"
+      });
 
-    // Stagger navbar items with scale effect
-    gsap.from(".navbar-nav li", {
-      opacity: 0,
-      scale: 0.8,
-      stagger: 0.15,
-      duration: 1,
-      delay: 0.3,
-      ease: "back.out(1.7)"
-    });
+      // Stagger navbar items with scale effect
+      gsap.from(".navbar-nav li", {
+        opacity: 0,
+        scale: 0.8,
+        stagger: 0.15,
+        duration: 1,
+        delay: 0.3,
+        ease: "back.out(1.7)"
+      });
 
-    // Animate hero image zoom-in with slight rotation
-    gsap.from("#carouselImage", {
-      scale: 0.8,
-      rotate: 2,
-      opacity: 0,
-      duration: 1.8,
-      delay: 0.6,
-      ease: "power3.out"
-    });
+      // Animate hero image zoom-in with slight rotation
+      gsap.from("#carouselImage", {
+        scale: 0.8,
+        rotate: 2,
+        opacity: 0,
+        duration: 1.8,
+        delay: 0.6,
+        ease: "power3.out"
+      });
 
-    // Animate arrow buttons individually
-    gsap.from(".arrow-btn", {
-      y: 20,
-      opacity: 0,
-      duration: 1,
-      delay: 1,
-      stagger: 0.25,
-      ease: "elastic.out(1, 0.5)"
-    });
+      // Animate arrow buttons individually
+      gsap.from(".arrow-btn", {
+        y: 20,
+        opacity: 0,
+        duration: 1,
+        delay: 1,
+        stagger: 0.25,
+        ease: "elastic.out(1, 0.5)"
+      });
 
-    // Animate heading with typewriter reveal
-    gsap.from(".logo-wrapper h1", {
-      opacity: 0,
-      x: -80,
-      duration: 1.5,
-      ease: "power2.out",
-      delay: 0.6
-    });
+      // Animate heading with typewriter reveal
+      gsap.from(".logo-wrapper h1", {
+        opacity: 0,
+        x: -80,
+        duration: 1.5,
+        ease: "power2.out",
+        delay: 0.6
+      });
 
-    // Animate paragraph from below
-    gsap.from(".logo-wrapper ~ p", {
-      opacity: 0,
-      y: 30,
-      duration: 1.2,
-      delay: 1.2,
-      ease: "power2.out"
-    });
+      // Animate paragraph from below
+      gsap.from(".logo-wrapper ~ p", {
+        opacity: 0,
+        y: 30,
+        duration: 1.2,
+        delay: 1.2,
+        ease: "power2.out"
+      });
 
-    // Scroll-trigger footer animation
-    gsap.from("footer", {
-      scrollTrigger: {
-        trigger: "footer",
-        start: "top bottom"
-      },
-      y: 100,
-      opacity: 0,
-      duration: 1.5,
-      ease: "power2.out"
-    });
+      // Scroll-trigger footer animation
+      gsap.from("footer", {
+        scrollTrigger: {
+          trigger: "footer",
+          start: "top bottom"
+        },
+        y: 100,
+        opacity: 0,
+        duration: 1.5,
+        ease: "power2.out"
+      });
 
-    // Right-side content slide from right
-    gsap.from(".col-md-6.ps-md-5", {
-      scrollTrigger: {
-        trigger: ".col-md-6.ps-md-5",
-        start: "top 80%"
-      },
-      x: 100,
-      opacity: 0,
-      duration: 1.3,
-      ease: "power4.out"
+      // Right-side content slide from right
+      gsap.from(".col-md-6.ps-md-5", {
+        scrollTrigger: {
+          trigger: ".col-md-6.ps-md-5",
+          start: "top 80%"
+        },
+        x: 100,
+        opacity: 0,
+        duration: 1.3,
+        ease: "power4.out"
+      });
     });
-  });
-</script>
+  </script>
 
 
 
