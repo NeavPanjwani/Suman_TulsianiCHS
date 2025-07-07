@@ -12,7 +12,7 @@
             background: #f0efe9;
         }
     </style>
-    <link rel="icon" href="../pictures/logo-2.png" type="image/png">
+    <link rel="icon" href="../Suman_TulsianiCHS/assets/images/logo2.png" type="image/png">
 
 </head>
 
@@ -24,6 +24,7 @@
 
                 <!-- Left Part (Logo + Text) -->
                 <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center p-5">
+                    <img id="logoImage" src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="R Logo" class="mb-3" style="max-width: 350px;">
                     <span class="logo-text">SUMAN TULSIANI CHS</span>
                 </div>
 
@@ -130,64 +131,64 @@
             }
         });
     </script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Container fade and scale
-    gsap.from(".container", {
-      opacity: 0,
-      scale: 0.95,
-      duration: 1.5,
-      ease: "power2.out",
-    });
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Container fade and scale
+            gsap.from(".container", {
+                opacity: 0,
+                scale: 0.95,
+                duration: 1.5,
+                ease: "power2.out",
+            });
 
-    // Logo float in with subtle rotation
-    gsap.from(".logo-bounce", {
-      y: -60,
-      rotation: -10,
-      opacity: 0,
-      duration: 1.8,
-      delay: 0.5,
-      ease: "back.out(1.7)",
-    });
+            // Logo float in with subtle rotation
+            gsap.from(".logo-bounce", {
+                y: -60,
+                rotation: -10,
+                opacity: 0,
+                duration: 1.8,
+                delay: 0.5,
+                ease: "back.out(1.7)",
+            });
 
-    // Form card fly-in from right
-    gsap.from(".col-md-6 .bg-white", {
-      x: 100,
-      opacity: 0,
-      duration: 1.5,
-      delay: 0.8,
-      ease: "power3.out",
-    });
+            // Form card fly-in from right
+            gsap.from(".col-md-6 .bg-white", {
+                x: 100,
+                opacity: 0,
+                duration: 1.5,
+                delay: 0.8,
+                ease: "power3.out",
+            });
 
-    // Form inputs staggered rise-in
-    gsap.from("form .form-control", {
-      y: 30,
-      opacity: 0,
-      stagger: 0.2,
-      delay: 1,
-      duration: 1,
-      ease: "power2.out",
-    });
+            // Form inputs staggered rise-in
+            gsap.from("form .form-control", {
+                y: 30,
+                opacity: 0,
+                stagger: 0.2,
+                delay: 1,
+                duration: 1,
+                ease: "power2.out",
+            });
 
-    // Button bounce in
-    gsap.from("form button", {
-      y: 20,
-      opacity: 0,
-      duration: 1,
-      delay: 1.5,
-      ease: "bounce.out",
-    });
+            // Button bounce in
+            gsap.from("form button", {
+                y: 20,
+                opacity: 0,
+                duration: 1,
+                delay: 1.5,
+                ease: "bounce.out",
+            });
 
-    // Footer reveal from bottom
-    gsap.from("footer", {
-      y: 100,
-      opacity: 0,
-      duration: 2,
-      delay: 1.8,
-      ease: "power2.out",
-    });
-  });
-</script>
+            // Footer reveal from bottom
+            gsap.from("footer", {
+                y: 100,
+                opacity: 0,
+                duration: 2,
+                delay: 1.8,
+                ease: "power2.out",
+            });
+        });
+    </script>
 
 
 
