@@ -28,19 +28,23 @@
   <nav class="navbar navbar-expand-lg border-bottom py-3" style="background-color: #e0dfd6;">
     <div class="container-fluid px-4">
 
-      <div class="nav_logo" style="margin-left: 50px;">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="./index.PHP">
-          <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo" width="38" height="38">
-          <span class="logo-text">SUMAN TULSANI CHS</span>
+      <div class="d-flex align-items-center gap-2">
+        <a class="navbar-brand d-flex align-items-center justify-content-between w-100" href="./index.php">
+          <div class="d-flex align-items-center gap-2">
+            <img src="../Suman_TulsianiCHS/assets/images/logo2.png"
+              alt="Logo"
+              class="img-fluid"
+              style="max-height: 42px; width: auto;">
+            <span class="logo-text fw-semibold text-nowrap" style="font-size: 0.9rem;">SUMAN TULSIANI CHS</span>
+          </div>
         </a>
+
+        <!-- Hamburger Button -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
-
-      <!-- Hamburger Button (only shows on small screens) -->
-      <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
       <!-- Desktop nav items -->
       <div class="collapse navbar-collapse d-none d-lg-block">
         <ul class="navbar-nav gap-3 ms-auto me-5">
@@ -229,9 +233,10 @@
         <div class="col-lg-6 mb-4 mb-lg-0">
           <div id="mapSection" class="w-100 h-100 rounded-4 shadow" style="min-height: 620px;">
             <iframe id="mapIframe"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.6008201773016!2d72.7952304!3d18.9490551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cd221003457f%3A0x15739590e8d79596!2sRajul%20Apartments%2C%20B%20Wing!5e0!3m2!1sen!2sin!4v1751271723936!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.158382635824!2d72.82282507497918!3d19.1445431820742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b615c973dee3%3A0xd6a09bdbcc3c3704!2sSuman%20Tower!5e0!3m2!1sen!2sin!4v1752004438043!5m2!1sen!2sin"
               width="100%" height="100%" style="border:0; border-radius: 1rem;" allowfullscreen="" loading="lazy">
             </iframe>
+            
           </div>
         </div>
 
@@ -312,6 +317,15 @@
       delay: 0.2,
       ease: "power2.out"
     });
+
+    gsap.from(".navbar-nav .nav-item", {
+        y: -30,
+        opacity: 0,
+        duration: 1.2,
+        stagger: 0.2,
+        ease: "power2.out"
+      });
+
 
     // Accordion Items
     gsap.from("#faqAccordion .accordion-item", {

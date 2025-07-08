@@ -29,9 +29,14 @@
     <div class="container-fluid px-4">
 
       <div class="d-flex align-items-center gap-2">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="./index.PHP">
-          <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo" width="38" height="38">
-          <span class="logo-text">SUMAN TULSIANI CHS</span>
+        <a class="navbar-brand d-flex align-items-center justify-content-between w-100" href="./index.php">
+          <div class="d-flex align-items-center gap-2">
+            <img src="../Suman_TulsianiCHS/assets/images/logo2.png"
+              alt="Logo"
+              class="img-fluid"
+              style="max-height: 42px; width: auto;">
+            <span class="logo-text fw-semibold text-nowrap" style="font-size: 0.9rem;">SUMAN TULSIANI CHS</span>
+          </div>
         </a>
 
         <!-- Hamburger Button -->
@@ -40,7 +45,6 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-
       <!-- Desktop nav items -->
       <div class="collapse navbar-collapse d-none d-lg-block">
         <ul class="navbar-nav gap-3 ms-auto me-5">
@@ -188,6 +192,15 @@
         start: "top 90%",
       }
     });
+
+    gsap.from(".navbar-nav .nav-item", {
+        y: -30,
+        opacity: 0,
+        duration: 1.2,
+        stagger: 0.2,
+        ease: "power2.out"
+      });
+
 
     // Animate paragraphs below heading
     gsap.from(".col-12.col-md-8 p", {

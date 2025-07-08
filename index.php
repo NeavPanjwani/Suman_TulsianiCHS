@@ -29,9 +29,14 @@
     <div class="container-fluid px-4">
 
       <div class="d-flex align-items-center gap-2">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="./index.PHP">
-          <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo" width="38" height="38">
-          <span class="logo-text">SUMAN TULSIANI CHS</span>
+        <a class="navbar-brand d-flex align-items-center justify-content-between w-100" href="./index.php">
+          <div class="d-flex align-items-center gap-2">
+            <img src="../Suman_TulsianiCHS/assets/images/logo2.png"
+              alt="Logo"
+              class="img-fluid"
+              style="max-height: 42px; width: auto;">
+            <span class="logo-text fw-semibold text-nowrap" style="font-size: 0.9rem;">SUMAN TULSIANI CHS</span>
+          </div>
         </a>
 
         <!-- Hamburger Button -->
@@ -78,9 +83,6 @@
     </div>
   </nav>
 
-
-
-
   <!-- MAIN SECTION -->
   <section style="background-color: #f9f8f3; min-height: 100vh;">
     <div class="container-fluid">
@@ -90,9 +92,8 @@
         <!-- LEFT TEXT SECTION -->
         <div class="col-lg-6 d-flex flex-column justify-content-center px-5" id="left-text">
           <h1 class="m-0">
-            <span class="d-block">SUMAN</span>
-            <span class="d-block">TULSIANI</span>
-            <span class="d-block" style="margin-left: 8vw; font-size: 3.5vw; margin-top: 1.5vw;">CHS LTD.</span>
+            <span class="d-block" style="font-size: 50px;">SUMAN TULSIANI</span>
+            <span class="d-block" style="margin-left: 20vw; font-size: 4vw; margin-top: 1.5vw;">CHS LTD.</span>
           </h1>
         </div>
 
@@ -172,6 +173,14 @@
         stagger: 0.2,
         ease: "power2.out"
       });
+      gsap.from(".navbar-nav .nav-item", {
+        y: -30,
+        opacity: 0,
+        duration: 1.2,
+        stagger: 0.2,
+        ease: "power2.out"
+      });
+
 
       gsap.from("#right-img", {
         x: 100,

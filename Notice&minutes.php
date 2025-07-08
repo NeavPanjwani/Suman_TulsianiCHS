@@ -52,9 +52,14 @@
     <div class="container-fluid px-4">
 
       <div class="d-flex align-items-center gap-2">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="./index.PHP">
-          <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo" width="38" height="38">
-          <span class="logo-text">SUMAN TULSIANI CHS</span>
+        <a class="navbar-brand d-flex align-items-center justify-content-between w-100" href="./index.php">
+          <div class="d-flex align-items-center gap-2">
+            <img src="../Suman_TulsianiCHS/assets/images/logo2.png"
+              alt="Logo"
+              class="img-fluid"
+              style="max-height: 42px; width: auto;">
+            <span class="logo-text fw-semibold text-nowrap" style="font-size: 0.9rem;">SUMAN TULSIANI CHS</span>
+          </div>
         </a>
 
         <!-- Hamburger Button -->
@@ -63,7 +68,6 @@
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
-
       <!-- Desktop nav items -->
       <div class="collapse navbar-collapse d-none d-lg-block">
         <ul class="navbar-nav gap-3 ms-auto me-5">
@@ -108,7 +112,7 @@
     <div id="defaultView" class="row">
       <div class="col-md-4 order-md-1">
         <h1 class="display-5 mb-3" style="font-size: 28px; margin-top: 18px; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
-          NOTICES & MINUTES - Apt A
+          NOTICES & MINUTES
         </h1>
 
         <div class="fw-bold mb-2" style="margin-top: 15%; font-size: 29px;">Year</div>
@@ -127,30 +131,30 @@
           attendance, key points, and action items.</p>
 
         <div class="row g-3 align-items-stretch">
-          <!-- Left Column -->
-          <div class="col-md-5">
-            <div class="d-flex flex-column justify-content-between h-100" style="height: 350px;">
-              <!-- Top Image -->
-              <div class="mb-2" style="flex: 1;">
-                <img src="../Suman_TulsianiCHS/assets/images/room.jpg" class="img-fluid rounded" style="height: 80%; width: 100%; object-fit: cover;" alt="" />
-                <p class="text-center fw-semibold mt-2 mb-0">APPOINTMENT OF PMC</p>
-              </div>
-              <!-- Bottom Image -->
-              <div style="flex: 1;">
-                <img src="../Suman_TulsianiCHS/assets/images/room2.jpg" class="img-fluid rounded" style="height: 85%; width: 100%; object-fit: cover;" alt="" />
-                <p class="text-center fw-semibold mt-2 mb-0">CONSENT FOR REDEVELOPMENT</p>
-              </div>
-            </div>
-          </div>
+                    <!-- Left Column -->
+                    <div class="col-md-5">
+                        <div class="d-flex flex-column justify-content-between h-100" style="height: 350px;">
+                            <!-- Top Image -->
+                            <div class="mb-2" style="flex: 1;">
+                                <img src="./assets/images/room 4 (1).jpg" class="img-fluid rounded" style="height: 80%; width: 100%; object-fit: cover;" alt="" />
+                                <p class="text-center fw-semibold mt-2 mb-0">APPOINTMENT OF PMC</p>
+                            </div>
+                            <!-- Bottom Image -->
+                            <div style="flex: 1;">
+                                <img src="./assets/images/room 5.jpg" class="img-fluid rounded" style="height: 85%; width: 100%; object-fit: cover;" alt="" />
+                                <p class="text-center fw-semibold mt-2 mb-0">CONSENT FOR REDEVELOPMENT</p>
+                            </div>
+                        </div>
+                    </div>
 
-          <!-- Right Column -->
-          <div class="col-md-7">
-            <div style="height: 500px;">
-              <img src="../Suman_TulsianiCHS/assets/images/vtry.jpeg" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="" />
-              <p class="text-center fw-semibold mt-2 mb-0">REVISED DRAFT WITH LAWYER INPUTS</p>
-            </div>
-          </div>
-        </div>
+                    <!-- Right Column -->
+                    <div class="col-md-7">
+                        <div style="height: 500px;">
+                            <img src="./assets/images/room-1.jpg" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="" />
+                            <p class="text-center fw-semibold mt-2 mb-0">REVISED DRAFT WITH LAWYER INPUTS</p>
+                        </div>
+                    </div>
+                </div>
 
 
       </div>
