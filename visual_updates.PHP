@@ -28,18 +28,18 @@
   <nav class="navbar navbar-expand-lg border-bottom py-3" style="background-color: #e0dfd6;">
     <div class="container-fluid px-4">
 
-      <div class="nav_logo" style="margin-left: 50px;">
+      <div class="d-flex align-items-center gap-2">
         <a class="navbar-brand d-flex align-items-center gap-2" href="./index.PHP">
           <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo" width="38" height="38">
           <span class="logo-text">SUMAN TULSIANI CHS</span>
         </a>
-      </div>
 
-      <!-- Hamburger Button (only shows on small screens) -->
-      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- Hamburger Button -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
 
       <!-- Desktop nav items -->
       <div class="collapse navbar-collapse d-none d-lg-block">
@@ -120,11 +120,11 @@
 
 
   <!-- FOOTER -->
- <footer class="bg-light border-top border-muted">
+  <footer class="bg-light border-top border-muted">
     <div class="container py-5">
       <div class="row">
         <!-- Left -->
-       <div class="col-md-6 mb-4 mb-md-0 text-center">
+        <div class="col-md-6 mb-4 mb-md-0 text-center">
           <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 100px; width: 100%;">
             <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo" style="height: 100%; object-fit: contain; max-width: 100%;">
           </div>

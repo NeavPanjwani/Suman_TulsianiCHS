@@ -26,18 +26,18 @@
   <nav class="navbar navbar-expand-lg border-bottom py-3" style="background-color: #e0dfd6;">
     <div class="container-fluid px-4">
 
-      <div class="nav_logo" style="margin-left: 50px;">
+      <div class="d-flex align-items-center gap-2">
         <a class="navbar-brand d-flex align-items-center gap-2" href="./index.PHP">
           <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo" width="38" height="38">
           <span class="logo-text">SUMAN TULSIANI CHS</span>
         </a>
-      </div>
 
-      <!-- Hamburger Button (only shows on small screens) -->
-      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- Hamburger Button -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
 
       <!-- Desktop nav items -->
       <div class="collapse navbar-collapse d-none d-lg-block">
@@ -83,7 +83,7 @@
       <div class="row align-items-center">
 
         <!-- LEFT SIDE -->
-        <div class="col-md-6 pt-4 pt-md-0">
+        <div class="col-md-6 pt-4 pt-md-0" id="pmcLeft">
           <div class="fs-6 ms-5 ps-3 mb-4">
             <h1 class="display-3 fw-light mb-2">PMC</h1>
             <p class="text-muted fst-italic">– NKA PMC</p>
@@ -109,7 +109,7 @@
         </div>
 
         <!-- RIGHT SIDE -->
-        <div class="col-md-6 text-center mt-5 mt-md-0">
+        <div class="col-md-6 text-center mt-5 mt-md-0" id="pmcRight">
           <img src="../Suman_TulsianiCHS/assets/images/pmc.png" alt="" class="img-fluid rotate-once" style="max-height: 300px;">
         </div>
       </div>
@@ -136,7 +136,7 @@
   </div>
 
   <!-- FOOTER -->
- <footer class="bg-light border-top border-muted">
+  <footer class="bg-light border-top border-muted">
     <div class="container py-5">
       <div class="row">
         <!-- Left -->
@@ -187,112 +187,65 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="./script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
   <script>
-    gsap.registerPlugin(ScrollTrigger);
-
-    // Fade in navbar with slight slide
-    gsap.from(".navbar", {
-      y: -80,
-      opacity: 0,
-      duration: 1.2,
-      ease: "power4.out"
-    });
-
-    // Staggered fade and scale for nav items
-    gsap.from(".navbar-nav .nav-item", {
-      opacity: 0,
-      scale: 0.9,
-      stagger: 0.1,
-      duration: 1,
-      ease: "back.out(1.5)",
-      delay: 0.5
-    });
-
-    // Fade in section title with slight skew
-    gsap.from(".display-3", {
-      scrollTrigger: ".display-3",
-      x: -100,
-      skewX: 5,
-      opacity: 0,
-      duration: 1.4,
-      ease: "power3.out"
-    });
-
-    // Fade in subheading with upward float
-    gsap.from(".text-muted.fst-italic", {
-      scrollTrigger: ".text-muted.fst-italic",
-      y: 30,
-      opacity: 0,
-      duration: 1,
-      delay: 0.3,
-      ease: "power2.out"
-    });
-
-    // Staggered fade-in of paragraph text from left
-    gsap.from(".col-md-6 .fs-6.mb-3, .col-md-6 .fs-6.mb-4", {
-      scrollTrigger: ".col-md-6 .fs-6.mb-3",
-      x: -60,
-      opacity: 0,
-      duration: 1.1,
-      stagger: 0.3,
-      ease: "power2.out"
-    });
-
-    // Slide in button with elastic pop
-    gsap.from(".btn-outline-dark", {
-      scrollTrigger: ".btn-outline-dark",
-      y: 50,
-      scale: 0.8,
-      opacity: 0,
-      duration: 1,
-      ease: "elastic.out(1, 0.5)"
-    });
-
-    // Right image rotates slightly and fades in
-    gsap.from(".rotate-once", {
-      scrollTrigger: ".rotate-once",
-      opacity: 0,
-      rotate: 15,
-      scale: 0.9,
-      duration: 1.5,
-      ease: "power2.out"
-    });
-
-    // Animate modal iframe when modal is shown
-    const modal = document.getElementById('previewModal');
-    modal.addEventListener('shown.bs.modal', () => {
-      gsap.from("#previewModal iframe", {
-        scale: 0.7,
+    window.addEventListener("load", () => {
+      // PMC Heading and Subheading
+      gsap.from("#pmcLeft h1", {
+        x: -50,
         opacity: 0,
-        duration: 0.9,
-        ease: "power4.out"
+        duration: 1,
+        ease: "power2.out"
+      });
+
+      gsap.from("#pmcLeft p.text-muted", {
+        x: -30,
+        opacity: 0,
+        duration: 1,
+        delay: 0.3,
+        ease: "power2.out"
+      });
+
+      // Paragraphs
+      gsap.from("#pmcLeft .fs-6.mb-3, #pmcLeft .fs-6.mb-4", {
+        y: 30,
+        opacity: 0,
+        duration: 1,
+        delay: 0.5,
+        stagger: 0.2,
+        ease: "power2.out"
+      });
+
+      // Button
+      gsap.from("#pmcLeft button", {
+        scale: 0.8,
+        opacity: 0,
+        duration: 0.8,
+        delay: 0.9,
+        ease: "back.out(1.7)"
+      });
+
+      // Right Image
+      gsap.from("#pmcRight img", {
+        x: 60,
+        scale: 1.05,
+        opacity: 0,
+        duration: 1.2,
+        delay: 0.4,
+        ease: "power2.out"
       });
     });
 
-    // Footer fade-up on scroll
-    gsap.from("footer", {
-      scrollTrigger: {
-        trigger: "footer",
-        start: "top 90%"
-      },
-      y: 100,
-      opacity: 0,
-      duration: 1.2,
-      ease: "power2.out"
-    });
-
-    // Bounce back-to-top button on hover
-    const backToTop = document.getElementById("backToTop");
-    if (backToTop) {
-      backToTop.addEventListener("mouseenter", () => {
-        gsap.to(backToTop, {
-          y: -5,
-          duration: 0.2,
-          repeat: 1,
-          yoyo: true
-        });
+    // Optional: Animate modal iframe content on open
+    const previewModal = document.getElementById('previewModal');
+    previewModal.addEventListener('shown.bs.modal', () => {
+      gsap.from("#previewModal iframe", {
+        opacity: 0,
+        scale: 0.95,
+        duration: 0.6,
+        ease: "power2.out"
       });
-    }
+    });
   </script>
 
 

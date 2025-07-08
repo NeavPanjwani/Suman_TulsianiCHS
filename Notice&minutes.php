@@ -51,18 +51,18 @@
   <nav class="navbar navbar-expand-lg border-bottom py-3" style="background-color: #e0dfd6;">
     <div class="container-fluid px-4">
 
-      <div class="nav_logo" style="margin-left: 50px;">
+      <div class="d-flex align-items-center gap-2">
         <a class="navbar-brand d-flex align-items-center gap-2" href="./index.PHP">
           <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo" width="38" height="38">
           <span class="logo-text">SUMAN TULSIANI CHS</span>
         </a>
-      </div>
 
-      <!-- Hamburger Button (only shows on small screens) -->
-      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- Hamburger Button -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
 
       <!-- Desktop nav items -->
       <div class="collapse navbar-collapse d-none d-lg-block">
@@ -71,8 +71,9 @@
           <li class="nav-item"><a class="nav-link" href="./PMC.php">PMC</a></li>
           <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
           <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
           <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+
 
           <li class="nav-item"><a class="nav-link" href="./login.php">Log Out</a></li>
         </ul>
@@ -90,9 +91,9 @@
             <li class="nav-item"><a class="nav-link" href="./PMC.php">PMC</a></li>
             <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
             <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
-
-            <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
             <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+
             <li class="nav-item"><a class="nav-link" href="./login.php">Log Out</a></li>
           </ul>
         </div>
@@ -204,7 +205,7 @@
 
 
   <!-- FOOTER -->
- <footer class="bg-light border-top border-muted">
+  <footer class="bg-light border-top border-muted">
     <div class="container py-5">
       <div class="row">
         <!-- Left -->

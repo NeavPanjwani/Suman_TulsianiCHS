@@ -35,18 +35,19 @@
   <nav class="navbar navbar-expand-lg border-bottom py-3" style="background-color: #e0dfd6;">
     <div class="container-fluid px-4">
 
-      <div class="nav_logo" style="margin-left: 50px;">
+      <div class="d-flex align-items-center gap-2">
         <a class="navbar-brand d-flex align-items-center gap-2" href="./index.PHP">
           <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo" width="38" height="38">
           <span class="logo-text">SUMAN TULSIANI CHS</span>
         </a>
+
+        <!-- Hamburger Button -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
 
-      <!-- Hamburger Button (only shows on small screens) -->
-      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
       <!-- Desktop nav items -->
       <div class="collapse navbar-collapse d-none d-lg-block">
@@ -91,7 +92,7 @@
     <div class="container-fluid px-5">
       <div class="row align-items-center">
         <!-- LEFT: IMAGE WITH ARROWS -->
-        <div class="col-md-6 position-relative">
+        <div class="col-md-6 position-relative" id="updateImageSection">
           <img id="carouselImage" src="../Suman_TulsianiCHS/assets/images/room.jpg" class="img-fluid w-100 rounded-3" style="max-height: 80vh; object-fit: cover;" />
           <!-- Arrows -->
           <div class="position-absolute bottom-0 end-0 mb-3 me-3 d-flex gap-2">
@@ -102,7 +103,7 @@
 
         <!-- RIGHT: TEXT -->
 
-        <div class="col-md-6 d-flex flex-column justify-content-center ps-md-5 mt-n5 mt-md-0">
+        <div class="col-md-6 d-flex flex-column justify-content-center ps-md-5 mt-n5 mt-md-0" id="updateText">
           <div class="logo-wrapper text-start">
             <h1 class="display-5 mb-3" style="font-weight: 250; letter-spacing: 2.5px; margin-left: 40px;">LATEST UPDATE</h1>
           </div>
@@ -121,7 +122,7 @@
 
 
   <!-- FOOTER -->
-<footer class="bg-light border-top border-muted">
+  <footer class="bg-light border-top border-muted">
     <div class="container py-5">
       <div class="row">
         <!-- Left -->
@@ -197,86 +198,42 @@
       showImage(currentIndex);
     }
   </script>
+
   <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // Slide in navbar from top with fade
-      gsap.from("nav", {
-        y: -80,
-        opacity: 0,
-        duration: 1.4,
-        ease: "expo.out"
-      });
-
-      // Stagger navbar items with scale effect
-      gsap.from(".navbar-nav li", {
-        opacity: 0,
-        scale: 0.8,
-        stagger: 0.15,
-        duration: 1,
-        delay: 0.3,
-        ease: "back.out(1.7)"
-      });
-
-      // Animate hero image zoom-in with slight rotation
+    window.addEventListener("load", () => {
+      // Image Fade-in + Zoom
       gsap.from("#carouselImage", {
-        scale: 0.8,
-        rotate: 2,
+        scale: 1.1,
         opacity: 0,
-        duration: 1.8,
-        delay: 0.6,
-        ease: "power3.out"
+        duration: 1.2,
+        ease: "power2.out"
       });
 
-      // Animate arrow buttons individually
-      gsap.from(".arrow-btn", {
-        y: 20,
+      // Arrow Buttons Slide Up
+      gsap.from("#arrowButtons", {
+        y: 30,
+        opacity: 0,
+        duration: 0.8,
+        delay: 1,
+        ease: "power2.out"
+      });
+
+      // Heading Slide from Left
+      gsap.from("#updateText h1", {
+        x: -50,
         opacity: 0,
         duration: 1,
-        delay: 1,
-        stagger: 0.25,
-        ease: "elastic.out(1, 0.5)"
+        delay: 0.5,
+        ease: "power2.out"
       });
 
-      // Animate heading with typewriter reveal
-      gsap.from(".logo-wrapper h1", {
-        opacity: 0,
-        x: -80,
-        duration: 1.5,
-        ease: "power2.out",
-        delay: 0.6
-      });
-
-      // Animate paragraph from below
-      gsap.from(".logo-wrapper ~ p", {
-        opacity: 0,
+      // Paragraph Fade In with Upward Motion
+      gsap.from("#updateText p", {
         y: 30,
-        duration: 1.2,
-        delay: 1.2,
-        ease: "power2.out"
-      });
-
-      // Scroll-trigger footer animation
-      gsap.from("footer", {
-        scrollTrigger: {
-          trigger: "footer",
-          start: "top bottom"
-        },
-        y: 100,
         opacity: 0,
-        duration: 1.5,
+        duration: 1,
+        delay: 0.8,
         ease: "power2.out"
-      });
-
-      // Right-side content slide from right
-      gsap.from(".col-md-6.ps-md-5", {
-        scrollTrigger: {
-          trigger: ".col-md-6.ps-md-5",
-          start: "top 80%"
-        },
-        x: 100,
-        opacity: 0,
-        duration: 1.3,
-        ease: "power4.out"
       });
     });
   </script>

@@ -36,7 +36,7 @@
       </div>
 
       <!-- Hamburger Button (only shows on small screens) -->
-      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+      <button class="navbar-toggler d-lg-none ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -82,7 +82,7 @@
   <div class="container py-5">
     <div class="row align-items-stretch">
       <!-- FAQ Section -->
-      <div class="col-lg-7">
+      <div class="col-lg-7" id="faqBlock">
         <h1 class="display-1 " style="font-family: Georgia, serif;">FAQ</h1>
         <h5 class="mb-4" style="font-family: Georgia, serif;">FREQUENTLY ASKED QUESTIONS</h5>
 
@@ -133,7 +133,7 @@
       </div>
 
       <!-- Side Images -->
-      <div class="col-lg-5 d-flex flex-column flex-lg-row gap-3 mt-4 mt-lg-0">
+      <div class="col-lg-5 d-flex flex-column flex-lg-row gap-3 mt-4 mt-lg-0"  id="faqImages">
         <div class="w-50">
           <img src="../Suman_TulsianiCHS/assets/images/room-1.jpg" class="w-100 h-100 rounded" style="object-fit: cover;" alt="Image 1">
         </div>
@@ -296,87 +296,82 @@
 
   <script src="./script.js"></script>
   <script>
-    // GSAP Intro Animations
-    window.addEventListener("DOMContentLoaded", () => {
-      gsap.from("nav", {
-        y: -80,
-        opacity: 0,
-        duration: 1,
-        ease: "power3.out"
-      });
-
-      gsap.from(".display-1", {
-        x: -100,
-        opacity: 0,
-        duration: 1,
-        delay: 0.5,
-        ease: "power2.out"
-      });
-
-      gsap.from(".accordion", {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        delay: 0.8,
-        ease: "power2.out"
-      });
-
-      gsap.from(".col-lg-5 img", {
-        scale: 1.1,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.3,
-        delay: 1
-      });
-    });
-
-    // ScrollTrigger Animations
-    gsap.registerPlugin(ScrollTrigger);
-
-    gsap.from("#contactHeading", {
-      scrollTrigger: {
-        trigger: "#contactHeading",
-        start: "top 90%",
-      },
-      y: 50,
+  window.addEventListener("load", () => {
+    // FAQ Title and Subheading
+    gsap.from("#faqBlock h1", {
+      x: -60,
       opacity: 0,
       duration: 1,
       ease: "power2.out"
     });
 
-    gsap.from("#contactBlock", {
-      scrollTrigger: {
-        trigger: "#contactBlock",
-        start: "top 80%",
-      },
+    gsap.from("#faqBlock h5", {
+      y: 20,
       opacity: 0,
-      y: 80,
-      duration: 1.2,
+      duration: 1,
+      delay: 0.2,
       ease: "power2.out"
     });
 
+    // Accordion Items
+    gsap.from("#faqAccordion .accordion-item", {
+      y: 30,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.2,
+      delay: 0.4,
+      ease: "power2.out"
+    });
+
+    // FAQ Images
+    gsap.from("#faqImages img", {
+      scale: 0.95,
+      y: 40,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.2,
+      delay: 0.6,
+      ease: "power2.out"
+    });
+
+    // Contact Heading
+    gsap.from("#contactHeading", {
+      y: 40,
+      opacity: 0,
+      duration: 1,
+      delay: 0.3,
+      ease: "power2.out"
+    });
+
+    // Contact Info Block (Left)
+    gsap.from("#contactBlock .col-md-6.bg-body-secondary", {
+      x: -50,
+      opacity: 0,
+      duration: 1,
+      delay: 0.5,
+      ease: "power2.out"
+    });
+
+    // Contact Form Block (Right)
+    gsap.from("#contactBlock .col-md-6.bg-white", {
+      x: 50,
+      opacity: 0,
+      duration: 1,
+      delay: 0.7,
+      ease: "power2.out"
+    });
+
+    // Map Animation
     gsap.from("#mapSection", {
-      scrollTrigger: {
-        trigger: "#mapSection",
-        start: "top 90%",
-      },
       scale: 0.95,
       opacity: 0,
       duration: 1,
+      delay: 1,
       ease: "power2.out"
     });
+  });
+</script>
 
-    gsap.from("footer", {
-      scrollTrigger: {
-        trigger: "footer",
-        start: "top 95%",
-      },
-      y: 60,
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out"
-    });
-  </script>
 
 
 

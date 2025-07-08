@@ -28,19 +28,18 @@
   <nav class="navbar navbar-expand-lg border-bottom py-3" style="background-color: #e0dfd6;">
     <div class="container-fluid px-4">
 
-      <div class="nav_logo" style="margin-left: 50px;">
+      <div class="d-flex align-items-center gap-2">
         <a class="navbar-brand d-flex align-items-center gap-2" href="./index.PHP">
           <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo" width="38" height="38">
           <span class="logo-text">SUMAN TULSIANI CHS</span>
         </a>
+
+        <!-- Hamburger Button -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
-
-      <!-- Hamburger Button (only shows on small screens) -->
-      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
       <!-- Desktop nav items -->
       <div class="collapse navbar-collapse d-none d-lg-block">
         <ul class="navbar-nav gap-3 ms-auto me-5">
@@ -70,6 +69,7 @@
             <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
             <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
             <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+
             <li class="nav-item"><a class="nav-link" href="./login.php">Log Out</a></li>
           </ul>
         </div>
@@ -86,15 +86,10 @@
     <div class="container-fluid">
       <div class="row align-items-stretch g-0" style="min-height: 100vh;">
 
+
         <!-- LEFT TEXT SECTION -->
-        <div class="col-lg-6 d-flex flex-column justify-content-center px-5">
-          <h1 class="m-0" style="
-            font-family: 'Playfair Display', serif;
-            font-weight: 300;
-            font-size: 7.5vw;
-            line-height: 1;
-            letter-spacing: -1px;
-          ">
+        <div class="col-lg-6 d-flex flex-column justify-content-center px-5" id="left-text">
+          <h1 class="m-0">
             <span class="d-block">SUMAN</span>
             <span class="d-block">TULSIANI</span>
             <span class="d-block" style="margin-left: 8vw; font-size: 3.5vw; margin-top: 1.5vw;">CHS LTD.</span>
@@ -102,20 +97,19 @@
         </div>
 
         <!-- RIGHT IMAGE SECTION -->
-        <div class="col-lg-6">
+        <div class="col-lg-6" id="right-img">
           <div class="p-4 h-100">
             <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
               alt="Interior" class="w-100 h-100"
               style="object-fit: cover; filter: grayscale(100%); border-radius: 0;">
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-light border-top border-muted">
+  <footer id="footerSection" class="bg-light border-top border-muted">
     <div class="container py-5">
       <div class="row">
         <!-- Left -->
@@ -170,69 +164,26 @@
 
   <!-- GSAP Animations -->
   <script>
-    // Animate Navbar
-    gsap.from("nav", {
-      y: -100,
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out"
-    });
+    window.addEventListener("load", () => {
+      gsap.from("#left-text h1 span", {
+        x: -100,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power2.out"
+      });
 
-    // Animate the Heading Text (line by line)
-    gsap.from("h1 span", {
-      y: 100,
-      opacity: 0,
-      duration: 1,
-      stagger: 0.2,
-      ease: "power3.out",
-      delay: 0.5
-    });
-
-    // Animate the Image on the Right
-    gsap.from(".col-lg-6 img", {
-      scale: 1.2,
-      opacity: 0,
-      duration: 1.2,
-      ease: "power2.out",
-      delay: 0.8
-    });
-
-    // Animate the Footer
-    gsap.from("footer", {
-      opacity: 0,
-      y: 100,
-      duration: 1.2,
-      delay: 1.2,
-      ease: "power2.out"
-    });
-
-    // Back to Top Button - Smooth Show/Hide on Scroll
-    const backToTop = document.getElementById("backToTop");
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 400) {
-        gsap.to(backToTop, {
-          opacity: 1,
-          duration: 0.5,
-          display: "block"
-        });
-      } else {
-        gsap.to(backToTop, {
-          opacity: 0,
-          duration: 0.5,
-          display: "none"
-        });
-      }
-    });
-
-    // Smooth Scroll to Top
-    backToTop.addEventListener("click", function(e) {
-      e.preventDefault();
-      gsap.to(window, {
-        scrollTo: 0,
-        duration: 1
+      gsap.from("#right-img", {
+        x: 100,
+        opacity: 0,
+        duration: 1.5,
+        ease: "power2.out",
+        delay: 0.5
       });
     });
   </script>
+
+
 
 
 
