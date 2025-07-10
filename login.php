@@ -33,12 +33,12 @@
           <div id="loginCard" class="bg-white p-4 rounded-4 shadow w-100" style="max-width: 400px;">
             <h3 class="text-center fw-bold mb-4"><u>Log in</u></h3>
 
-            <form>
+            <form method="POST" action="./PhpFiles/handle_login.php">
               <div class="mb-3">
                 <label class="form-label">Flat No.</label>
                 <div class="position-relative mb-3">
                   <i class="bi bi-person position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
-                  <input type="text" class="form-control ps-5 rounded-pill" placeholder="Please Enter Flat No.">
+                  <input type="text" name="flat_no" class="form-control ps-5 rounded-pill" placeholder="Please Enter Flat No." required>
                 </div>
               </div>
 
@@ -46,7 +46,7 @@
                 <label class="form-label">Password</label>
                 <div class="position-relative mb-3">
                   <i class="bi bi-lock position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
-                  <input type="password" class="form-control ps-5 rounded-pill" placeholder="Please Enter Password">
+                  <input type="password" name="password" class="form-control ps-5 rounded-pill" placeholder="Please Enter Password" required>
                 </div>
               </div>
 
@@ -59,7 +59,8 @@
               </div>
 
               <div class="d-grid mb-2">
-                <a href="index.php" class="btn btn-dark rounded-pill">Log in</a>
+                <button type="submit" class="btn btn-dark rounded-pill">Log in</button>
+
               </div>
             </form>
           </div>

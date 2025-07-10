@@ -22,6 +22,44 @@
 
 
 </head>
+<?php
+session_start();
+require 'PhpFiles/db.php';
+
+// Not logged in
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit;
+}
+
+// Auto logout after 300 seconds (5 mins)
+if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity'] > 300)) {
+    $update = $pdo->prepare("UPDATE login_logs SET logout_time = NOW() WHERE user_id = ? ORDER BY id DESC LIMIT 1");
+    $update->execute([$_SESSION['user_id']]);
+
+    $stmt = $pdo->prepare("DELETE FROM active_sessions WHERE user_id = ?");
+    $stmt->execute([$_SESSION['user_id']]);
+
+    session_unset();
+    session_destroy();
+    header("Location: login.php?timeout=1");
+    exit;
+}
+
+$_SESSION['last_activity'] = time();
+
+// Optional: check if current session matches DB
+$check = $pdo->prepare("SELECT session_id FROM active_sessions WHERE user_id = ?");
+$check->execute([$_SESSION['user_id']]);
+$row = $check->fetch();
+
+if ($row && $row['session_id'] !== session_id()) {
+    session_unset();
+    session_destroy();
+    header("Location: login.php?multiple=1");
+    exit;
+}
+?>
 
 <body style="background-color: #f0efe9;">
   <!-- NAVBAR -->
@@ -56,7 +94,7 @@
           <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
 
 
-          <li class="nav-item"><a class="nav-link" href="./login.php">Log Out</a></li>
+          <li class="nav-item"><a class="nav-link" href="PhpFiles/handle_logout.php">Log Out</a></li>
         </ul>
       </div>
 
