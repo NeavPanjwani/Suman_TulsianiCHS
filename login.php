@@ -17,6 +17,11 @@
 </head>
 
 <body>
+  <?php if (isset($_GET['timeout'])): ?>
+  <div class="alert alert-warning text-center mt-3">
+    Session expired due to inactivity. Please log in again.
+  </div>
+<?php endif; ?>
 
   <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
     <div id="mainContainer" class="container rounded-4 shadow-lg" style="background-color: #ded1bd; max-width: 1000px; width: 100%;">
@@ -57,6 +62,9 @@
                   Change/Forgot Password?
                 </a>
               </div>
+              <input type="hidden" name="latitude" id="latitude">
+              <input type="hidden" name="longitude" id="longitude">
+              <div class="text-center text-muted small" id="location-status"></div>
 
               <div class="d-grid mb-2">
                 <button type="submit" class="btn btn-dark rounded-pill">Log in</button>
@@ -73,6 +81,39 @@
 
   <!-- script -->
   <script src="./script.js"></script>
+  <script>
+  window.addEventListener("load", () => {
+    const latField = document.getElementById("latitude");
+    const lonField = document.getElementById("longitude");
+    const status = document.getElementById("location-status");
+    const loginButton = document.querySelector('button[type="submit"]');
+    loginButton.disabled = true; 
+
+    // Check if the browser supports geolocation
+    if (!navigator.geolocation) {
+      alert("Geolocation is not supported by your browser.");
+      return;
+    }
+
+    // Get the current position
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        
+        latField.value = position.coords.latitude;
+        lonField.value = position.coords.longitude;
+        console.log("Latitude:", position.coords.latitude);
+        console.log("Longitude:", position.coords.longitude);
+        
+        loginButton.disabled = false;
+        
+      },
+      (error) => {
+        // Show an alert if location access is denied
+        alert("Please allow location access to log in.");
+      }
+    );
+  });
+</script>
 
   <!-- Bootstrap Icons CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">

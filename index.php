@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php require 'PhpFiles/session_protect.php'; ?>
 
 <head>
   <meta charset="UTF-8" />
@@ -23,7 +24,9 @@
 
 </head>
 <?php
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 require 'PhpFiles/db.php';
 
 // Not logged in

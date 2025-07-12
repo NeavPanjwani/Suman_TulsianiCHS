@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php require 'PhpFiles/session_protect.php'; ?>
 
 <head>
   <meta charset="UTF-8" />

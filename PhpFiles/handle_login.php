@@ -44,11 +44,12 @@ if ($user && $password === $user['password']) {
 }
     $user_agent = simplifyAgent($_SERVER['HTTP_USER_AGENT']);
 
-
+    $latitude = $_POST['latitude'] ?? null;
+    $longitude = $_POST['longitude'] ?? null;
 
     // Log login
-    $log_stmt = $pdo->prepare("INSERT INTO login_logs (user_id, ip_address, user_agent) VALUES (?, ?, ?)");
-    $log_stmt->execute([$user['id'], $ip, $user_agent]);
+    $log_stmt = $pdo->prepare("INSERT INTO login_logs (user_id, ip_address, user_agent, latitude, longitude) VALUES (?, ?, ?, ?, ?)");
+    $log_stmt->execute([$user['id'], $ip, $user_agent, $latitude, $longitude]);
 
     // Update active session
     $session_stmt = $pdo->prepare("REPLACE INTO active_sessions (user_id, session_id) VALUES (?, ?)");
@@ -59,3 +60,4 @@ if ($user && $password === $user['password']) {
 } else {
     echo "Invalid login credentials.";
 }
+?>

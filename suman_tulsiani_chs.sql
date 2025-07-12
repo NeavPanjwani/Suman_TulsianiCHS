@@ -40,14 +40,17 @@ CREATE TABLE `active_sessions` (
 --
 
 CREATE TABLE `login_logs` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   `ip_address` varchar(45) DEFAULT NULL,
   `user_agent` text DEFAULT NULL,
   `login_time` timestamp NOT NULL DEFAULT current_timestamp(),
-  `logout_time` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `logout_time` timestamp NULL DEFAULT NULL,
+  `latitude` decimal(10, 8) DEFAULT NULL,
+  `longitude` decimal(11, 8) DEFAULT NULL,
 
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 --
 -- Dumping data for table `login_logs`
 --
@@ -102,6 +105,7 @@ ALTER TABLE `login_logs`
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `flat_no` (`flat_no`);
+
 
 --
 -- AUTO_INCREMENT for dumped tables
