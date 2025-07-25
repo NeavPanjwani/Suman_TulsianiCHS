@@ -18,10 +18,10 @@
 
 <body>
   <?php if (isset($_GET['timeout'])): ?>
-  <div class="alert alert-warning text-center mt-3">
-    Session expired due to inactivity. Please log in again.
-  </div>
-<?php endif; ?>
+    <div class="alert alert-warning text-center mt-3">
+      Session expired due to inactivity. Please log in again.
+    </div>
+  <?php endif; ?>
 
   <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
     <div id="mainContainer" class="container rounded-4 shadow-lg" style="background-color: #ded1bd; max-width: 1000px; width: 100%;">
@@ -82,38 +82,54 @@
   <!-- script -->
   <script src="./script.js"></script>
   <script>
-  window.addEventListener("load", () => {
-    const latField = document.getElementById("latitude");
-    const lonField = document.getElementById("longitude");
-    const status = document.getElementById("location-status");
-    const loginButton = document.querySelector('button[type="submit"]');
-    loginButton.disabled = true; 
+    window.addEventListener("load", () => {
+      const latField = document.getElementById("latitude");
+      const lonField = document.getElementById("longitude");
+      const status = document.getElementById("location-status");
+      const loginButton = document.querySelector('button[type="submit"]');
 
-    // Check if the browser supports geolocation
-    if (!navigator.geolocation) {
-      alert("Geolocation is not supported by your browser.");
-      return;
-    }
+      // Disable login initially
+      loginButton.disabled = true;
+      status.textContent = "Fetching your location... please wait.";
+      status.classList.add("text-warning");
 
-    // Get the current position
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        
-        latField.value = position.coords.latitude;
-        lonField.value = position.coords.longitude;
-        console.log("Latitude:", position.coords.latitude);
-        console.log("Longitude:", position.coords.longitude);
-        
+      // Fallback: Enable login after 5 seconds if location not granted
+      const fallbackTimeout = setTimeout(() => {
         loginButton.disabled = false;
-        
-      },
-      (error) => {
-        // Show an alert if location access is denied
-        alert("Please allow location access to log in.");
+        status.textContent = "Location access not granted. You can still log in.";
+        status.classList.remove("text-warning");
+        status.classList.add("text-danger");
+      }, 5000);
+
+      // Attempt to get location
+      if (!navigator.geolocation) {
+        status.textContent = "Geolocation is not supported by your browser.";
+        status.classList.replace("text-warning", "text-danger");
+        return;
       }
-    );
-  });
-</script>
+
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          clearTimeout(fallbackTimeout); // cancel fallback
+          latField.value = position.coords.latitude;
+          lonField.value = position.coords.longitude;
+          console.log("Latitude:", position.coords.latitude);
+          console.log("Longitude:", position.coords.longitude);
+
+          loginButton.disabled = false;
+          status.textContent = "Location detected successfully.";
+          status.classList.remove("text-warning");
+          status.classList.add("text-success");
+        },
+        (error) => {
+          // If denied or error, fallback will trigger after 5 seconds
+          console.warn("Geolocation error:", error.message);
+          status.textContent = "Waiting for location permission... or continue without it.";
+        }
+      );
+    });
+  </script>
+
 
   <!-- Bootstrap Icons CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
