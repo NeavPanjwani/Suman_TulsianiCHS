@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 10, 2025 at 02:38 PM
+-- Generation Time: Jul 25, 2025 at 03:05 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -40,27 +40,30 @@ CREATE TABLE `active_sessions` (
 --
 
 CREATE TABLE `login_logs` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `user_id` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
+  `user_id` int(10) UNSIGNED DEFAULT NULL,
   `ip_address` varchar(45) DEFAULT NULL,
   `user_agent` text DEFAULT NULL,
   `login_time` timestamp NOT NULL DEFAULT current_timestamp(),
   `logout_time` timestamp NULL DEFAULT NULL,
-  `latitude` decimal(10, 8) DEFAULT NULL,
-  `longitude` decimal(11, 8) DEFAULT NULL,
-
-  PRIMARY KEY (`id`)
+  `latitude` decimal(10,8) DEFAULT NULL,
+  `longitude` decimal(11,8) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
 --
 -- Dumping data for table `login_logs`
 --
 
-INSERT INTO `login_logs` (`id`, `user_id`, `ip_address`, `user_agent`, `login_time`, `logout_time`) VALUES
-(9, 2, '::1', NULL, '2025-07-10 12:12:24', '2025-07-10 12:13:50'),
-(10, 2, '::1', 'Chrome on Windows', '2025-07-10 12:13:58', '2025-07-10 12:15:17'),
-(11, 2, '::1', 'Chrome on Windows', '2025-07-10 12:15:51', '2025-07-10 12:16:26'),
-(12, 1, '::1', 'Chrome on Windows', '2025-07-10 12:16:44', '2025-07-10 12:18:20'),
-(13, 2, '::1', 'Chrome on Windows', '2025-07-10 12:20:00', '2025-07-10 12:20:23');
+INSERT INTO `login_logs` (`id`, `user_id`, `ip_address`, `user_agent`, `login_time`, `logout_time`, `latitude`, `longitude`) VALUES
+(9, 2, '::1', NULL, '2025-07-10 12:12:24', '2025-07-10 12:13:50', NULL, NULL),
+(10, 2, '::1', 'Chrome on Windows', '2025-07-10 12:13:58', '2025-07-10 12:15:17', NULL, NULL),
+(11, 2, '::1', 'Chrome on Windows', '2025-07-10 12:15:51', '2025-07-10 12:16:26', NULL, NULL),
+(12, 1, '::1', 'Chrome on Windows', '2025-07-10 12:16:44', '2025-07-10 12:18:20', NULL, NULL),
+(13, 2, '::1', 'Chrome on Windows', '2025-07-10 12:20:00', '2025-07-10 12:20:23', NULL, NULL),
+(14, 1, '::1', 'Chrome on Windows', '2025-07-25 12:54:34', '2025-07-25 12:55:10', 19.06495760, 72.89195320),
+(15, 2, '::1', 'Chrome on Windows', '2025-07-25 12:56:25', '2025-07-25 12:56:54', 19.07006530, 72.89510360),
+(16, 1, '::1', 'Chrome on Windows', '2025-07-25 12:57:24', '2025-07-25 12:57:31', 19.07006530, 72.89510360),
+(17, 2, '::1', 'Chrome on Windows', '2025-07-25 12:59:10', '2025-07-25 12:59:40', 19.07006530, 72.89510360);
 
 -- --------------------------------------------------------
 
@@ -96,16 +99,13 @@ ALTER TABLE `active_sessions`
 -- Indexes for table `login_logs`
 --
 ALTER TABLE `login_logs`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `user_id` (`user_id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `flat_no` (`flat_no`);
-
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -115,7 +115,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `login_logs`
 --
 ALTER TABLE `login_logs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -131,13 +131,7 @@ ALTER TABLE `users`
 -- Constraints for table `active_sessions`
 --
 ALTER TABLE `active_sessions`
-  ADD CONSTRAINT `active_sessions_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
-
---
--- Constraints for table `login_logs`
---
-ALTER TABLE `login_logs`
-  ADD CONSTRAINT `login_logs_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE;
+  ADD CONSTRAINT `active_sessions_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
