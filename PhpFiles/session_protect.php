@@ -25,7 +25,7 @@ if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity']) >
     session_unset();
     session_destroy();
 
-    header("Location: ../login.php?timeout=1");
+    header("Location: /SUMAN_TULSIANICHS/login.php?timeout=1");
     exit();
 }
 

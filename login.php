@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+// DEBUG ONLY
+if (isset($_SESSION['pending_user'])) {
+    echo "<script>console.log('✅ Pending session found');</script>";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -71,6 +80,20 @@
 
               </div>
             </form>
+            <?php if (isset($_GET['multiple']) && isset($_SESSION['pending_user'])): ?>
+              <form method="POST" action="./PhpFiles/handle_login.php">
+                <input type="hidden" name="flat_no" value="<?= htmlspecialchars($_SESSION['pending_user']['flat_no']) ?>">
+                <input type="hidden" name="password" value="<?= htmlspecialchars($_SESSION['pending_user']['password']) ?>">
+                <input type="hidden" name="latitude" value="<?= htmlspecialchars($_SESSION['pending_user']['latitude']) ?>">
+                <input type="hidden" name="longitude" value="<?= htmlspecialchars($_SESSION['pending_user']['longitude']) ?>">
+                <input type="hidden" name="override" value="1">
+                <div class="alert alert-warning text-center rounded-3 mt-3">
+                  You're already logged in elsewhere. <br>
+                  <button type="submit" class="btn btn-sm btn-danger mt-2">Click here to continue and logout previous session</button>
+                </div>
+              </form>
+            <?php endif; ?>
+
           </div>
         </div>
 

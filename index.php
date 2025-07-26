@@ -27,42 +27,84 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
+
 require 'PhpFiles/db.php';
 
-// Not logged in
+// 1. Not logged in? Go to login
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
     exit;
 }
 
-// Auto logout after 300 seconds (5 mins)
+// Update last_seen time every activity
+$updateSeen = $pdo->prepare("UPDATE active_sessions SET last_seen = NOW() WHERE user_id = ?");
+$updateSeen->execute([$_SESSION['user_id']]);
+
+
+// 2. Timeout check (5 mins inactivity)
 if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity'] > 300)) {
-    $update = $pdo->prepare("UPDATE login_logs SET logout_time = NOW() WHERE user_id = ? ORDER BY id DESC LIMIT 1");
-    $update->execute([$_SESSION['user_id']]);
+    // Record logout time
+    $pdo->prepare("UPDATE login_logs SET logout_time = NOW() WHERE user_id = ? AND logout_time IS NULL")
+        ->execute([$_SESSION['user_id']]);
 
-    $stmt = $pdo->prepare("DELETE FROM active_sessions WHERE user_id = ?");
-    $stmt->execute([$_SESSION['user_id']]);
+    // Remove from active_sessions
+    $pdo->prepare("DELETE FROM active_sessions WHERE user_id = ?")
+        ->execute([$_SESSION['user_id']]);
 
+    // Destroy session
     session_unset();
     session_destroy();
     header("Location: login.php?timeout=1");
     exit;
 }
 
+
+
+
+// 3. Update last activity timestamp
 $_SESSION['last_activity'] = time();
 
-// Optional: check if current session matches DB
-$check = $pdo->prepare("SELECT session_id FROM active_sessions WHERE user_id = ?");
-$check->execute([$_SESSION['user_id']]);
-$row = $check->fetch();
+// 4. Session conflict check
+$stmt = $pdo->prepare("SELECT session_id, last_seen FROM active_sessions WHERE user_id = ?");
+$stmt->execute([$_SESSION['user_id']]);
+$active = $stmt->fetch();
 
-if ($row && $row['session_id'] !== session_id()) {
-    session_unset();
-    session_destroy();
-    header("Location: login.php?multiple=1");
-    exit;
+$currentSession = session_id();
+
+if ($active) {
+    $lastSeen = strtotime($active['last_seen']);
+    $diff = time() - $lastSeen;
+
+    if ($active['session_id'] !== $currentSession) {
+        if ($diff <= 300) {
+            // Another session is still active
+            session_unset();
+            session_destroy();
+            header("Location: login.php?multiple=1");
+            exit;
+        } else {
+            // ❌ Stale session — remove and allow current session
+            $pdo->prepare("DELETE FROM active_sessions WHERE user_id = ?")->execute([$_SESSION['user_id']]);
+
+            // ✅ Now insert current session as active
+            $insert = $pdo->prepare("REPLACE INTO active_sessions (user_id, session_id, last_seen) VALUES (?, ?, NOW())");
+            $insert->execute([$_SESSION['user_id'], $currentSession]);
+        }
+    } else {
+        // ✅ Same session — just update last_seen
+        $insert = $pdo->prepare("REPLACE INTO active_sessions (user_id, session_id, last_seen) VALUES (?, ?, NOW())");
+        $insert->execute([$_SESSION['user_id'], $currentSession]);
+    }
 }
+
+
+// 5. Update or Insert current session
+$insert = $pdo->prepare("REPLACE INTO active_sessions (user_id, session_id, last_seen) VALUES (?, ?, NOW())");
+$insert->execute([$_SESSION['user_id'], $currentSession]);
 ?>
+
+
+
 
 <body style="background-color: #f0efe9;">
   <!-- NAVBAR -->
