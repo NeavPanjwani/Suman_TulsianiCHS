@@ -20,6 +20,64 @@
   </style>
   <link rel="icon" href="../Suman_TulsianiCHS/assets/images/logo2.png" type="image/png">
 
+  <!-- Include this inside <head> or before </body> -->
+<style>
+  #loader {
+    display: none;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  #thankyou-msg {
+    display: none;
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("form");
+    const loader = document.getElementById("loader");
+    const thankyou = document.getElementById("thankyou-msg");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent default form submission
+
+      // Show loader and hide thank-you message
+      loader.style.display = "block";
+      thankyou.style.display = "none";
+
+      const formData = new FormData(form);
+
+      // Send data to PHP backend
+      fetch("PhpFiles/handle_contact_us.php", {
+        method: "POST",
+        body: formData,
+      })
+        .then((res) => res.text())
+        .then((response) => {
+          loader.style.display = "none"; // Hide loader
+
+          if (response.trim() === "success") {
+            thankyou.style.display = "block"; // Show thank-you message
+            form.reset(); // Reset form after success
+          } else {
+            alert("Error: " + response); // Show error message from PHP
+          }
+        })
+        .catch((err) => {
+          loader.style.display = "none";
+          alert("Something went wrong. Please try again.");
+        });
+    });
+  });
+</script>
+
+
+
 </head>
 
 <body id="top" style="background-color: #f9f8f3;">
@@ -165,7 +223,19 @@
           </div>
 
           <div id="contactBlock" class="row g-0 shadow overflow-hidden rounded-5 mx-auto" style="max-width: 700px;">
-            <!-- Info -->
+          <!-- Loader -->
+            <div id="loader" style="display:none;" class="text-center mt-3">
+              <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Sending...</span>
+              </div>
+              <p class="mt-2">Sending your message...</p>
+            </div>
+            <!-- Thank You Message -->
+            <div id="thankyou-msg" style="display:none;" class="text-success text-center mt-3 fw-bold">
+              ✅ Thank you! Your message has been sent to the society’s registered email.<br>
+              We'll be in touch very soon!
+            </div>  
+          <!-- Info -->
             <div class="col-md-6 bg-body-secondary p-4">
               <h5 class="fw-bold text-center text-md-start text-decoration-underline mb-4">GET IN TOUCH</h5>
               <div class="mb-4 d-flex align-items-start">
@@ -197,23 +267,23 @@
             <!-- Form -->
             <div class="col-md-6 bg-white p-4">
               <h5 class="fw-bold text-center text-md-start text-decoration-underline mb-4">REACH OUT TO US</h5>
-              <form>
+              <form method="POST" action="./PhpFiles/handle_contact_us.php">
                 <!-- Flat No -->
                 <div class="mb-3 position-relative">
                   <i class="bi bi-person-fill position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
-                  <input type="text" class="form-control ps-5 border-10 rounded-pill" placeholder="Please Enter Flat No.">
+                  <input type="text"  name="flat_no" class="form-control ps-5 border-10 rounded-pill" placeholder="Please Enter Flat No.">
                 </div>
 
                 <!-- Email ID -->
                 <div class="mb-3 position-relative">
                   <i class="bi bi-envelope-fill position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
-                  <input type="email" class="form-control ps-5 border-10 rounded-pill" placeholder="Please Enter Email ID">
+                  <input type="email"  name="email" class="form-control ps-5 border-10 rounded-pill" placeholder="Please Enter Email ID">
                 </div>
 
                 <!-- Message -->
                 <div class="mb-3 position-relative">
                   <i class="bi bi-chat-left-text-fill position-absolute top-0 start-0 mt-3 ms-3 text-muted"></i>
-                  <textarea class="form-control ps-5 pt-4 border-10 rounded-4" rows="3" placeholder="Please Enter Message"></textarea>
+                  <textarea name="message" class="form-control ps-5 pt-4 border-10 rounded-4" rows="3" placeholder="Please Enter Message"></textarea>
                 </div>
 
                 <!-- Submit -->
@@ -223,6 +293,29 @@
               </form>
             </div>
 
+            
+
+            <!-- Thank You Message -->
+            <!-- Popup Thank You Message -->
+            <div id="thankyou-popup" style="
+              display: none;
+              position: fixed;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              background-color: #f0fff0;
+              border: 2px solid #28a745;
+              padding: 20px 30px;
+              border-radius: 10px;
+              font-weight: bold;
+              color: #155724;
+              z-index: 9999;
+              box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+              text-align: center;
+              ">
+              ✅ Thank you! Your message has been sent to the society’s registered email.<br>
+              We'll be in touch very soon!
+            </div>
 
           </div>
         </div>
