@@ -232,9 +232,6 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
             ↑
           </a>
         </div>
-
-
-
       </div>
     </div>
   </footer>
