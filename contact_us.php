@@ -232,7 +232,7 @@
             </div>
             <!-- Thank You Message -->
             <div id="thankyou-msg" style="display:none;" class="text-success text-center mt-3 fw-bold">
-              ✅ Thank you! Your message has been sent to the society’s registered email.<br>
+              Thank you! Your message has been sent to the society’s registered email.<br>
               We'll be in touch very soon!
             </div>  
           <!-- Info -->
