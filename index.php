@@ -25,15 +25,15 @@
 </head>
 <?php
 if (session_status() === PHP_SESSION_NONE) {
-    session_start();
+  session_start();
 }
 
 require 'PhpFiles/db.php';
 
 // 1. Not logged in? Go to login
 if (!isset($_SESSION['user_id'])) {
-    header("Location: login.php");
-    exit;
+  header("Location: login.php");
+  exit;
 }
 
 // Update last_seen time every activity
@@ -43,19 +43,19 @@ $updateSeen->execute([$_SESSION['user_id']]);
 
 // 2. Timeout check (5 mins inactivity)
 if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity'] > 300)) {
-    // Record logout time
-    $pdo->prepare("UPDATE login_logs SET logout_time = NOW() WHERE user_id = ? AND logout_time IS NULL")
-        ->execute([$_SESSION['user_id']]);
+  // Record logout time
+  $pdo->prepare("UPDATE login_logs SET logout_time = NOW() WHERE user_id = ? AND logout_time IS NULL")
+    ->execute([$_SESSION['user_id']]);
 
-    // Remove from active_sessions
-    $pdo->prepare("DELETE FROM active_sessions WHERE user_id = ?")
-        ->execute([$_SESSION['user_id']]);
+  // Remove from active_sessions
+  $pdo->prepare("DELETE FROM active_sessions WHERE user_id = ?")
+    ->execute([$_SESSION['user_id']]);
 
-    // Destroy session
-    session_unset();
-    session_destroy();
-    header("Location: login.php?timeout=1");
-    exit;
+  // Destroy session
+  session_unset();
+  session_destroy();
+  header("Location: login.php?timeout=1");
+  exit;
 }
 
 
@@ -72,29 +72,29 @@ $active = $stmt->fetch();
 $currentSession = session_id();
 
 if ($active) {
-    $lastSeen = strtotime($active['last_seen']);
-    $diff = time() - $lastSeen;
+  $lastSeen = strtotime($active['last_seen']);
+  $diff = time() - $lastSeen;
 
-    if ($active['session_id'] !== $currentSession) {
-        if ($diff <= 300) {
-            // Another session is still active
-            session_unset();
-            session_destroy();
-            header("Location: login.php?multiple=1");
-            exit;
-        } else {
-            // ❌ Stale session — remove and allow current session
-            $pdo->prepare("DELETE FROM active_sessions WHERE user_id = ?")->execute([$_SESSION['user_id']]);
-
-            // ✅ Now insert current session as active
-            $insert = $pdo->prepare("REPLACE INTO active_sessions (user_id, session_id, last_seen) VALUES (?, ?, NOW())");
-            $insert->execute([$_SESSION['user_id'], $currentSession]);
-        }
+  if ($active['session_id'] !== $currentSession) {
+    if ($diff <= 300) {
+      // Another session is still active
+      session_unset();
+      session_destroy();
+      header("Location: login.php?multiple=1");
+      exit;
     } else {
-        // ✅ Same session — just update last_seen
-        $insert = $pdo->prepare("REPLACE INTO active_sessions (user_id, session_id, last_seen) VALUES (?, ?, NOW())");
-        $insert->execute([$_SESSION['user_id'], $currentSession]);
+      // ❌ Stale session — remove and allow current session
+      $pdo->prepare("DELETE FROM active_sessions WHERE user_id = ?")->execute([$_SESSION['user_id']]);
+
+      // ✅ Now insert current session as active
+      $insert = $pdo->prepare("REPLACE INTO active_sessions (user_id, session_id, last_seen) VALUES (?, ?, NOW())");
+      $insert->execute([$_SESSION['user_id'], $currentSession]);
     }
+  } else {
+    // ✅ Same session — just update last_seen
+    $insert = $pdo->prepare("REPLACE INTO active_sessions (user_id, session_id, last_seen) VALUES (?, ?, NOW())");
+    $insert->execute([$_SESSION['user_id'], $currentSession]);
+  }
 }
 
 
@@ -114,17 +114,15 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
       <div class="d-flex align-items-center gap-2">
         <a class="navbar-brand d-flex align-items-center justify-content-between w-100" href="./index.php">
           <div class="d-flex align-items-center gap-2">
-            <img src="../Suman_TulsianiCHS/assets/images/logo2.png"
-              alt="Logo"
-              class="img-fluid"
+            <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo" class="img-fluid"
               style="max-height: 42px; width: auto;">
             <span class="logo-text fw-semibold text-nowrap" style="font-size: 0.9rem;">SUMAN TULSIANI CHS</span>
           </div>
         </a>
 
         <!-- Hamburger Button -->
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar">
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
       </div>
@@ -183,8 +181,7 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
         <!-- RIGHT IMAGE SECTION -->
         <div class="col-lg-6" id="right-img">
           <div class="p-4 h-100">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
-              alt="Interior" class="w-100 h-100"
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Interior" class="w-100 h-100"
               style="object-fit: cover; filter: grayscale(100%); border-radius: 0;">
           </div>
         </div>
@@ -199,7 +196,8 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
         <!-- Left -->
         <div class="col-md-6 mb-4 mb-md-0 text-center">
           <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 100px; width: 100%;">
-            <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo" style="height: 100%; object-fit: contain; max-width: 100%;">
+            <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo"
+              style="height: 100%; object-fit: contain; max-width: 100%;">
           </div>
 
           <p class="text-muted small mb-0">
@@ -223,8 +221,11 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
       </div>
 
       <!-- Bottom Bar -->
-      <div class="d-flex justify-content-center align-items-center pt-4 mt-4 border-top text-muted small " style="padding-left: 30%; ">
-        <p class="mb-0">© 2025 Suman Tulsiani APARTMENTS CHS LTD - DEVELOPED BY <a href="https://www.theveenagroup.com/" class="text-primary text-decoration-none text-primary slide-underline" style="text-decoration: none;"><span class="text-primary">Veena Infotech</span></a>.</p>
+      <div class="d-flex justify-content-center align-items-center pt-4 mt-4 border-top text-muted small "
+        style="padding-left: 30%; ">
+        <p class="mb-0">© 2025 Suman Tulsiani APARTMENTS CHS LTD - DEVELOPED BY <a href="https://www.theveenagroup.com/"
+            class="text-primary text-decoration-none text-primary slide-underline" style="text-decoration: none;"><span
+              class="text-primary">Veena Infotech</span></a>.</p>
         <div class="" style=" padding-left: 40%">
           <a href="#top" id="backToTop"
             class="btn  btn-warning btn-sm rounded-pill px-3 hidden fixed bottom-6 right-6  bg-yellow-400 text-black rounded-full shadow-lg hover:bg-yellow-300 transition-all duration-300 ease-in-out z-50 text-xl"
