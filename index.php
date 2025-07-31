@@ -209,8 +209,9 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
 
         <!-- Vertical Line -->
         <div class="col-md-1 d-none d-md-flex justify-content-center align-items-center">
-          <div style="width: 1px; height: 100%; background-color: #000;"></div>
+          <div style="width: 0.5px; height: 100%; background-color: #999;"></div>
         </div>
+
 
         <!-- Contacts -->
         <div class="col-md-6 d-flex flex-column justify-content-center">
@@ -225,9 +226,9 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
         </div>
       </div>
 
-      <!-- Thick Horizontal Line -->
+      <!-- Thin Horizontal Line -->
       <div class="mt-4 mb-3">
-        <div style="height: 2px; background-color: black;"></div>
+        <div style="height: 1px; background-color: #999;"></div> <!-- thinner and lighter -->
       </div>
 
       <!-- Footer Credits Centered on Single Line -->
@@ -252,9 +253,6 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
       </div>
     </div>
   </footer>
-
-
-
 
   <!-- Bootstrap Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
