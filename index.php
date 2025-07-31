@@ -225,7 +225,7 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
       </div>
 
       <!-- Horizontal Line -->
-      <hr class="my-4" style="border-color: #ccc;">
+      <hr class="my-4" style="border: 0; height: 1px; background-color: #ccc;">
 
       <!-- Bottom Bar Centered -->
       <div class="text-center text-muted small">
