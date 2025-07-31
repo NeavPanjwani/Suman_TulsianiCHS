@@ -210,65 +210,68 @@
 
 
   <!-- FOOTER -->
-  <footer id="footerSection" class="bg-light border-top border-muted">
+ <footer id="footerSection" class="bg-light border-top border-muted">
     <div class="container py-5">
       <div class="row">
-        <!-- Left -->
-        <div class="row align-items-center">
-          <!-- Left -->
-          <div class="col-md-5 mb-4 mb-md-0 text-center">
-            <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 100px; width: 100%;">
-              <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo"
-                style="height: 100%; object-fit: contain; max-width: 100%;">
-            </div>
-
-            <p class="text-muted small mb-0">
-              SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-              NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
-              MAJIWADA, THANE WEST, MAHARASHTRA, INDIA
-            </p>
+        <div class="col-md-5 text-center d-flex flex-column align-items-center justify-content-center">
+          <!-- Logo -->
+          <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 80px; width: 100%;">
+            <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo"
+              style="height: 100%; object-fit: contain; max-width: 100%;">
           </div>
+          <!-- Address -->
+          <p class="text-muted small mb-0">
+            SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
+            NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
+            MAJIWADA, THANE WEST, MAHARASHTRA, INDIA
+          </p>
+        </div>
 
-          <!-- Vertical Line -->
-          <div class="col-md-1 d-none d-md-flex justify-content-center">
-            <div style="width: 1px; background-color: #ccc; height: 100%;"></div>
-          </div>
-
-          <!-- Right -->
-          <div class="col-md-6">
-            <h5 class="mb-3">Contacts</h5>
-            <ul class="list-unstyled small text-muted">
-              <li class="mb-2">- SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-                NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
-                MAJIWADA, THANE WEST, MAHARASHTRA, INDIA</li>
-              <li class="mb-2">- SUMAN TULSANI.in</li>
-              <li>- +1 (123) 456-7890</li>
-            </ul>
-          </div>
+        <!-- Vertical Line -->
+        <div class="col-md-1 d-none d-md-flex justify-content-center align-items-center">
+          <div style="width: 0.5px; height: 100%; background-color: #999;"></div>
         </div>
 
 
-        <!-- Bottom Bar -->
-        <div class="d-flex justify-content-center align-items-center pt-4 mt-4 border-top text-muted small "
-          style="padding-left: 30%; ">
-          <p class="mb-0 text-muted">© 2025 Suman Tulsiani APARTMENTS CHS LTD</p>
-          <p class="mb-0 text-center">
-            DEVELOPED BY
-            <a href="https://www.theveenagroup.com/"
-              class="text-primary text-decoration-none slide-underline"
-              style="text-decoration: none;">
-              <span class="text-primary">Veena Infotech</span>
-            </a>
-          </p>
-          <div class="" style=" padding-left: 40%">
-            <a href="#top" id="backToTop"
-              class="btn  btn-warning btn-sm rounded-pill px-3 hidden fixed bottom-6 right-6  bg-yellow-400 text-black rounded-full shadow-lg hover:bg-yellow-300 transition-all duration-300 ease-in-out z-50 text-xl"
-              aria-label="Back to Top">
-              ↑
-            </a>
-          </div>
+        <!-- Contacts -->
+        <div class="col-md-6 d-flex flex-column justify-content-center">
+          <h5 class="mb-3">Contacts</h5>
+          <ul class="list-unstyled small text-muted">
+            <li class="mb-2">- SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
+              NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
+              MAJIWADA, THANE WEST, MAHARASHTRA, INDIA</li>
+            <li class="mb-2">- SUMAN TULSANI.in</li>
+            <li>- +1 (123) 456-7890</li>
+          </ul>
         </div>
       </div>
+
+      <!-- Thin Horizontal Line -->
+      <div class="mt-4 mb-3">
+        <div style="height: 1px; background-color: #999;"></div> <!-- thinner and lighter -->
+      </div>
+
+      <!-- Footer Credits Centered on Single Line -->
+      <div class="text-center text-muted small">
+        <p class="mb-0 d-inline">© 2025 Suman Tulsiani APARTMENTS CHS LTD</p>
+        <span class="mx-2">|</span>
+        <p class="mb-0 d-inline">
+          DEVELOPED BY
+          <a href="https://www.theveenagroup.com/"
+            class="text-primary text-decoration-none slide-underline"
+            style="text-decoration: none;">
+            <span class="text-primary">Veena Infotech</span>
+          </a>
+        </p>
+      </div>
+
+      <!-- Back to Top Button -->
+      <div style="position: fixed; bottom: 20px; right: 20px;">
+        <a href="#top" id="backToTop"
+          class="btn btn-warning btn-sm rounded-pill px-3 bg-yellow-400 text-black shadow-lg hover:bg-yellow-300 transition-all duration-300 ease-in-out z-50 text-xl"
+          aria-label="Back to Top">↑</a>
+      </div>
+    </div>
   </footer>
 
   <!-- script -->
