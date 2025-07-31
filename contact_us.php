@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php require 'PhpFiles/session_protect.php'; ?>
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,60 +22,60 @@
   <link rel="icon" href="../Suman_TulsianiCHS/assets/images/logo2.png" type="image/png">
 
   <!-- Include this inside <head> or before </body> -->
-<style>
-  #loader {
-    display: none;
-    text-align: center;
-    margin-top: 15px;
-  }
+  <style>
+    #loader {
+      display: none;
+      text-align: center;
+      margin-top: 15px;
+    }
 
-  #thankyou-msg {
-    display: none;
-    color: green;
-    font-weight: bold;
-    margin-top: 15px;
-    text-align: center;
-  }
-</style>
+    #thankyou-msg {
+      display: none;
+      color: green;
+      font-weight: bold;
+      margin-top: 15px;
+      text-align: center;
+    }
+  </style>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form");
-    const loader = document.getElementById("loader");
-    const thankyou = document.getElementById("thankyou-msg");
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const form = document.querySelector("form");
+      const loader = document.getElementById("loader");
+      const thankyou = document.getElementById("thankyou-msg");
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // Prevent default form submission
+      form.addEventListener("submit", function(e) {
+        e.preventDefault(); // Prevent default form submission
 
-      // Show loader and hide thank-you message
-      loader.style.display = "block";
-      thankyou.style.display = "none";
+        // Show loader and hide thank-you message
+        loader.style.display = "block";
+        thankyou.style.display = "none";
 
-      const formData = new FormData(form);
+        const formData = new FormData(form);
 
-      // Send data to PHP backend
-      fetch("PhpFiles/handle_contact_us.php", {
-        method: "POST",
-        body: formData,
-      })
-        .then((res) => res.text())
-        .then((response) => {
-          loader.style.display = "none"; // Hide loader
+        // Send data to PHP backend
+        fetch("PhpFiles/handle_contact_us.php", {
+            method: "POST",
+            body: formData,
+          })
+          .then((res) => res.text())
+          .then((response) => {
+            loader.style.display = "none"; // Hide loader
 
-          if (response.trim() === "success") {
-            thankyou.style.display = "block"; // Show thank-you message
-            form.reset(); // Reset form after success
-          } else {
-            alert("Error: " + response); // Show error message from PHP
-          }
-        })
-        .catch((err) => {
-          loader.style.display = "none";
-          alert("Something went wrong. Please try again.");
-        });
+            if (response.trim() === "success") {
+              thankyou.style.display = "block"; // Show thank-you message
+              form.reset(); // Reset form after success
+            } else {
+              alert("Error: " + response); // Show error message from PHP
+            }
+          })
+          .catch((err) => {
+            loader.style.display = "none";
+            alert("Something went wrong. Please try again.");
+          });
+      });
     });
-  });
-</script>
+  </script>
 
 
 
@@ -195,7 +196,7 @@
       </div>
 
       <!-- Side Images -->
-      <div class="col-lg-5 d-flex flex-column flex-lg-row gap-3 mt-4 mt-lg-0"  id="faqImages">
+      <div class="col-lg-5 d-flex flex-column flex-lg-row gap-3 mt-4 mt-lg-0" id="faqImages">
         <div class="w-50">
           <img src="../Suman_TulsianiCHS/assets/images/room-1.jpg" class="w-100 h-100 rounded" style="object-fit: cover;" alt="Image 1">
         </div>
@@ -223,7 +224,7 @@
           </div>
 
           <div id="contactBlock" class="row g-0 shadow overflow-hidden rounded-5 mx-auto" style="max-width: 700px;">
-          <!-- Loader -->
+            <!-- Loader -->
             <div id="loader" style="display:none;" class="text-center mt-3">
               <div class="spinner-border text-primary" role="status">
                 <span class="visually-hidden">Sending...</span>
@@ -234,8 +235,8 @@
             <div id="thankyou-msg" style="display:none;" class="text-success text-center mt-3 fw-bold">
               Thank you! Your message has been sent to the society’s registered email.<br>
               We'll be in touch very soon!
-            </div>  
-          <!-- Info -->
+            </div>
+            <!-- Info -->
             <div class="col-md-6 bg-body-secondary p-4">
               <h5 class="fw-bold text-center text-md-start text-decoration-underline mb-4">GET IN TOUCH</h5>
               <div class="mb-4 d-flex align-items-start">
@@ -271,13 +272,13 @@
                 <!-- Flat No -->
                 <div class="mb-3 position-relative">
                   <i class="bi bi-person-fill position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
-                  <input type="text"  name="flat_no" class="form-control ps-5 border-10 rounded-pill" placeholder="Please Enter Flat No.">
+                  <input type="text" name="flat_no" class="form-control ps-5 border-10 rounded-pill" placeholder="Please Enter Flat No.">
                 </div>
 
                 <!-- Email ID -->
                 <div class="mb-3 position-relative">
                   <i class="bi bi-envelope-fill position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
-                  <input type="email"  name="email" class="form-control ps-5 border-10 rounded-pill" placeholder="Please Enter Email ID">
+                  <input type="email" name="email" class="form-control ps-5 border-10 rounded-pill" placeholder="Please Enter Email ID">
                 </div>
 
                 <!-- Message -->
@@ -293,7 +294,7 @@
               </form>
             </div>
 
-            
+
 
             <!-- Thank You Message -->
             <!-- Popup Thank You Message -->
@@ -329,7 +330,7 @@
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.158382635824!2d72.82282507497918!3d19.1445431820742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b615c973dee3%3A0xd6a09bdbcc3c3704!2sSuman%20Tower!5e0!3m2!1sen!2sin!4v1752004438043!5m2!1sen!2sin"
               width="100%" height="100%" style="border:0; border-radius: 1rem;" allowfullscreen="" loading="lazy">
             </iframe>
-            
+
           </div>
         </div>
 
@@ -341,46 +342,65 @@
 
 
   <!-- FOOTER -->
-  <footer class="bg-light border-top border-muted">
+  <footer id="footerSection" class="bg-light border-top border-muted">
     <div class="container py-5">
       <div class="row">
         <!-- Left -->
-       <div class="col-md-6 mb-4 mb-md-0 text-center">
-          <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 100px; width: 100%;">
-            <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo" style="height: 100%; object-fit: contain; max-width: 100%;">
+        <div class="row align-items-center">
+          <!-- Left -->
+          <div class="col-md-5 mb-4 mb-md-0 text-center">
+            <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 100px; width: 100%;">
+              <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo"
+                style="height: 100%; object-fit: contain; max-width: 100%;">
+            </div>
+
+            <p class="text-muted small mb-0">
+              SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
+              NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
+              MAJIWADA, THANE WEST, MAHARASHTRA, INDIA
+            </p>
           </div>
 
-          <p class="text-muted small mb-0">
-            SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-            NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
-            MAJIWADA, THANE WEST, MAHARASHTRA, INDIA
-          </p>
-        </div>
-        <!-- Right -->
-        <div class="col-md-6">
-          <h5 class="mb-3">Contacts</h5>
-          <ul class="list-unstyled small text-muted">
-            <li class="mb-2">-SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-              NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
-              MAJIWADA, THANE WEST, MAHARASHTRA, INDIA</li>
-            <li class="mb-2">- SUMAN TULSANI.in</li>
-            <li>- +1 (123) 456-7890</li>
-          </ul>
-        </div>
-      </div>
+          <!-- Vertical Line -->
+          <div class="col-md-1 d-none d-md-flex justify-content-center">
+            <div style="width: 1px; background-color: #ccc; height: 100%;"></div>
+          </div>
 
-      <!-- Bottom Bar -->
-      <div class="d-flex justify-content-center align-items-center pt-4 mt-4 border-top text-muted small " style="padding-left: 30%; ">
-        <p class="mb-0">© 2025 Suman Tulsiani APARTMENTS CHS LTD - DEVELOPED BY <a href="https://www.theveenagroup.com/" class="text-primary text-decoration-none text-primary slide-underline" style="text-decoration: none;"><span class="text-primary">Veena Infotech</span></a>.</p>
-        <div class="" style=" padding-left: 40%">
-          <a href="#top" id="backToTop"
-            class="btn  btn-warning btn-sm rounded-pill px-3 hidden fixed bottom-6 right-6  bg-yellow-400 text-black rounded-full shadow-lg hover:bg-yellow-300 transition-all duration-300 ease-in-out z-50 text-xl"
-            aria-label="Back to Top">
-            ↑
-          </a>
+          <!-- Right -->
+          <div class="col-md-6">
+            <h5 class="mb-3">Contacts</h5>
+            <ul class="list-unstyled small text-muted">
+              <li class="mb-2">- SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
+                NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
+                MAJIWADA, THANE WEST, MAHARASHTRA, INDIA</li>
+              <li class="mb-2">- SUMAN TULSANI.in</li>
+              <li>- +1 (123) 456-7890</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <!-- Bottom Bar -->
+        <div class="d-flex justify-content-center align-items-center pt-4 mt-4 border-top text-muted small "
+          style="padding-left: 30%; ">
+          <p class="mb-0 text-muted">© 2025 Suman Tulsiani APARTMENTS CHS LTD</p>
+          <p class="mb-0 text-center">
+            DEVELOPED BY
+            <a href="https://www.theveenagroup.com/"
+              class="text-primary text-decoration-none slide-underline"
+              style="text-decoration: none;">
+              <span class="text-primary">Veena Infotech</span>
+            </a>
+          </p>
+          <div class="" style=" padding-left: 40%">
+            <a href="#top" id="backToTop"
+              class="btn  btn-warning btn-sm rounded-pill px-3 hidden fixed bottom-6 right-6  bg-yellow-400 text-black rounded-full shadow-lg hover:bg-yellow-300 transition-all duration-300 ease-in-out z-50 text-xl"
+              aria-label="Back to Top">
+              ↑
+            </a>
+          </div>
         </div>
       </div>
-    </div>
   </footer>
 
 
@@ -391,24 +411,24 @@
 
   <script src="./script.js"></script>
   <script>
-  window.addEventListener("load", () => {
-    // FAQ Title and Subheading
-    gsap.from("#faqBlock h1", {
-      x: -60,
-      opacity: 0,
-      duration: 1,
-      ease: "power2.out"
-    });
+    window.addEventListener("load", () => {
+      // FAQ Title and Subheading
+      gsap.from("#faqBlock h1", {
+        x: -60,
+        opacity: 0,
+        duration: 1,
+        ease: "power2.out"
+      });
 
-    gsap.from("#faqBlock h5", {
-      y: 20,
-      opacity: 0,
-      duration: 1,
-      delay: 0.2,
-      ease: "power2.out"
-    });
+      gsap.from("#faqBlock h5", {
+        y: 20,
+        opacity: 0,
+        duration: 1,
+        delay: 0.2,
+        ease: "power2.out"
+      });
 
-    gsap.from(".navbar-nav .nav-item", {
+      gsap.from(".navbar-nav .nav-item", {
         y: -30,
         opacity: 0,
         duration: 1.2,
@@ -417,64 +437,64 @@
       });
 
 
-    // Accordion Items
-    gsap.from("#faqAccordion .accordion-item", {
-      y: 30,
-      opacity: 0,
-      duration: 1,
-      stagger: 0.2,
-      delay: 0.4,
-      ease: "power2.out"
-    });
+      // Accordion Items
+      gsap.from("#faqAccordion .accordion-item", {
+        y: 30,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        delay: 0.4,
+        ease: "power2.out"
+      });
 
-    // FAQ Images
-    gsap.from("#faqImages img", {
-      scale: 0.95,
-      y: 40,
-      opacity: 0,
-      duration: 1,
-      stagger: 0.2,
-      delay: 0.6,
-      ease: "power2.out"
-    });
+      // FAQ Images
+      gsap.from("#faqImages img", {
+        scale: 0.95,
+        y: 40,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        delay: 0.6,
+        ease: "power2.out"
+      });
 
-    // Contact Heading
-    gsap.from("#contactHeading", {
-      y: 40,
-      opacity: 0,
-      duration: 1,
-      delay: 0.3,
-      ease: "power2.out"
-    });
+      // Contact Heading
+      gsap.from("#contactHeading", {
+        y: 40,
+        opacity: 0,
+        duration: 1,
+        delay: 0.3,
+        ease: "power2.out"
+      });
 
-    // Contact Info Block (Left)
-    gsap.from("#contactBlock .col-md-6.bg-body-secondary", {
-      x: -50,
-      opacity: 0,
-      duration: 1,
-      delay: 0.5,
-      ease: "power2.out"
-    });
+      // Contact Info Block (Left)
+      gsap.from("#contactBlock .col-md-6.bg-body-secondary", {
+        x: -50,
+        opacity: 0,
+        duration: 1,
+        delay: 0.5,
+        ease: "power2.out"
+      });
 
-    // Contact Form Block (Right)
-    gsap.from("#contactBlock .col-md-6.bg-white", {
-      x: 50,
-      opacity: 0,
-      duration: 1,
-      delay: 0.7,
-      ease: "power2.out"
-    });
+      // Contact Form Block (Right)
+      gsap.from("#contactBlock .col-md-6.bg-white", {
+        x: 50,
+        opacity: 0,
+        duration: 1,
+        delay: 0.7,
+        ease: "power2.out"
+      });
 
-    // Map Animation
-    gsap.from("#mapSection", {
-      scale: 0.95,
-      opacity: 0,
-      duration: 1,
-      delay: 1,
-      ease: "power2.out"
+      // Map Animation
+      gsap.from("#mapSection", {
+        scale: 0.95,
+        opacity: 0,
+        duration: 1,
+        delay: 1,
+        ease: "power2.out"
+      });
     });
-  });
-</script>
+  </script>
 
 
 
