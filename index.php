@@ -192,13 +192,14 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
   <!-- FOOTER -->
   <footer id="footerSection" class="bg-light border-top border-muted">
     <div class="container py-5">
-      <div class="row align-items-start">
-        <!-- Left -->
-        <div class="col-md-5 mb-4 mb-md-0 text-center">
+      <div class="row">
+        <div class="col-md-5 text-center d-flex flex-column align-items-center justify-content-center">
+          <!-- Logo -->
           <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 80px; width: 100%;">
             <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo"
               style="height: 100%; object-fit: contain; max-width: 100%;">
           </div>
+          <!-- Address -->
           <p class="text-muted small mb-0">
             SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
             NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
@@ -207,12 +208,12 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
         </div>
 
         <!-- Vertical Line -->
-        <div class="col-md-1 d-none d-md-flex justify-content-center">
-          <div style="width: 1px; background-color: #ccc; height: 100%;"></div>
+        <div class="col-md-1 d-none d-md-flex justify-content-center align-items-center">
+          <div style="width: 1px; height: 100%; background-color: #000;"></div>
         </div>
 
-        <!-- Right -->
-        <div class="col-md-6">
+        <!-- Contacts -->
+        <div class="col-md-6 d-flex flex-column justify-content-center">
           <h5 class="mb-3">Contacts</h5>
           <ul class="list-unstyled small text-muted">
             <li class="mb-2">- SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
@@ -224,10 +225,12 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
         </div>
       </div>
 
-      <!-- Horizontal Line -->
-      <hr class="my-4" style="border: 0; height: 1px; background-color: #ccc;">
+      <!-- Thick Horizontal Line -->
+      <div class="mt-4 mb-3">
+        <div style="height: 2px; background-color: black;"></div>
+      </div>
 
-      <!-- Bottom Bar Centered -->
+      <!-- Footer Credits Centered on Single Line -->
       <div class="text-center text-muted small">
         <p class="mb-0 d-inline">© 2025 Suman Tulsiani APARTMENTS CHS LTD</p>
         <span class="mx-2">|</span>
@@ -249,6 +252,7 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
       </div>
     </div>
   </footer>
+
 
 
 
