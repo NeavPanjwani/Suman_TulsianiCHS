@@ -36,8 +36,8 @@ if ($user && $password === $user['password']) {
                 $_SESSION['pending_user'] = [
                     'flat_no' => $flat_no,
                     'password' => $password,
-                    'latitude' => $_POST['latitude'] ?? null,
-                    'longitude' => $_POST['longitude'] ?? null
+                    //'latitude' => $_POST['latitude'] ?? null,
+                    //'longitude' => $_POST['longitude'] ?? null
                 ];
                 header("Location: ../login.php?multiple=1");
                 exit;
@@ -55,8 +55,8 @@ if ($user && $password === $user['password']) {
     // 📍 IP and Location
     $ip = $_SERVER['REMOTE_ADDR'];
     $user_agent = $_SERVER['HTTP_USER_AGENT'];
-    $latitude = $_POST['latitude'] ?? null;
-    $longitude = $_POST['longitude'] ?? null;
+    //$latitude = $_POST['latitude'] ?? null;
+    //$longitude = $_POST['longitude'] ?? null;
 
     function simplifyAgent($ua) {
         $os = 'Other OS';
@@ -77,8 +77,8 @@ if ($user && $password === $user['password']) {
     $device = simplifyAgent($user_agent);
 
     // 📝 Log login
-    $log_stmt = $pdo->prepare("INSERT INTO login_logs (user_id, ip_address, user_agent, latitude, longitude) VALUES (?, ?, ?, ?, ?)");
-    $log_stmt->execute([$user['id'], $ip, $device, $latitude, $longitude]);
+    $log_stmt = $pdo->prepare("INSERT INTO login_logs (user_id, ip_address, user_agent) VALUES (?, ?, ?)");
+    $log_stmt->execute([$user['id'], $ip, $device]);
 
     
 

@@ -71,9 +71,9 @@ if (isset($_SESSION['pending_user'])) {
                   Change/Forgot Password?
                 </a>
               </div>
-              <input type="hidden" name="latitude" id="latitude">
+              <!--input type="hidden" name="latitude" id="latitude">
               <input type="hidden" name="longitude" id="longitude">
-              <div class="text-center text-muted small" id="location-status"></div>
+              <div class="text-center text-muted small" id="location-status"></div-->
 
               <div class="d-grid mb-2">
                 <button type="submit" class="btn btn-dark rounded-pill">Log in</button>
@@ -84,8 +84,8 @@ if (isset($_SESSION['pending_user'])) {
               <form method="POST" action="./PhpFiles/handle_login.php">
                 <input type="hidden" name="flat_no" value="<?= htmlspecialchars($_SESSION['pending_user']['flat_no']) ?>">
                 <input type="hidden" name="password" value="<?= htmlspecialchars($_SESSION['pending_user']['password']) ?>">
-                <input type="hidden" name="latitude" value="<?= htmlspecialchars($_SESSION['pending_user']['latitude']) ?>">
-                <input type="hidden" name="longitude" value="<?= htmlspecialchars($_SESSION['pending_user']['longitude']) ?>">
+                <!--input type="hidden" name="latitude" value="<!?= htmlspecialchars($_SESSION['pending_user']['latitude']) ?>"-->
+                <!--input type="hidden" name="longitude" value="<!?= htmlspecialchars($_SESSION['pending_user']['longitude']) ?>"-->
                 <input type="hidden" name="override" value="1">
                 <div class="alert alert-warning text-center rounded-3 mt-3">
                   You're already logged in elsewhere. <br>
@@ -104,7 +104,7 @@ if (isset($_SESSION['pending_user'])) {
 
   <!-- script -->
   <script src="./script.js"></script>
-  <script>
+  <!--script>
     window.addEventListener("load", () => {
       const latField = document.getElementById("latitude");
       const lonField = document.getElementById("longitude");
@@ -151,7 +151,7 @@ if (isset($_SESSION['pending_user'])) {
         }
       );
     });
-  </script>
+  </script-->
 
 
   <!-- Bootstrap Icons CDN -->
