@@ -116,15 +116,15 @@
           NOTICES & MINUTES
         </h1>
 
-        <div class="fw-bold mb-2" style="margin-top: 15%; font-size: 29px;">Year</div>
-        <div id="yearList">
+        <!-- <div class="fw-bold mb-2" style="margin-top: 15%; font-size: 29px;">Year</div>
+         <div id="yearList">
           <div class="py-2 border-bottom nav-link" style="cursor: pointer;" onclick="showYear(2025)">&#9658; 2025</div>
           <div class="py-2 border-bottom nav-link" style="cursor: pointer;" onclick="showYear(2024)">&#9658; 2024</div>
           <div class="py-2 border-bottom nav-link" style="cursor: pointer;" onclick="showYear(2023)">&#9658; 2023</div>
           <div class="py-2 border-bottom nav-link" style="cursor: pointer;" onclick="showYear(2022)">&#9658; 2022</div>
-        </div>
-      </div>
-      <div class="col-md-8 order-md-2">
+        </div> 
+      </div> -->
+      <!-- <div class="col-md-8 order-md-2">
         <p class="mb-4" style="text-align: justify;">Notices and minutes are essential components of society meetings. A
           notice informs members in advance about upcoming meetings,
           including the date, time, venue, and agenda. Minutes are the official
@@ -133,36 +133,36 @@
 
         <div class="row g-3 align-items-stretch">
           <!-- Left Column -->
-          <div class="col-md-5">
+          <!-- <div class="col-md-5">
             <div class="d-flex flex-column justify-content-between h-100" style="height: 350px;">
               <!-- Top Image -->
-              <div class="mb-2" style="flex: 1;">
+              <!-- <div class="mb-2" style="flex: 1;">
                 <img src="./assets/images/room 4 (1).jpg" class="img-fluid rounded" style="height: 80%; width: 100%; object-fit: cover;" alt="" />
                 <p class="text-center fw-semibold mt-2 mb-0">APPOINTMENT OF PMC</p>
-              </div>
+              </div> -->
               <!-- Bottom Image -->
-              <div style="flex: 1;">
+              <!-- <div style="flex: 1;">
                 <img src="./assets/images/room 5.jpg" class="img-fluid rounded" style="height: 85%; width: 100%; object-fit: cover;" alt="" />
                 <p class="text-center fw-semibold mt-2 mb-0">CONSENT FOR REDEVELOPMENT</p>
               </div>
-            </div>
-          </div>
+            </div> -->
+          </div> 
 
           <!-- Right Column -->
-          <div class="col-md-7">
+          <!-- <div class="col-md-7">
             <div style="height: 500px;">
               <img src="./assets/images/room-1.jpg" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="" />
               <p class="text-center fw-semibold mt-2 mb-0">REVISED DRAFT WITH LAWYER INPUTS</p>
             </div>
           </div>
-        </div>
+        </div> -->
 
 
-      </div>
+      </div> 
     </div>
 
     <!-- Year View (Initially Hidden) -->
-    <div id="yearView" class="d-none">
+    <!-- <div id="yearView" class="d-none">
       <div class="d-flex justify-content-between align-items-center mb-4">
         <h1 class="display-5 mb-0 text-center" style="font-size: 50px;">NOTICES & MINUTES</h1>
         <div class="input-group" style="max-width: 300px;">
@@ -204,9 +204,473 @@
           </div>
         </div>
       </div>
+    </div> -->
+
+  <!----DOCUMENTS GRID---->
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/images/doc1.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">Appointment of Registrar</h3>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+              data-bs-toggle="modal" data-bs-target="#doc1">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/images/doc2.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">Society Copy Letter from Resgistrar Appointment of MLDL_Suman CHS</h3>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+              data-bs-toggle="modal" data-bs-target="#may-minutes-modal">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/images/doc3.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">DOC-20250731-WA0025</h3>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+              data-bs-toggle="modal" data-bs-target="#rules-modal">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <!-- Card 4 -->
+      <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/images/doc4.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">DOC-20250731-WA0026</h3>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+              data-bs-toggle="modal" data-bs-target="#doc4">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/images/doc5.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">DOC-20250814-WA0017</h3>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+              data-bs-toggle="modal" data-bs-target="#doc5">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/images/doc6.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">DOC-20250819-WA0019</h3>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+              data-bs-toggle="modal" data-bs-target="#doc6">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="container">
+    <div class="row g-4 mb-4">
+      <!-- Card 7 -->
+      <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/images/doc7.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">Feasibility Report Houzer</h3>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+              data-bs-toggle="modal" data-bs-target="#doc7">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 8 -->
+      <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/images/doc8.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">Offer Letter From Mahindra</h3>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+              data-bs-toggle="modal" data-bs-target="#doc8">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 9 -->
+      <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/images/doc9.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">Public Notice</h3>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+              data-bs-toggle="modal" data-bs-target="#doc9">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <!-- Card 10 -->
+      <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/images/doc10.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">Suman - Feasibility Report</h3>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+              data-bs-toggle="modal" data-bs-target="#doc10">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+<!-- Card 11 -->
+      <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/images/doc11.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">Suman Structural Surver Report</h3>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+              data-bs-toggle="modal" data-bs-target="#doc11">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+  <!-- Modals -->
+  <section>
+    <!-- SGBM Notice Modal -->
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="doc1" tabindex="-1" aria-labelledby="sgbmNoticeLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="sgbmNoticeLabel">Appointment of Registrar</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="overflow:auto; max-height:70vh;">
+            <div id="document1"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- May Minutes Modal -->
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="may-minutes-modal" tabindex="-1" aria-labelledby="mayMinutesLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="mayMinutesLabel">Society Copy Letter from Resgistrar Appointment of MLDL_Suman CHS</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="overflow:auto; max-height:70vh;">
+            <div id="may-minutes-pdf"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Rules Modal -->
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="rules-modal" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rulesModalLabel">DOC-20250731-WA0025</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="overflow:auto; max-height:70vh;">
+            <div id="rules-pdf"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
     </div>
 
-  </div>
+     <!-- Doc 4 Modal -->
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="doc4" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rulesModalLabel">DOC-20250731-WA0026</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="overflow:auto; max-height:70vh;">
+            <div id="document4"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Doc 5 Modal -->
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="doc5" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rulesModalLabel">DOC-20250814-WA0017</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="overflow:auto; max-height:70vh;">
+            <div id="document5"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Doc 6 Modal -->
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="doc6" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rulesModalLabel">DOC-20250819-WA0019</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="overflow:auto; max-height:70vh;">
+            <div id="document6"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Doc 7 Modal -->
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="doc7" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rulesModalLabel">Feasibility Report Houzer</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="overflow:auto; max-height:70vh;">
+            <div id="document7"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Doc 8 Modal -->
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="doc8" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rulesModalLabel">Offer Letter From Mahindra</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="overflow:auto; max-height:70vh;">
+            <div id="document8"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Doc 9 Modal -->
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="doc9" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rulesModalLabel">Public Notice</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="overflow:auto; max-height:70vh;">
+            <div id="document9"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Doc 10 Modal -->
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="doc10" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rulesModalLabel">Suman - Feasibility Report</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="overflow:auto; max-height:70vh;">
+            <div id="document10"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Doc 11 Modal -->
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="doc11" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rulesModalLabel">Suman Structural Surver Report</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="overflow:auto; max-height:70vh;">
+            <div id="document11"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <script>
+    function renderPDF(pdfUrl, containerId) {
+      const canvasContainer = document.getElementById(containerId);
+
+      // Ensure the container exists before proceeding
+      if (!canvasContainer) {
+        console.error(`Container with ID ${containerId} not found.`);
+        return;
+      }
+
+      // Load the PDF document using pdf.js
+      const loadingTask = pdfjsLib.getDocument(pdfUrl);
+
+      loadingTask.promise.then(function(pdf) {
+        const totalPages = pdf.numPages; // Get total number of pages
+        // Clear previous canvases (if any)
+        canvasContainer.innerHTML = '';
+
+        // Function to render each page in sequence
+        function renderPage(pageNum) {
+          if (pageNum > totalPages) return;
+
+          pdf.getPage(pageNum).then(function(page) {
+            const scale = 2; // Zoom level
+            const viewport = page.getViewport({ scale: scale });
+
+            // Create a canvas for the page and append it to the container
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+
+            // Set canvas dimensions
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+
+            // Render the page
+            page.render({
+              canvasContext: context,
+              viewport: viewport
+            }).promise.then(function() {
+              canvasContainer.appendChild(canvas); // Append the canvas
+              renderPage(pageNum + 1); // Move to the next page
+            });
+          });
+        }
+
+        // Start rendering from the first page
+        renderPage(1);
+      }).catch(function(error) {
+        console.error('Error loading PDF: ', error);
+        canvasContainer.innerHTML = '<div class="text-danger">Failed to load document.</div>';
+      });
+    }
+
+    // SGBM Notice Modal
+     // doc1 Modal
+    document.getElementById('doc1').addEventListener('show.bs.modal', function() {
+      renderPDF('assets/Documents/Appointment of Registrar_Sumans.pdf', 'document1');
+    });
+
+    // May Minutes Modal
+    document.getElementById('may-minutes-modal').addEventListener('show.bs.modal', function() {
+      renderPDF('assets/Documents/20250402 Society Copy_Letter from Resgistrar Appointment of MLDL_Suman CHS.pdf', 'may-minutes-pdf');
+    });
+
+    // Rules Modal
+    document.getElementById('rules-modal').addEventListener('show.bs.modal', function() {
+      renderPDF('assets/Documents/DOC-20250731-WA0025.pdf', 'rules-pdf');
+    });
+      // doc4 Modal
+    document.getElementById('doc4').addEventListener('show.bs.modal', function() {
+      renderPDF('assets/Documents/DOC-20250731-WA0026.pdf', 'document4');
+    });
+      // doc5 Modal
+    document.getElementById('doc5').addEventListener('show.bs.modal', function() {
+      renderPDF('assets/Documents/DOC-20250814-WA0017.pdf', 'document5');
+    });
+      // doc6 Modal
+    document.getElementById('doc6').addEventListener('show.bs.modal', function() {
+      renderPDF('assets/Documents/DOC-20250819-WA0019.pdf', 'document6');
+    });
+      // doc7 Modal
+    document.getElementById('doc7').addEventListener('show.bs.modal', function() {
+      renderPDF('assets/Documents/Feasibility report houzer.pdf', 'document7');
+    });
+      // doc8 Modal
+    document.getElementById('doc8').addEventListener('show.bs.modal', function() {
+      renderPDF('assets/Documents/offer letter from mahindra.pdf', 'document8');
+    });
+     // doc9 Modal
+    document.getElementById('doc9').addEventListener('show.bs.modal', function() {
+      renderPDF('assets/Documents/public notice.pdf', 'document9');
+    });
+     // doc10 Modal
+    document.getElementById('doc10').addEventListener('show.bs.modal', function() {
+      renderPDF('assets/Documents/Suman - Feasibility report.pdf', 'document10');
+    });
+    // doc11 Modal
+    document.getElementById('doc10').addEventListener('show.bs.modal', function() {
+      renderPDF('assets/Documents/Suman Structural survey report.pdf', 'document11');
+    });
+    
+    
+  </script>
+
 
 
   <!-- FOOTER -->
