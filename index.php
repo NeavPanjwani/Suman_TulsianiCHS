@@ -32,14 +32,13 @@ require 'PhpFiles/db.php';
 
 // 1. Not logged in? Go to login
 if (!isset($_SESSION['user_id'])) {
-  header("Location: login.php");
+  include 'login.php';
   exit;
 }
 
 // Update last_seen time every activity
 $updateSeen = $pdo->prepare("UPDATE active_sessions SET last_seen = NOW() WHERE user_id = ?");
 $updateSeen->execute([$_SESSION['user_id']]);
-
 
 // 2. Timeout check (5 mins inactivity)
 if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity'] > 300)) {

@@ -68,7 +68,7 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav gap-3">
             <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
-            <li class="nav-item"><a class="nav-link" href="./PMC.php">PMC</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
             <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
             <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
             <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
