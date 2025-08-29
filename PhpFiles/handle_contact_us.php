@@ -29,7 +29,7 @@ try {
     $mail->Port       = 465;
 
     $mail->setFrom('veenatheveenagroup@gmail.com', 'Suman Tulsiani CHS Website');
-    $mail->addAddress('veena@veenaservices.com', 'Veena Naik');  //Add a recipient
+    $mail->addAddress('infotech@veenaservices.com', 'Veena Infotech');  //Add a recipient
 
     $mail->isHTML(true);
     $mail->Subject = 'New Contact Form Message';

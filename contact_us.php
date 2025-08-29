@@ -19,7 +19,7 @@
       font-family: 'Georgia', serif;
     }
   </style>
-  <link rel="icon" href="../Suman_TulsianiCHS/assets/images/logo2.png" type="image/png">
+  <link rel="icon" href="./assets/images/logo2.png" type="image/png">
 
   <!-- Include this inside <head> or before </body> -->
   <style>
@@ -90,7 +90,7 @@
       <div class="d-flex align-items-center gap-2">
         <a class="navbar-brand d-flex align-items-center justify-content-between w-100" href="./index.php">
           <div class="d-flex align-items-center gap-2">
-            <img src="../Suman_TulsianiCHS/assets/images/logo2.png"
+            <img src="./assets/images/logo2.png"
               alt="Logo"
               class="img-fluid"
               style="max-height: 42px; width: auto;">
@@ -198,10 +198,10 @@
       <!-- Side Images -->
       <div class="col-lg-5 d-flex flex-column flex-lg-row gap-3 mt-4 mt-lg-0" id="faqImages">
         <div class="w-50">
-          <img src="../Suman_TulsianiCHS/assets/images/room-1.jpg" class="w-100 h-100 rounded" style="object-fit: cover;" alt="Image 1">
+          <img src="./assets/images/room-1.jpg" class="w-100 h-100 rounded" style="object-fit: cover;" alt="Image 1">
         </div>
         <div class="w-50">
-          <img src="../Suman_TulsianiCHS/assets/images/room-2.jpg" class="w-100 h-100 rounded" style="object-fit: cover;" alt="Image 2">
+          <img src="./assets/images/room-2.jpg" class="w-100 h-100 rounded" style="object-fit: cover;" alt="Image 2">
         </div>
       </div>
 
@@ -348,7 +348,7 @@
         <div class="col-md-5 text-center d-flex flex-column align-items-center justify-content-center">
           <!-- Logo -->
           <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 80px; width: 100%;">
-            <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo"
+            <img src="./assets/images/logo2.png" alt="Logo"
               style="height: 100%; object-fit: contain; max-width: 100%;">
           </div>
           <!-- Address -->

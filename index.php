@@ -18,7 +18,7 @@
       font-family: 'Georgia', serif;
     }
   </style>
-  <link rel="icon" href="../Suman_TulsianiCHS/assets/images/logo2.png" type="image/png">
+  <link rel="icon" href="./assets/images/logo2.png" type="image/png">
 
 
 
@@ -113,7 +113,7 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
       <div class="d-flex align-items-center gap-2">
         <a class="navbar-brand d-flex align-items-center justify-content-between w-100" href="./index.php">
           <div class="d-flex align-items-center gap-2">
-            <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo" class="img-fluid"
+            <img src="./assets/images/logo2.png" alt="Logo" class="img-fluid"
               style="max-height: 42px; width: auto;">
             <span class="logo-text fw-semibold text-nowrap" style="font-size: 0.9rem;">SUMAN TULSIANI CHS</span>
           </div>
@@ -129,7 +129,7 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
       <div class="collapse navbar-collapse d-none d-lg-block">
         <ul class="navbar-nav gap-3 ms-auto me-5">
           <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
-          <li class="nav-item"><a class="nav-link" href="./PMC.php">PMC</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
           <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
           <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
           <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
@@ -149,7 +149,7 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
         <div class="offcanvas-body">
           <ul class="navbar-nav gap-3">
             <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
-            <li class="nav-item"><a class="nav-link" href="./PMC.php">PMC</a></li>
+            <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
             <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
             <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
             <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
@@ -195,7 +195,7 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
         <div class="col-md-5 text-center d-flex flex-column align-items-center justify-content-center">
           <!-- Logo -->
           <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 80px; width: 100%;">
-            <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo"
+            <img src="./assets/images/logo2.png" alt="Logo"
               style="height: 100%; object-fit: contain; max-width: 100%;">
           </div>
           <!-- Address -->

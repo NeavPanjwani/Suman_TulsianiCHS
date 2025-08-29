@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SUMAN TULSIANI CHS - forgot_password</title>
+    <title>SUMAN TULSIANI CHS - Forgot Password</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <style>
@@ -12,7 +12,7 @@
             background: #f0efe9;
         }
     </style>
-    <link rel="icon" href="../Suman_TulsianiCHS/assets/images/logo2.png" type="image/png">
+    <link rel="icon" href="./assets/images/logo2.png" type="image/png">
 
 </head>
 
@@ -24,7 +24,7 @@
 
                 <!-- Left Part (Logo + Text) -->
                 <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center p-5">
-                    <img id="logoImage" src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="R Logo" class="mb-3" style="max-width: 350px;">
+                    <img id="logoImage" src="./assets/images/logo2.png" alt="R Logo" class="mb-3" style="max-width: 350px;">
                     <span class="logo-text">SUMAN TULSIANI CHS</span>
                 </div>
 

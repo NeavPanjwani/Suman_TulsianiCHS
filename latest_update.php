@@ -11,7 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="../Suman_TulsianiCHS/assets/images/logo2.png" type="image/png">
+  <link rel="icon" href="./assets/images/logo2.png" type="image/png">
 
   <style>
     body {
@@ -39,7 +39,7 @@
       <div class="d-flex align-items-center gap-2">
         <a class="navbar-brand d-flex align-items-center justify-content-between w-100" href="./index.php">
           <div class="d-flex align-items-center gap-2">
-            <img src="../Suman_TulsianiCHS/assets/images/logo2.png"
+            <img src="./assets/images/logo2.png"
               alt="Logo"
               class="img-fluid"
               style="max-height: 42px; width: auto;">
@@ -97,7 +97,7 @@
       <div class="row align-items-center">
         <!-- LEFT: IMAGE WITH ARROWS -->
         <div class="col-md-6 position-relative" id="updateImageSection">
-          <img id="carouselImage" src="../Suman_TulsianiCHS/assets/images/room.jpg" class="img-fluid w-100 rounded-3" style="max-height: 80vh; object-fit: cover;" />
+          <img id="carouselImage" src="./assets/images/room.jpg" class="img-fluid w-100 rounded-3" style="max-height: 80vh; object-fit: cover;" />
           <!-- Arrows -->
           <div class="position-absolute bottom-0 end-0 mb-3 me-3 d-flex gap-2">
             <button class="arrow-btn" onclick="prevImage()">❮</button>
@@ -132,7 +132,7 @@
         <div class="col-md-5 text-center d-flex flex-column align-items-center justify-content-center">
           <!-- Logo -->
           <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 80px; width: 100%;">
-            <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo"
+            <img src="./assets/images/logo2.png" alt="Logo"
               style="height: 100%; object-fit: contain; max-width: 100%;">
           </div>
           <!-- Address -->
@@ -199,9 +199,9 @@
 
   <script>
     const images = [
-      "../Suman_TulsianiCHS/assets/images/vtry.jpeg",
-      "../Suman_TulsianiCHS/assets/images/room.jpg",
-      "../Suman_TulsianiCHS/assets/images/room2.jpg",
+      "./assets/images/vtry.jpeg",
+      "./assets/images/room.jpg",
+      "./assets/images/room2.jpg",
 
     ];
     let currentIndex = 0;

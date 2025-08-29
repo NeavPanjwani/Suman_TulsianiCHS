@@ -9,7 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="../Suman_TulsianiCHS/assets/images/logo2.png" type="image/png">
+  <link rel="icon" href="./assets/images/logo2.png" type="image/png">
 
   <style>
     body {
@@ -55,7 +55,7 @@
       <div class="d-flex align-items-center gap-2">
         <a class="navbar-brand d-flex align-items-center justify-content-between w-100" href="./index.php">
           <div class="d-flex align-items-center gap-2">
-            <img src="../Suman_TulsianiCHS/assets/images/logo2.png"
+            <img src="./assets/images/logo2.png"
               alt="Logo"
               class="img-fluid"
               style="max-height: 42px; width: auto;">
@@ -131,10 +131,10 @@
           record of what was discussed and decided during the meeting, including
           attendance, key points, and action items.</p>
 
-        <div class="row g-3 align-items-stretch">
+        <div class="row g-3 align-items-stretch"> -->
           <!-- Left Column -->
           <!-- <div class="col-md-5">
-            <div class="d-flex flex-column justify-content-between h-100" style="height: 350px;">
+            <div class="d-flex flex-column justify-content-between h-100" style="height: 350px;"> -->
               <!-- Top Image -->
               <!-- <div class="mb-2" style="flex: 1;">
                 <img src="./assets/images/room 4 (1).jpg" class="img-fluid rounded" style="height: 80%; width: 100%; object-fit: cover;" alt="" />
@@ -155,11 +155,11 @@
               <p class="text-center fw-semibold mt-2 mb-0">REVISED DRAFT WITH LAWYER INPUTS</p>
             </div>
           </div>
-        </div> -->
+        </div> 
 
 
       </div> 
-    </div>
+    </div> -->
 
     <!-- Year View (Initially Hidden) -->
     <!-- <div id="yearView" class="d-none">
@@ -680,7 +680,7 @@
         <div class="col-md-5 text-center d-flex flex-column align-items-center justify-content-center">
           <!-- Logo -->
           <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 80px; width: 100%;">
-            <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo"
+            <img src="./assets/images/logo2.png" alt="Logo"
               style="height: 100%; object-fit: contain; max-width: 100%;">
           </div>
           <!-- Address -->
@@ -795,7 +795,7 @@
                 <div class="col-md-12">
                     <div class="p-4 shadow-sm border rounded">
                         <h5>${month} - Notice Title</h5>
-                        <img src="../Suman_TulsianiCHS/assets/images/room.jpg" alt="${month}" class="img-fluid mb-3"/>
+                        <img src="./assets/images/room.jpg" alt="${month}" class="img-fluid mb-3"/>
                         <p>This is a sample notice content for <strong>${month}</strong>. You can update this with actual data.</p>
                     </div>
                 </div>
