@@ -92,5 +92,7 @@ if ($user && $password === $user['password']) {
     header("Location: ./index.php");
     exit;
 } else {
-    echo "Invalid login credentials.";
+    header("Location: ../login.php?error=1");
+    exit;
 }
+?>
