@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php require 'PhpFiles/session_protect.php'; ?>
 
 <head>
   <meta charset="UTF-8" />
@@ -242,7 +241,7 @@
                 <i class="bi bi-envelope-fill fs-5 me-3"></i>
                 <div>
                   <div class="fw-bold">EMAIL ID</div>
-                  <div class="text-muted" style="font-size: 14px;">INFO@SUMANTULSIANICHS.COM </div>
+                  <div class="text-muted" style="font-size: 14px;">sumantulsianichsltd1986@gmail.com </div>
                 </div>
               </div>
               <div class="mb-4 d-flex align-items-start">
@@ -250,8 +249,8 @@
                 <div>
                   <div class="fw-bold">ADDRESS</div>
                   <div class="text-muted"> SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-                    NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
-                    MAJIWADA, THANE WEST, MAHARASHTRA, INDIA
+                   Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
+                    Andheri West, Mumbai, Maharashtra 400053
                   </div>
                 </div>
               </div>
@@ -259,7 +258,7 @@
                 <i class="bi bi-telephone-fill fs-5 me-3"></i>
                 <div>
                   <div class="fw-bold">PHONE NO.</div>
-                  <div class="text-muted">+1 (123) 456-7890</div>
+                  <div class="text-muted">+91 xxxx xxxxx</div>
                 </div>
               </div>
             </div>
@@ -353,8 +352,8 @@
           <!-- Address -->
           <p class="text-muted small mb-0">
             SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-            NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
-            MAJIWADA, THANE WEST, MAHARASHTRA, INDIA
+           Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
+           Andheri West, Mumbai, Maharashtra 400053
           </p>
         </div>
 
@@ -369,10 +368,10 @@
           <h5 class="mb-3">Contacts</h5>
           <ul class="list-unstyled small text-muted">
             <li class="mb-2">- SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-              NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
-              MAJIWADA, THANE WEST, MAHARASHTRA, INDIA</li>
-            <li class="mb-2">- SUMAN TULSANI.in</li>
-            <li>- +1 (123) 456-7890</li>
+              Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
+              Andheri West, Mumbai, Maharashtra 400053</li>
+            <li class="mb-2">- sumantulsianichsltd1986@gmail.com</li>
+            <li>- +91 xxxxxxxx</li>
           </ul>
         </div>
       </div>
@@ -384,7 +383,7 @@
 
       <!-- Footer Credits Centered on Single Line -->
       <div class="text-center text-muted small">
-        <p class="mb-0 d-inline">© 2025 Suman Tulsiani APARTMENTS CHS LTD</p>
+        <p class="mb-0 d-inline">© 2025 Suman Tulsiani CHS LTD</p>
         <span class="mx-2">|</span>
         <p class="mb-0 d-inline">
           DEVELOPED BY

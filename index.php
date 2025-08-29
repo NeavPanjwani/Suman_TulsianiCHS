@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php require 'PhpFiles/session_protect.php'; ?>
 
 <head>
   <meta charset="UTF-8" />
@@ -189,7 +188,7 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
   </section>
 
   <!-- FOOTER -->
-  <footer id="footerSection" class="bg-light border-top border-muted">
+ <footer id="footerSection" class="bg-light border-top border-muted">
     <div class="container py-5">
       <div class="row">
         <div class="col-md-5 text-center d-flex flex-column align-items-center justify-content-center">
@@ -201,8 +200,8 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
           <!-- Address -->
           <p class="text-muted small mb-0">
             SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-            NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
-            MAJIWADA, THANE WEST, MAHARASHTRA, INDIA
+           Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
+           Andheri West, Mumbai, Maharashtra 400053
           </p>
         </div>
 
@@ -217,10 +216,10 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
           <h5 class="mb-3">Contacts</h5>
           <ul class="list-unstyled small text-muted">
             <li class="mb-2">- SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-              NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
-              MAJIWADA, THANE WEST, MAHARASHTRA, INDIA</li>
-            <li class="mb-2">- SUMAN TULSANI.in</li>
-            <li>- +1 (123) 456-7890</li>
+              Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
+              Andheri West, Mumbai, Maharashtra 400053</li>
+            <li class="mb-2">- sumantulsianichsltd1986@gmail.com</li>
+            <li>- +91 xxxxxxxx</li>
           </ul>
         </div>
       </div>
@@ -232,7 +231,7 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
 
       <!-- Footer Credits Centered on Single Line -->
       <div class="text-center text-muted small">
-        <p class="mb-0 d-inline">© 2025 Suman Tulsiani APARTMENTS CHS LTD</p>
+        <p class="mb-0 d-inline">© 2025 Suman Tulsiani CHS LTD</p>
         <span class="mx-2">|</span>
         <p class="mb-0 d-inline">
           DEVELOPED BY

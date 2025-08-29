@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php require 'PhpFiles/session_protect.php'; ?>
 
 <head>
   <meta charset="UTF-8" />
@@ -106,40 +105,76 @@
         </div>
 
         <!-- RIGHT: TEXT -->
-
         <div class="col-md-6 d-flex flex-column justify-content-center ps-md-5 mt-n5 mt-md-0" id="updateText">
-          <div class="logo-wrapper text-start">
-            <h1 class="display-5 mb-3" style="font-weight: 250; letter-spacing: 2.5px; margin-left: 40px;">LATEST UPDATE</h1>
+          <div class="logo-wrapper text-start mb-4">
+            <h1 class="display-5 mb-3" style="font-weight: 400; letter-spacing: 2.5px; margin-left: 0;">LATEST UPDATE</h1>
           </div>
-          <p class="fs-5" style="max-width: 600px; margin-top: -10px;">
-            Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.
-            It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools
-            for convincing and teaching.
-          </p>
+          <p class="mb-4 fs-5 text-muted">Latest Document</p>
+          <div class="card shadow-sm border-0 mb-4" style="max-width: 420px;">
+            <img src="assets/images/doc8.png" alt="Document 2" class="card-img-top" style="height: 180px; object-fit: cover;">
+            <div class="card-body d-flex flex-column">
+              <h3 class="fs-5 fw-semibold mb-3">Offer Letter From Mahindra</h3>
+              <button type="button" class="btn btn-warning text-white mt-auto" style="background-color: #722f10; border: none;"
+                data-bs-toggle="modal" data-bs-target="#doc8">
+                Open Document
+              </button>
+            </div>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="doc8" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="rulesModalLabel">Offer Letter From Mahindra</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="overflow:auto; max-height:70vh;">
+                  <div id="document8" style="width:100%; min-height:60vh; display:flex; align-items:center; justify-content:center;">
+                    <span class="text-muted">Loading document...</span>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
+        <script>
+          // Helper to embed PDF in a div using <iframe>
+          function renderPDF(pdfUrl, containerId) {
+            const container = document.getElementById(containerId);
+            container.innerHTML = `<iframe src="${pdfUrl}#toolbar=0&navpanes=0&scrollbar=1" width="100%" height="600px" style="border:none;"></iframe>`;
+          }
+
+          // Ensure PDF loads every time modal opens
+          document.getElementById('doc8').addEventListener('show.bs.modal', function () {
+            renderPDF('assets/Documents/offer letter from mahindra.pdf', 'document8');
+          });
+
+          // Optional: Clear PDF when modal closes (for cleanup)
+          document.getElementById('doc8').addEventListener('hidden.bs.modal', function () {
+            document.getElementById('document8').innerHTML = '<span class="text-muted">Loading document...</span>';
+          });
+        </script>
 
 
-      </div>
-    </div>
-  </section>
-
-
-  <!-- FOOTER -->
-  <footer id="footerSection" class="bg-light border-top border-muted">
+ <footer id="footerSection" class="bg-light border-top border-muted">
     <div class="container py-5">
       <div class="row">
         <div class="col-md-5 text-center d-flex flex-column align-items-center justify-content-center">
           <!-- Logo -->
           <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 80px; width: 100%;">
-            <img src="./assets/images/logo2.png" alt="Logo"
+            <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo"
               style="height: 100%; object-fit: contain; max-width: 100%;">
           </div>
           <!-- Address -->
           <p class="text-muted small mb-0">
             SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-            NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
-            MAJIWADA, THANE WEST, MAHARASHTRA, INDIA
+           Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
+           Andheri West, Mumbai, Maharashtra 400053
           </p>
         </div>
 
@@ -154,10 +189,10 @@
           <h5 class="mb-3">Contacts</h5>
           <ul class="list-unstyled small text-muted">
             <li class="mb-2">- SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-              NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
-              MAJIWADA, THANE WEST, MAHARASHTRA, INDIA</li>
-            <li class="mb-2">- SUMAN TULSANI.in</li>
-            <li>- +1 (123) 456-7890</li>
+              Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
+              Andheri West, Mumbai, Maharashtra 400053</li>
+            <li class="mb-2">- sumantulsianichsltd1986@gmail.com</li>
+            <li>- +91 xxxxxxxx</li>
           </ul>
         </div>
       </div>
@@ -169,7 +204,7 @@
 
       <!-- Footer Credits Centered on Single Line -->
       <div class="text-center text-muted small">
-        <p class="mb-0 d-inline">© 2025 Suman Tulsiani APARTMENTS CHS LTD</p>
+        <p class="mb-0 d-inline">© 2025 Suman Tulsiani CHS LTD</p>
         <span class="mx-2">|</span>
         <p class="mb-0 d-inline">
           DEVELOPED BY

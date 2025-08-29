@@ -31,7 +31,7 @@
       <div class="d-flex align-items-center gap-2">
         <a class="navbar-brand d-flex align-items-center justify-content-between w-100" href="./index.php">
           <div class="d-flex align-items-center gap-2">
-            <img src="../Suman_TulsianiCHS/assets/images/logo2.png"
+            <img src="./assets/images/logo2.png"
               alt="Logo"
               class="img-fluid"
               style="max-height: 42px; width: auto;">
@@ -95,9 +95,9 @@
           </h1>
         </div>
         <div class="col-12 col-md-8 offset-md-4 text-md-start text-center mt-3">
-          <p class="fs-5 mb-2">Design isn’t just how it looks — it’s how it feels.</p>
-          <p class="fs-6 mb-2">We’ve reimagined our visual space to tell stories, inspire clarity, and connect effortlessly.</p>
-          <p class="fs-6 mb-0">Welcome to a refined, refreshed and redefined experience.</p>
+          <p class="fs-5 mb-2">Feasibility Report: Building the foundation for informed decisions.</p>
+          <p class="fs-6 mb-2">Our comprehensive analysis ensures every step forward is practical, sustainable, and tailored to our society’s needs.</p>
+          <p class="fs-6 mb-0">Explore the insights guiding our redevelopment journey.</p>
         </div>
 
       </div>
@@ -110,12 +110,8 @@
           <p class="fw-semibold mt-2 mb-0 small">SGBM FOR REDEVELOPMENT</p>
         </div>
         <div class="col-md-4">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="SGBM FOR TENDER" class="img-fluid rounded-4 shadow-sm">
-          <p class="fw-semibold mt-2 mb-0 small">SGBM FOR TENDER PROCESS</p>
-        </div>
-        <div class="col-md-4">
           <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="SGBM FOR PMC VISIBILITY (REPORT)" class="img-fluid rounded-4 shadow-sm">
-          <p class="fw-semibold mt-2 mb-0 small">SGBM FOR PMC VISIBILITY (REPORT PRESENTATION)</p>
+          <p class="fw-semibold mt-2 mb-0 small">SGBM FOR PMC FEASIBILITY (REPORT PRESENTATION)</p>
         </div>
       </div>
     </div>
@@ -130,14 +126,14 @@
         <div class="col-md-5 text-center d-flex flex-column align-items-center justify-content-center">
           <!-- Logo -->
           <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 80px; width: 100%;">
-            <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo"
+            <img src="./assets/images/logo2.png" alt="Logo"
               style="height: 100%; object-fit: contain; max-width: 100%;">
           </div>
           <!-- Address -->
           <p class="text-muted small mb-0">
             SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-            NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
-            MAJIWADA, THANE WEST, MAHARASHTRA, INDIA
+           Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
+           Andheri West, Mumbai, Maharashtra 400053
           </p>
         </div>
 
@@ -152,10 +148,10 @@
           <h5 class="mb-3">Contacts</h5>
           <ul class="list-unstyled small text-muted">
             <li class="mb-2">- SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-              NEAR RUSTOMJEE URBANIA, VRINDAVAN AREA,<br>
-              MAJIWADA, THANE WEST, MAHARASHTRA, INDIA</li>
-            <li class="mb-2">- SUMAN TULSANI.in</li>
-            <li>- +1 (123) 456-7890</li>
+              Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
+              Andheri West, Mumbai, Maharashtra 400053</li>
+            <li class="mb-2">- sumantulsianichsltd1986@gmail.com</li>
+            <li>- +91 xxxxxxxx</li>
           </ul>
         </div>
       </div>
@@ -167,7 +163,7 @@
 
       <!-- Footer Credits Centered on Single Line -->
       <div class="text-center text-muted small">
-        <p class="mb-0 d-inline">© 2025 Suman Tulsiani APARTMENTS CHS LTD</p>
+        <p class="mb-0 d-inline">© 2025 Suman Tulsiani CHS LTD</p>
         <span class="mx-2">|</span>
         <p class="mb-0 d-inline">
           DEVELOPED BY
