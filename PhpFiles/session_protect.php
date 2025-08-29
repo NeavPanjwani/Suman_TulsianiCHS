@@ -8,7 +8,7 @@ require 'db.php';
 $timeout_duration = 300; // 5 minutes
 
 if (!isset($_SESSION['user_id'])) {
-    header("Location: ./login.php");
+    header("Location: ../login.php");
     exit();
 }
 
@@ -25,7 +25,7 @@ if (isset($_SESSION['last_activity']) && (time() - $_SESSION['last_activity']) >
     session_unset();
     session_destroy();
 
-    header("Location: ./login.php?timeout=1");
+    header("Location: ../login.php?timeout=1");
     exit();
 }
 

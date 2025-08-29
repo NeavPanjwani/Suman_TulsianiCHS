@@ -89,7 +89,7 @@ if ($user && $password === $user['password']) {
     // ✅ Clean up override session data if it exists
     unset($_SESSION['pending_user']);
 
-    header("Location: ./index.php");
+    header("Location: ../index.php");
     exit;
 } else {
     header("Location: ../login.php?error=1");

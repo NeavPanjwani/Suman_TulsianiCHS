@@ -23,6 +23,6 @@ session_unset();
 session_destroy();
 
 // 🔁 Redirect to login with message
-header("Location: ./login.php?loggedout=1");
+header("Location: ../login.php?loggedout=1");
 exit;
 ?>
