@@ -115,7 +115,7 @@
           <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
 
 
-          <li class="nav-item"><a class="nav-link" href="./login.php">Log Out</a></li>
+          <li class="nav-item"><a class="nav-link" href="PhpFiles/handle_logout.php">Log Out</a></li>
         </ul>
       </div>
 
@@ -133,8 +133,7 @@
             <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
             <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
             <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
-
-            <li class="nav-item"><a class="nav-link" href="./login.php">Log Out</a></li>
+            <li class="nav-item"><a class="nav-link" href="PhpFiles/handle_logout.php">Log Out</a></li>
           </ul>
         </div>
       </div>
