@@ -94,13 +94,19 @@
           </div>
           <div class="ms-5">
             <p class="fs-6 mb-3">
-              Headway Development Management LLP, a real estate advisory firm based in Mumbai, India.<br>
-              The company specializes in providing Project Management Consultancy (PMC), Owner’s<br>
-              Representative services, and Development Management, focusing on the Mumbai region.
+              We at Naren Kuwarlekar Project Consultants, (NKPC) conceive and manage the project at hand by
+              applying
+              our acquired knowledge, skills, and experience at various stages throughout the project life
+              cycle.
+              We excel in dealing with various challenges like feasability of projects, viability of schemes,
+              design
+              issues, constructibility issues, long lead material issues, inter contractor coordination
+              engineering
+              issues, safety issues, etc.
             </p>
             <p class="fs-6 mb-4">
               Their expertise encompasses land broking and other related services tailored to the real estate<br>
-              sector. Headway DM LLP is actively involved in the development and management of various <br>
+              sector. NKPC is actively involved in the development and management of various <br>
               real estate projects, offering professional guidance and support throughout the project lifecycle.
             </p>
           </div>
