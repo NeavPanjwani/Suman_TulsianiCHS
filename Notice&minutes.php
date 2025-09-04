@@ -212,7 +212,7 @@
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/images/doc1.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">Appointment of Registrar</h3>
+            <h3 class="fs-5 fw-semibold mb-3">Circular</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc1">
               Open Document
@@ -225,7 +225,7 @@
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/images/doc2.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">Society Copy Letter from Resgistrar Appointment of MLDL_Suman CHS</h3>
+            <h3 class="fs-5 fw-semibold mb-3">Feasibility Report Total</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
               data-bs-toggle="modal" data-bs-target="#may-minutes-modal">
               Open Document
@@ -238,7 +238,7 @@
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/images/doc3.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">DOC-20250731-WA0025</h3>
+            <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 1st Sept,2024</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
               data-bs-toggle="modal" data-bs-target="#rules-modal">
               Open Document
@@ -256,7 +256,7 @@
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/images/doc4.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">DOC-20250731-WA0026</h3>
+            <h3 class="fs-5 fw-semibold mb-3">Notice for SGBM Dated 1st Sept,2024</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc4">
               Open Document
@@ -269,7 +269,7 @@
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/images/doc5.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">DOC-20250814-WA0017</h3>
+            <h3 class="fs-5 fw-semibold mb-3">Feasibility report houzer 15.2.25</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc5">
               Open Document
@@ -282,7 +282,7 @@
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/images/doc6.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">DOC-20250819-WA0019</h3>
+            <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 23rd Feb, 2025</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc6">
               Open Document
@@ -300,7 +300,7 @@
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/images/doc7.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">Feasibility Report Houzer</h3>
+            <h3 class="fs-5 fw-semibold mb-3">Notice for SGBM Dated 23rd Feb, 2025</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc7">
               Open Document
@@ -313,7 +313,7 @@
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/images/doc8.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">Offer Letter From Mahindra</h3>
+            <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 23.03.2025</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc8">
               Open Document
@@ -326,9 +326,9 @@
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/images/doc10.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">Suman - Feasibility Report</h3>
+            <h3 class="fs-5 fw-semibold mb-3">Notice for SGBM Dated 23.03.2025</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
-              data-bs-toggle="modal" data-bs-target="#doc10">
+              data-bs-toggle="modal" data-bs-target="#doc9">
               Open Document
             </button>
           </div>
@@ -348,9 +348,9 @@
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/images/doc11.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">Suman Structural Surver Report</h3>
+            <h3 class="fs-5 fw-semibold mb-3">Final Offer Letter from Mahindra Lifespaces Developers Limited 16th july</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
-              data-bs-toggle="modal" data-bs-target="#doc11">
+              data-bs-toggle="modal" data-bs-target="#doc10">
               Open Document
             </button>
           </div>
@@ -367,7 +367,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="sgbmNoticeLabel">Appointment of Registrar</h5>
+            <h5 class="modal-title" id="sgbmNoticeLabel">Circular</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="overflow:auto; max-height:70vh;">
@@ -384,7 +384,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="mayMinutesLabel">Society Copy Letter from Resgistrar Appointment of MLDL_Suman CHS</h5>
+            <h5 class="modal-title" id="mayMinutesLabel">Feasibility Report Total</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="overflow:auto; max-height:70vh;">
@@ -401,7 +401,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="rulesModalLabel">DOC-20250731-WA0025</h5>
+            <h5 class="modal-title" id="rulesModalLabel">Minutes for SGBM Dated 1st Sept,2024</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="overflow:auto; max-height:70vh;">
@@ -419,7 +419,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="rulesModalLabel">DOC-20250731-WA0026</h5>
+            <h5 class="modal-title" id="rulesModalLabel">Notice for SGBM Dated 1st Sept,2024</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="overflow:auto; max-height:70vh;">
@@ -436,7 +436,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="rulesModalLabel">DOC-20250814-WA0017</h5>
+            <h5 class="modal-title" id="rulesModalLabel">Feasibility report houzer 15.2.25</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="overflow:auto; max-height:70vh;">
@@ -453,7 +453,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="rulesModalLabel">DOC-20250819-WA0019</h5>
+            <h5 class="modal-title" id="rulesModalLabel">Minutes for SGBM Dated 23rd Feb, 2025</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="overflow:auto; max-height:70vh;">
@@ -470,7 +470,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="rulesModalLabel">Feasibility Report Houzer</h5>
+            <h5 class="modal-title" id="rulesModalLabel">Notice for SGBM Dated 23rd Feb, 2025</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="overflow:auto; max-height:70vh;">
@@ -487,7 +487,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="rulesModalLabel">Offer Letter From Mahindra</h5>
+            <h5 class="modal-title" id="rulesModalLabel">Minutes for SGBM Dated 23.03.2025</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="overflow:auto; max-height:70vh;">
@@ -504,7 +504,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="rulesModalLabel">Public Notice</h5>
+            <h5 class="modal-title" id="rulesModalLabel">Notice for SGBM Dated 23.03.2025</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="overflow:auto; max-height:70vh;">
@@ -521,7 +521,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="rulesModalLabel">Suman - Feasibility Report</h5>
+            <h5 class="modal-title" id="rulesModalLabel">Final Offer Letter from Mahindra Lifespaces Developers Limited 16th july</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="overflow:auto; max-height:70vh;">
@@ -533,23 +533,8 @@
         </div>
       </div>
     </div>
-    <!-- Doc 11 Modal -->
-    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="doc11" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="rulesModalLabel">Suman Structural Surver Report</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body" style="overflow:auto; max-height:70vh;">
-            <div id="document11"></div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    
+    
   </section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
@@ -569,50 +554,47 @@
     // SGBM Notice Modal
      // doc1 Modal
     document.getElementById('doc1').addEventListener('show.bs.modal', function() {
-      renderPDF('assets/Documents/Appointment of Registrar_Sumans.pdf', 'document1');
+      renderPDF('assets/Documents/circular doc 1.pdf', 'document1');
     });
 
     // May Minutes Modal
     document.getElementById('may-minutes-modal').addEventListener('show.bs.modal', function() {
-      renderPDF('assets/Documents/20250402 Society Copy_Letter from Resgistrar Appointment of MLDL_Suman CHS.pdf', 'may-minutes-pdf');
+      renderPDF('assets/Documents/Feasibility Report Total.pdf', 'may-minutes-pdf');
     });
 
     // Rules Modal
     document.getElementById('rules-modal').addEventListener('show.bs.modal', function() {
-      renderPDF('assets/Documents/DOC-20250731-WA0025.pdf', 'rules-pdf');
+      renderPDF('assets/Documents/Minutes for SGBM Dated 1st Sept,2024.pdf', 'rules-pdf');
     });
       // doc4 Modal
     document.getElementById('doc4').addEventListener('show.bs.modal', function() {
-      renderPDF('assets/Documents/DOC-20250731-WA0026.pdf', 'document4');
+      renderPDF('assets/Documents/Notice for SGBM Dated 1st Sept,2024.pdf', 'document4');
     });
       // doc5 Modal
     document.getElementById('doc5').addEventListener('show.bs.modal', function() {
-      renderPDF('assets/Documents/DOC-20250814-WA0017.pdf', 'document5');
+      renderPDF('assets/Documents/Feasibility report houzer 15.2.25.pdf', 'document5');
     });
       // doc6 Modal
     document.getElementById('doc6').addEventListener('show.bs.modal', function() {
-      renderPDF('assets/Documents/DOC-20250819-WA0019.pdf', 'document6');
+      renderPDF('assets/Documents/Minutes for SGBM Dated 23rd Feb, 2025.pdf', 'document6');
     });
       // doc7 Modal
     document.getElementById('doc7').addEventListener('show.bs.modal', function() {
-      renderPDF('assets/Documents/Feasibility report houzer.pdf', 'document7');
+      renderPDF('assets/Documents/Notice for SGBM Dated 23rd Feb, 2025.pdf', 'document7');
     });
       // doc8 Modal
     document.getElementById('doc8').addEventListener('show.bs.modal', function() {
-      renderPDF('assets/Documents/offer letter from mahindra.pdf', 'document8');
+      renderPDF('assets/Documents/Minutes for SGBM Dated 23.03.2025.pdf', 'document8');
     });
      // doc9 Modal
     document.getElementById('doc9').addEventListener('show.bs.modal', function() {
-      renderPDF('assets/Documents/public notice.pdf', 'document9');
+      renderPDF('assets/Documents/Notice for SGBM Dated 23.03.2025.pdf', 'document9');
     });
      // doc10 Modal
     document.getElementById('doc10').addEventListener('show.bs.modal', function() {
-      renderPDF('assets/Documents/Suman - Feasibility report.pdf', 'document10');
+      renderPDF('assets/Documents/Final Offer Letter from Mahindra Lifespaces Developers Limited 16th july.pdf', 'document10');
     });
-    // doc11 Modal
-    document.getElementById('doc10').addEventListener('show.bs.modal', function() {
-      renderPDF('assets/Documents/Suman Structural survey report.pdf', 'document11');
-    });
+   
     
     
   </script>
