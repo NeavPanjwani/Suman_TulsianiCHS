@@ -97,7 +97,7 @@
           <div class="card shadow-sm border-0 mb-4" style="max-width: 420px;">
             <img src="assets/images/doc8.png" alt="Document 2" class="card-img-top" style="height: 180px; object-fit: cover;">
             <div class="card-body d-flex flex-column">
-              <h3 class="fs-5 fw-semibold mb-3">Offer Letter From Mahindra</h3>
+              <h3 class="fs-5 fw-semibold mb-3">Final Offer Letter from Mahindra Lifespaces Developers Limited</h3>
               <button type="button" class="btn btn-warning text-white mt-auto" style="background-color: #722f10; border: none;"
                 data-bs-toggle="modal" data-bs-target="#doc8">
                 Open Document
@@ -109,7 +109,7 @@
             <div class="modal-dialog modal-xl modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="rulesModalLabel">Offer Letter From Mahindra</h5>
+                  <h5 class="modal-title" id="rulesModalLabel">Final Offer Letter from Mahindra Lifespaces Developers Limited</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" style="overflow:auto; max-height:70vh;">
