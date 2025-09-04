@@ -177,8 +177,8 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
         <!-- RIGHT IMAGE SECTION -->
         <div class="col-lg-6" id="right-img">
           <div class="p-4 h-100">
-            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Interior" class="w-100 h-100"
-              style="object-fit: cover; filter: grayscale(100%); border-radius: 0;">
+            <img src="./assets/Building/Home Page.jpeg" alt="Interior" class="w-100 h-100"
+              style="object-fit: cover; filter: grayscale(10%); border-radius: 0;">
           </div>
         </div>
       </div>

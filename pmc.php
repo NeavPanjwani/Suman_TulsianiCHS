@@ -133,7 +133,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body" style="height: 80vh;">
-          <iframe src="../pdf/housing.com research.pdf"
+          <iframe src="../Suman_TulsianiCHS/assets/Documents/NKA presentation 3.1.pdf"
             width="100%" height="100%"
             style="border: none;"
             loading="lazy">

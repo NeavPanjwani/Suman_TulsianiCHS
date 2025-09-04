@@ -173,7 +173,7 @@
                 <i class="bi bi-envelope-fill fs-5 me-3"></i>
                 <div>
                   <div class="fw-bold">EMAIL ID</div>
-                  <div class="text-muted" style="font-size: 14px;">sumantulsianichsltd1986@gmail.com </div>
+                  <div class="text-muted" style="font-size: 14px;">redevelopmentsumanchs@gmail.com </div>
                 </div>
               </div>
               <div class="mb-4 d-flex align-items-start">
