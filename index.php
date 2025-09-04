@@ -219,7 +219,7 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
               Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
               Andheri West, Mumbai, Maharashtra 400053</li>
             <li class="mb-2">- sumantulsianichsltd1986@gmail.com</li>
-            <li>- +91 xxxxxxxx</li>
+
           </ul>
         </div>
       </div>
