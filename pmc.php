@@ -50,8 +50,7 @@
           <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
           <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
           <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
-          <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact_us.php">Contact Us</a></li>
 
 
           <li class="nav-item"><a class="nav-link" href="PhpFiles/handle_logout.php">Log Out</a></li>
@@ -70,8 +69,7 @@
             <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
             <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
             <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
-            <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
-            <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact_us.php">Contact Us</a></li>
 
             <li class="nav-item"><a class="nav-link" href="PhpFiles/handle_logout.php">Log Out</a></li>
           </ul>
@@ -82,7 +80,7 @@
   </nav>
 
   <!-- SECTION -->
-  <section class="py-5 " style="background-color: #f9f8f3;">
+  <section class="py-5 " style="background-color: #ffffff;">
     <div class="container-fluid px-4">
       <div class="row align-items-center">
 
@@ -176,8 +174,8 @@
             <li class="mb-2">- SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
               Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
               Andheri West, Mumbai, Maharashtra 400053</li>
-            <li class="mb-2">- sumantulsianichsltd1986@gmail.com</li>
-            <li>- +91 xxxxxxxx</li>
+            <li class="mb-2">-redevelopmentsumanchs@gmail.com</li>
+       
           </ul>
         </div>
       </div>

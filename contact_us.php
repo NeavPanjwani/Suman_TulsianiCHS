@@ -14,7 +14,7 @@
 
   <style>
     body {
-      background-color: #f0efe9;
+      background-color: #ffffff;
       font-family: 'Georgia', serif;
     }
   </style>
@@ -80,7 +80,7 @@
 
 </head>
 
-<body id="top" style="background-color: #f9f8f3;">
+<body id="top" style="background-color: #ffffff;">
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg border-bottom py-3" style="background-color: #e0dfd6;">
@@ -110,8 +110,7 @@
           <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
           <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
           <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
-          <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact_us.php">Contact Us</a></li>
 
 
           <li class="nav-item"><a class="nav-link" href="PhpFiles/handle_logout.php">Log Out</a></li>
@@ -130,8 +129,7 @@
             <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
             <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
             <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
-            <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
-            <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact_us.php">Contact Us</a></li>
             <li class="nav-item"><a class="nav-link" href="PhpFiles/handle_logout.php">Log Out</a></li>
           </ul>
         </div>
@@ -140,72 +138,6 @@
     </div>
   </nav>
 
-  <div class="container py-5">
-    <div class="row align-items-stretch">
-      <!-- FAQ Section -->
-      <div class="col-lg-7" id="faqBlock">
-        <h1 class="display-1 " style="font-family: Georgia, serif;">FAQ</h1>
-        <h5 class="mb-4" style="font-family: Georgia, serif;">FREQUENTLY ASKED QUESTIONS</h5>
-
-
-        <div class="accordion" id="faqAccordion">
-          <!-- Question 1 -->
-          <div class="accordion-item mb-3">
-            <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button collapsed bg-light fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
-                What are the rights of individual members during the redevelopment of a housing society?
-              </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                Individual members have the right to be informed, to participate in decisions, and to receive fair compensation or alternative accommodations as per the redevelopment agreement.
-              </div>
-            </div>
-          </div>
-
-          <!-- Question 2 -->
-          <div class="accordion-item mb-3">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed bg-light fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
-                How is the selection of a developer done for society redevelopment?
-              </button>
-            </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                The selection is done via a transparent process including tender invitation, evaluation, and finalization with member approval.
-              </div>
-            </div>
-          </div>
-
-          <!-- Question 3 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button class="accordion-button bg-light fw-medium" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true">
-                What is the role of the appointed Project Management Consultant (PMC) in redevelopment?
-              </button>
-            </h2>
-            <div id="collapseThree" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-              <div class="accordion-body">
-                The PMC helps the society assess developer proposals, prepare feasibility reports, manage timelines, ensure legal compliance, and coordinate between the developer and members.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Side Images -->
-      <div class="col-lg-5 d-flex flex-column flex-lg-row gap-3 mt-4 mt-lg-0" id="faqImages">
-        <div class="w-50">
-          <img src="./assets/images/room-1.jpg" class="w-100 h-100 rounded" style="object-fit: cover;" alt="Image 1">
-        </div>
-        <div class="w-50">
-          <img src="./assets/images/room-2.jpg" class="w-100 h-100 rounded" style="object-fit: cover;" alt="Image 2">
-        </div>
-      </div>
-
-
-    </div>
-  </div>
 
   <!-- CONTACT SECTION -->
   <section class="py-5">
@@ -254,13 +186,7 @@
                   </div>
                 </div>
               </div>
-              <div class="d-flex align-items-start">
-                <i class="bi bi-telephone-fill fs-5 me-3"></i>
-                <div>
-                  <div class="fw-bold">PHONE NO.</div>
-                  <div class="text-muted">+91 xxxx xxxxx</div>
-                </div>
-              </div>
+           
             </div>
 
             <!-- Form -->
@@ -370,8 +296,7 @@
             <li class="mb-2">- SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
               Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
               Andheri West, Mumbai, Maharashtra 400053</li>
-            <li class="mb-2">- sumantulsianichsltd1986@gmail.com</li>
-            <li>- +91 xxxxxxxx</li>
+            <li class="mb-2">- redevelopmentsumanchs@gmail.com</li>
           </ul>
         </div>
       </div>

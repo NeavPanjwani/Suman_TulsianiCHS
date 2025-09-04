@@ -12,7 +12,7 @@
 
   <style>
     body {
-      background-color: #f0efe9;
+      background-color: #ffffff;
       font-family: 'Georgia', serif;
     }
 
@@ -45,7 +45,7 @@
   </style>
 </head>
 
-<body style="background-color: #f9f8f3; font-family: 'Georgia', serif;">
+<body style="background-color: #ffffff; font-family: 'Georgia', serif;">
 
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg border-bottom py-3" style="background-color: #e0dfd6;">
@@ -75,8 +75,7 @@
           <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
           <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
           <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
-          <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact_us.php">Contact Us</a></li>
 
 
           <li class="nav-item"><a class="nav-link" href="PhpFiles/handle_logout.php">Log Out</a></li>
@@ -95,8 +94,7 @@
             <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
             <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
             <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
-            <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
-            <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact_us.php">Contact Us</a></li>
 
             <li class="nav-item"><a class="nav-link" href="PhpFiles/handle_logout.php">Log Out</a></li>
           </ul>
@@ -324,26 +322,7 @@
         </div>
       </div>
       <!-- Card 9 -->
-      <div class="col-md-4">
-        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/images/doc9.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
-          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">Public Notice</h3>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
-              data-bs-toggle="modal" data-bs-target="#doc9">
-              Open Document
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="container">
-    <div class="row g-4 mb-4">
-      <!-- Card 10 -->
-      <div class="col-md-4">
+        <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/images/doc10.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
@@ -355,6 +334,15 @@
           </div>
         </div>
       </div>
+    
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row g-4 mb-4">
+      <!-- Card 10 -->
+   
 <!-- Card 11 -->
       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
@@ -569,55 +557,13 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
   <script>
     function renderPDF(pdfUrl, containerId) {
-      const canvasContainer = document.getElementById(containerId);
 
-      // Ensure the container exists before proceeding
-      if (!canvasContainer) {
+      const container = document.getElementById(containerId);
+      if (!container) {
         console.error(`Container with ID ${containerId} not found.`);
         return;
       }
-
-      // Load the PDF document using pdf.js
-      const loadingTask = pdfjsLib.getDocument(pdfUrl);
-
-      loadingTask.promise.then(function(pdf) {
-        const totalPages = pdf.numPages; // Get total number of pages
-        // Clear previous canvases (if any)
-        canvasContainer.innerHTML = '';
-
-        // Function to render each page in sequence
-        function renderPage(pageNum) {
-          if (pageNum > totalPages) return;
-
-          pdf.getPage(pageNum).then(function(page) {
-            const scale = 2; // Zoom level
-            const viewport = page.getViewport({ scale: scale });
-
-            // Create a canvas for the page and append it to the container
-            const canvas = document.createElement('canvas');
-            const context = canvas.getContext('2d');
-
-            // Set canvas dimensions
-            canvas.height = viewport.height;
-            canvas.width = viewport.width;
-
-            // Render the page
-            page.render({
-              canvasContext: context,
-              viewport: viewport
-            }).promise.then(function() {
-              canvasContainer.appendChild(canvas); // Append the canvas
-              renderPage(pageNum + 1); // Move to the next page
-            });
-          });
-        }
-
-        // Start rendering from the first page
-        renderPage(1);
-      }).catch(function(error) {
-        console.error('Error loading PDF: ', error);
-        canvasContainer.innerHTML = '<div class="text-danger">Failed to load document.</div>';
-      });
+      container.innerHTML = `<iframe src="${pdfUrl}#toolbar=0&navpanes=0&scrollbar=1" width="100%" height="600px" style="border:none;"></iframe>`;
     }
 
     // SGBM Notice Modal
@@ -704,8 +650,8 @@
             <li class="mb-2">- SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
               Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
               Andheri West, Mumbai, Maharashtra 400053</li>
-            <li class="mb-2">- sumantulsianichsltd1986@gmail.com</li>
-            <li>- +91 xxxxxxxx</li>
+            <li class="mb-2">-  redevelopmentsumanchs@gmail.com</li>
+      
           </ul>
         </div>
       </div>

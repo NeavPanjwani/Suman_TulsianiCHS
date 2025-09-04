@@ -14,7 +14,7 @@
 
   <style>
     body {
-      background-color: #f0efe9;
+      background-color: #ffffff;
       font-family: 'Georgia', serif;
     }
 
@@ -59,8 +59,7 @@
           <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
           <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
           <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
-          <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
-          <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact_us.php">Contact Us</a></li>
 
 
           <li class="nav-item"><a class="nav-link" href="PhpFiles/handle_logout.php">Log Out</a></li>
@@ -79,8 +78,7 @@
             <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
             <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
             <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
-            <li class="nav-item"><a class="nav-link" href="./visual_updates.php">Visual Updates</a></li>
-            <li class="nav-item"><a class="nav-link" href="./contact_us.php">Feedback & Queries</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contact_us.php">Contact Us</a></li>
 
            <li class="nav-item"><a class="nav-link" href="PhpFiles/handle_logout.php">Log Out</a></li>
           </ul>
@@ -91,25 +89,11 @@
   </nav>
 
   <!-- LATEST UPDATE SECTION -->
-  <section class="py-5" style="background-color: #f9f8f3;">
+  <section class="py-5" style="background-color: #ffffff;">
     <div class="container-fluid px-5">
       <div class="row align-items-center">
-        <!-- LEFT: IMAGE WITH ARROWS -->
-        <div class="col-md-6 position-relative" id="updateImageSection">
-          <img id="carouselImage" src="./assets/images/room.jpg" class="img-fluid w-100 rounded-3" style="max-height: 80vh; object-fit: cover;" />
-          <!-- Arrows -->
-          <div class="position-absolute bottom-0 end-0 mb-3 me-3 d-flex gap-2">
-            <button class="arrow-btn" onclick="prevImage()">❮</button>
-            <button class="arrow-btn" onclick="nextImage()">❯</button>
-          </div>
-        </div>
-
-        <!-- RIGHT: TEXT -->
-        <div class="col-md-6 d-flex flex-column justify-content-center ps-md-5 mt-n5 mt-md-0" id="updateText">
-          <div class="logo-wrapper text-start mb-4">
-            <h1 class="display-5 mb-3" style="font-weight: 400; letter-spacing: 2.5px; margin-left: 0;">LATEST UPDATE</h1>
-          </div>
-          <p class="mb-4 fs-5 text-muted">Latest Document</p>
+        <!-- LEFT: DOCUMENT CARD WITH OPEN BUTTON -->
+        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
           <div class="card shadow-sm border-0 mb-4" style="max-width: 420px;">
             <img src="assets/images/doc8.png" alt="Document 2" class="card-img-top" style="height: 180px; object-fit: cover;">
             <div class="card-body d-flex flex-column">
@@ -120,7 +104,6 @@
               </button>
             </div>
           </div>
-
           <!-- Modal -->
           <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="doc8" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl modal-dialog-centered">
@@ -140,25 +123,31 @@
               </div>
             </div>
           </div>
+          <script>
+            function renderPDF(pdfUrl, containerId) {
+              const container = document.getElementById(containerId);
+              container.innerHTML = `<iframe src="${pdfUrl}#toolbar=0&navpanes=0&scrollbar=1" width="100%" height="600px" style="border:none;"></iframe>`;
+            }
+            document.getElementById('doc8').addEventListener('show.bs.modal', function () {
+              renderPDF('assets/Documents/offer letter from mahindra.pdf', 'document8');
+            });
+            document.getElementById('doc8').addEventListener('hidden.bs.modal', function () {
+              document.getElementById('document8').innerHTML = '<span class="text-muted">Loading document...</span>';
+            });
+          </script>
         </div>
-
-        <script>
-          // Helper to embed PDF in a div using <iframe>
-          function renderPDF(pdfUrl, containerId) {
-            const container = document.getElementById(containerId);
-            container.innerHTML = `<iframe src="${pdfUrl}#toolbar=0&navpanes=0&scrollbar=1" width="100%" height="600px" style="border:none;"></iframe>`;
-          }
-
-          // Ensure PDF loads every time modal opens
-          document.getElementById('doc8').addEventListener('show.bs.modal', function () {
-            renderPDF('assets/Documents/offer letter from mahindra.pdf', 'document8');
-          });
-
-          // Optional: Clear PDF when modal closes (for cleanup)
-          document.getElementById('doc8').addEventListener('hidden.bs.modal', function () {
-            document.getElementById('document8').innerHTML = '<span class="text-muted">Loading document...</span>';
-          });
-        </script>
+        <!-- RIGHT: HEADING AND DESCRIPTION -->
+        <div class="col-md-6 d-flex flex-column justify-content-center ps-md-5 mt-n5 mt-md-0" id="updateText">
+          <div class="logo-wrapper text-start mb-4">
+            <h1 class="display-5 mb-3" style="font-weight: 400; letter-spacing: 2.5px; margin-left: 0;">Latest Document</h1>
+          </div>
+          <p class="mb-4 fs-5 text-muted">
+            Our society is committed to transparency and progress. The latest documents are shared here to keep all members informed about important developments and decisions. Stay updated with official communications and key milestones as we move forward together.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
  <footer id="footerSection" class="bg-light border-top border-muted">
@@ -191,8 +180,8 @@
             <li class="mb-2">- SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
               Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
               Andheri West, Mumbai, Maharashtra 400053</li>
-            <li class="mb-2">- sumantulsianichsltd1986@gmail.com</li>
-            <li>- +91 xxxxxxxx</li>
+            <li class="mb-2">-  redevelopmentsumanchs@gmail.com</li>
+           
           </ul>
         </div>
       </div>

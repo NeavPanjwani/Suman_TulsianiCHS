@@ -1,11 +1,4 @@
-<?php
-session_start();
 
-// DEBUG ONLY
-if (isset($_SESSION['pending_user'])) {
-    echo "<script>console.log('✅ Pending session found');</script>";
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +13,7 @@ if (isset($_SESSION['pending_user'])) {
 
   <style>
     body {
-      background: #f0efe9;
+      background: #ffffff;
     }
   </style>
 </head>
