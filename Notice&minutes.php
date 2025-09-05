@@ -210,7 +210,7 @@
       <!-- Card 1 -->
       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/images/doc1.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <img src="assets/Documents/doc1.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Circular</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
@@ -223,7 +223,7 @@
       <!-- Card 2 -->
       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/images/doc2.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <img src="assets/Documents/doc2.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Feasibility Report Total</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
@@ -236,7 +236,7 @@
       <!-- Card 3 -->
       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/images/doc3.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
+          <img src="assets/Documents/doc3.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 1st Sept,2024</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
@@ -254,7 +254,7 @@
       <!-- Card 4 -->
       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/images/doc4.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <img src="assets/Documents/doc4.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Notice for SGBM Dated 1st Sept,2024</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
@@ -267,7 +267,7 @@
       <!-- Card 5 -->
       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/images/doc5.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <img src="assets/Documents/doc5.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Feasibility report houzer 15.2.25</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
@@ -280,7 +280,7 @@
       <!-- Card 6 -->
       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/images/doc6.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
+          <img src="assets/Documents/doc6.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 23rd Feb, 2025</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
@@ -298,7 +298,7 @@
       <!-- Card 7 -->
       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/images/doc7.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <img src="assets/Documents/doc7.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Notice for SGBM Dated 23rd Feb, 2025</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
@@ -311,7 +311,7 @@
       <!-- Card 8 -->
       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/images/doc8.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <img src="assets/Documents/doc8.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 23.03.2025</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
@@ -324,7 +324,7 @@
       <!-- Card 9 -->
         <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/images/doc10.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <img src="assets/Documents/doc9.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Notice for SGBM Dated 23.03.2025</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
@@ -346,7 +346,7 @@
 <!-- Card 11 -->
       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/images/doc11.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <img src="assets/Documents/doc10.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Final Offer Letter from Mahindra Lifespaces Developers Limited 16th july</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
