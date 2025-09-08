@@ -118,7 +118,7 @@
 
         <!-- RIGHT SIDE -->
         <div class="col-md-6 text-center mt-5 mt-md-0" id="pmcRight">
-          <img src="../Suman_TulsianiCHS/assets/images/pmc.png" alt="" class="img-fluid rotate-once" style="max-height: 300px;">
+          <img src="./assets/images/pmc.png" alt="" class="img-fluid rotate-once" style="max-height: 300px;">
         </div>
       </div>
     </div>
@@ -132,12 +132,8 @@
           <h5 class="modal-title" id="previewModalLabel">Full Preview</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body" style="height: 80vh;">
-          <iframe src="../Suman_TulsianiCHS/assets/Documents/NKA presentation 3.1.pdf"
-            width="100%" height="100%"
-            style="border: none;"
-            loading="lazy">
-          </iframe>
+        <div class="modal-body" style="overflow:auto; max-height:70vh;">
+          <div id="pmc-pdf-container"></div>
         </div>
       </div>
     </div>
@@ -214,6 +210,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="./script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
 
   <script>
     window.addEventListener("load", () => {
@@ -272,15 +269,18 @@
       });
     });
 
-    // Optional: Animate modal iframe content on open
-    const previewModal = document.getElementById('previewModal');
-    previewModal.addEventListener('shown.bs.modal', () => {
-      gsap.from("#previewModal iframe", {
-        opacity: 0,
-        scale: 0.95,
-        duration: 0.6,
-        ease: "power2.out"
-      });
+    // Render PDF in modal like Notice&minutes.php
+    function renderPDF(pdfUrl, containerId) {
+      const container = document.getElementById(containerId);
+      if (!container) {
+        console.error(`Container with ID ${containerId} not found.`);
+        return;
+      }
+      container.innerHTML = `<iframe src="${pdfUrl}#toolbar=0&navpanes=0&scrollbar=1" width="100%" height="600px" style="border:none;"></iframe>`;
+    }
+
+    document.getElementById('previewModal').addEventListener('show.bs.modal', function() {
+      renderPDF('assets/Documents/NKA presentation 3.1.pdf', 'pmc-pdf-container');
     });
   </script>
 

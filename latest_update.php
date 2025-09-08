@@ -98,7 +98,7 @@
             <img src="assets/images/doc8.png" alt="Document 2" class="card-img-top" style="height: 180px; object-fit: cover;">
             <div class="card-body d-flex flex-column">
               <h3 class="fs-5 fw-semibold mb-3">Final Offer Letter from Mahindra Lifespaces Developers Limited</h3>
-              <button type="button" class="btn btn-warning text-white mt-auto" style="background-color: #722f10; border: none;"
+              <button type="button" class="btn btn-warning text-white mt-auto" style="background-color: #4169e1; border: none;"
                 data-bs-toggle="modal" data-bs-target="#doc8">
                 Open Document
               </button>

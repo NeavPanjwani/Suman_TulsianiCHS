@@ -106,106 +106,9 @@
 
 
   <div class="container py-5">
-    <!-- Default View -->
-    <div id="defaultView" class="row">
-      <div class="col-md-4 order-md-1">
-       
-
-        <!-- <div class="fw-bold mb-2" style="margin-top: 15%; font-size: 29px;">Year</div>
-         <div id="yearList">
-          <div class="py-2 border-bottom nav-link" style="cursor: pointer;" onclick="showYear(2025)">&#9658; 2025</div>
-          <div class="py-2 border-bottom nav-link" style="cursor: pointer;" onclick="showYear(2024)">&#9658; 2024</div>
-          <div class="py-2 border-bottom nav-link" style="cursor: pointer;" onclick="showYear(2023)">&#9658; 2023</div>
-          <div class="py-2 border-bottom nav-link" style="cursor: pointer;" onclick="showYear(2022)">&#9658; 2022</div>
-        </div> 
-      </div> -->
-      <!-- <div class="col-md-8 order-md-2">
-        <p class="mb-4" style="text-align: justify;">Notices and minutes are essential components of society meetings. A
-          notice informs members in advance about upcoming meetings,
-          including the date, time, venue, and agenda. Minutes are the official
-          record of what was discussed and decided during the meeting, including
-          attendance, key points, and action items.</p>
-
-        <div class="row g-3 align-items-stretch"> -->
-          <!-- Left Column -->
-          <!-- <div class="col-md-5">
-            <div class="d-flex flex-column justify-content-between h-100" style="height: 350px;"> -->
-              <!-- Top Image -->
-              <!-- <div class="mb-2" style="flex: 1;">
-                <img src="./assets/images/room 4 (1).jpg" class="img-fluid rounded" style="height: 80%; width: 100%; object-fit: cover;" alt="" />
-                <p class="text-center fw-semibold mt-2 mb-0">APPOINTMENT OF PMC</p>
-              </div> -->
-              <!-- Bottom Image -->
-              <!-- <div style="flex: 1;">
-                <img src="./assets/images/room 5.jpg" class="img-fluid rounded" style="height: 85%; width: 100%; object-fit: cover;" alt="" />
-                <p class="text-center fw-semibold mt-2 mb-0">CONSENT FOR REDEVELOPMENT</p>
-              </div>
-            </div> -->
-          </div> 
-
-          <!-- Right Column -->
-          <!-- <div class="col-md-7">
-            <div style="height: 500px;">
-              <img src="./assets/images/room-1.jpg" class="img-fluid rounded h-100 w-100" style="object-fit: cover;" alt="" />
-              <p class="text-center fw-semibold mt-2 mb-0">REVISED DRAFT WITH LAWYER INPUTS</p>
-            </div>
-          </div>
-        </div> 
-
-
-      </div> 
-    </div> -->
-
-    <!-- Year View (Initially Hidden) -->
-    <!-- <div id="yearView" class="d-none">
-      <div class="d-flex justify-content-between align-items-center mb-4">
-        <h1 class="display-5 mb-0 text-center" style="font-size: 50px;">NOTICES & MINUTES</h1>
-        <div class="input-group" style="max-width: 300px;">
-          <input type="text" class="form-control" placeholder="Search..." id="searchInput" />
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-3">
-          <div class="fw-bold mb-3">Year</div>
-          <div class="border-top border-bottom py-2 year-item nav-link" onclick="showMonths('2025')">&#9658; <span class="fw-bold">2025</span></div>
-          <div class="border-bottom py-2 year-item nav-link" onclick="showMonths('2024')">&#9658; <span class="fw-bold">2024</span></div>
-          <div class="border-bottom py-2 year-item nav-link" onclick="showMonths('2023')">&#9658; <span class="fw-bold">2023</span></div>
-          <div class="border-bottom py-2 year-item nav-link" onclick="showMonths('2022')">&#9658; <span class="fw-bold">2022</span></div>
-        </div>
-
-        <div class="col-md-9">
-          <div class="row">
-            <div class="col-md-4" id="monthColumn" style="display: none;">
-              <div class="fw-bold mb-3">Month</div>
-              <div>
-                <div class="month-item nav-link" onclick="loadMonthData('January')">January</div>
-                <div class="month-item nav-link" onclick="loadMonthData('February')">February</div>
-                <div class="month-item nav-link" onclick="loadMonthData('March')">March</div>
-                <div class="month-item nav-link" onclick="loadMonthData('April')">April</div>
-                <div class="month-item nav-link" onclick="loadMonthData('May')">May</div>
-                <div class="month-item nav-link" onclick="loadMonthData('June')">June</div>
-                <div class="month-item nav-link" onclick="loadMonthData('July')">July</div>
-                <div class="month-item nav-link" onclick="loadMonthData('August')">August</div>
-                <div class="month-item nav-link" onclick="loadMonthData('September')">September</div>
-              </div>
-            </div>
-
-            <div class="col-md-8">
-              <div class="row g-4" id="cardsContainer">
-                <div class="text-muted text-center">Select a year to show months.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-  <!----DOCUMENTS GRID---->
-  <div class="container">
-     <h1 class="display-5 mb-3" style="font-size: 28px; margin-top: 18px; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
-          NOTICES & MINUTES
-        </h1>
+    <h1 class="display-5 mb-3" style="font-size: 28px; margin-top: 18px; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+      NOTICES & MINUTES
+    </h1>
     <div class="row g-4 mb-4">
       <!-- Card 1 -->
       <div class="col-md-4">
@@ -213,7 +116,7 @@
           <img src="assets/Documents/doc1.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Circular</h3>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc1">
               Open Document
             </button>
@@ -226,7 +129,7 @@
           <img src="assets/Documents/doc2.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Feasibility Report Total</h3>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#may-minutes-modal">
               Open Document
             </button>
@@ -239,7 +142,7 @@
           <img src="assets/Documents/doc3.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 1st Sept,2024</h3>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#rules-modal">
               Open Document
             </button>
@@ -247,9 +150,6 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="container">
     <div class="row g-4 mb-4">
       <!-- Card 4 -->
       <div class="col-md-4">
@@ -257,7 +157,7 @@
           <img src="assets/Documents/doc4.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Notice for SGBM Dated 1st Sept,2024</h3>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc4">
               Open Document
             </button>
@@ -270,7 +170,7 @@
           <img src="assets/Documents/doc5.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Feasibility report houzer 15.2.25</h3>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc5">
               Open Document
             </button>
@@ -283,7 +183,7 @@
           <img src="assets/Documents/doc6.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 23rd Feb, 2025</h3>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc6">
               Open Document
             </button>
@@ -291,9 +191,6 @@
         </div>
       </div>
     </div>
-  </div>
-
-   <div class="container">
     <div class="row g-4 mb-4">
       <!-- Card 7 -->
       <div class="col-md-4">
@@ -301,7 +198,7 @@
           <img src="assets/Documents/doc7.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Notice for SGBM Dated 23rd Feb, 2025</h3>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc7">
               Open Document
             </button>
@@ -314,7 +211,7 @@
           <img src="assets/Documents/doc8.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 23.03.2025</h3>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc8">
               Open Document
             </button>
@@ -322,42 +219,33 @@
         </div>
       </div>
       <!-- Card 9 -->
-        <div class="col-md-4">
+      <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/Documents/doc9.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Notice for SGBM Dated 23.03.2025</h3>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc9">
               Open Document
             </button>
           </div>
         </div>
       </div>
-    
     </div>
-  </div>
-
-
-  <div class="container">
     <div class="row g-4 mb-4">
       <!-- Card 10 -->
-   
-<!-- Card 11 -->
       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/Documents/doc10.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Final Offer Letter from Mahindra Lifespaces Developers Limited 16th july</h3>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #722f10; border: none;"
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc10">
               Open Document
             </button>
           </div>
         </div>
       </div>
-      
-      
     </div>
   </div>
   <!-- Modals -->
@@ -602,7 +490,7 @@
 
 
   <!-- FOOTER -->
- <footer id="footerSection" class="bg-light border-top border-muted">
+<footer id="footerSection" class="bg-light border-top border-muted">
     <div class="container py-5">
       <div class="row">
         <div class="col-md-5 text-center d-flex flex-column align-items-center justify-content-center">
@@ -632,8 +520,8 @@
             <li class="mb-2">- SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
               Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
               Andheri West, Mumbai, Maharashtra 400053</li>
-            <li class="mb-2">-  redevelopmentsumanchs@gmail.com</li>
-      
+            <li class="mb-2">-redevelopmentsumanchs@gmail.com</li>
+       
           </ul>
         </div>
       </div>
