@@ -129,7 +129,7 @@
               container.innerHTML = `<iframe src="${pdfUrl}#toolbar=0&navpanes=0&scrollbar=1" width="100%" height="600px" style="border:none;"></iframe>`;
             }
             document.getElementById('doc8').addEventListener('show.bs.modal', function () {
-              renderPDF('assets/Documents/offer letter from mahindra.pdf', 'document8');
+              renderPDF('assets/Documents/Final Offer Letter from Mahindra Lifespaces Developers Limited 16th july.pdf', 'document8');
             });
             document.getElementById('doc8').addEventListener('hidden.bs.modal', function () {
               document.getElementById('document8').innerHTML = '<span class="text-muted">Loading document...</span>';
