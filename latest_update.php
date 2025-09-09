@@ -162,7 +162,7 @@
           <!-- Address -->
           <p class="text-muted small mb-0">
             SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-           Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
+           Suman CHS, 3rd Cross Rd, Lokhandwala Complex,<br>
            Andheri West, Mumbai, Maharashtra 400053
           </p>
         </div>
@@ -178,7 +178,7 @@
           <h5 class="mb-3">Contacts</h5>
           <ul class="list-unstyled small text-muted">
             <li class="mb-2">- SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-              Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
+              Suman CHS, 3rd Cross Rd, Lokhandwala Complex,<br>
               Andheri West, Mumbai, Maharashtra 400053</li>
             <li class="mb-2">-  redevelopmentsumanchs@gmail.com</li>
            

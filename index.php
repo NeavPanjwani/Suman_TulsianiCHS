@@ -162,30 +162,56 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
 
   <!-- MAIN SECTION -->
   <section style="background-color: #f9f8f3; min-height: 100vh;">
-    <div class="container-fluid">
-      <div class="row align-items-stretch g-0" style="min-height: 100vh;">
+  <div class="container-fluid">
+    <div class="row align-items-stretch g-0" style="min-height: 100vh;">
 
+      <!-- LEFT TEXT SECTION -->
+      <div class="col-lg-6 d-flex flex-column justify-content-center px-5" id="left-text">
+        <h1 class="m-0">
+          <span class="d-block" style="font-size: 50px;">SUMAN TULSIANI</span>
+          <span class="d-block" style="margin-left: 20vw; font-size: 4vw; margin-top: 1.5vw;">CHS LTD.</span>
+        </h1>
+      </div>
 
-        <!-- LEFT TEXT SECTION -->
-        <div class="col-lg-6 d-flex flex-column justify-content-center px-5" id="left-text">
-          <h1 class="m-0">
-            <span class="d-block" style="font-size: 50px;">SUMAN TULSIANI</span>
-            <span class="d-block" style="margin-left: 20vw; font-size: 4vw; margin-top: 1.5vw;">CHS LTD.</span>
-          </h1>
-        </div>
-
-        <!-- RIGHT IMAGE SECTION -->
-        <div class="col-lg-6" id="right-img">
-          <div class="p-4 h-100">
-            <img src="./assets/images/homepage.jpg" alt="Interior" class="w-100 h-100"
-              style="object-fit: cover; filter: grayscale(10%); border-radius: 0;">
-          </div>
+      <!-- RIGHT IMAGE SECTION -->
+      <div class="col-lg-6" id="right-img">
+        <div class="p-4 h-100">
+          <img src="./assets/images/homepage.jpg" alt="Interior" class="w-100 h-100"
+            style="object-fit: cover; filter: grayscale(10%); border-radius: 0;">
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
+
+<!-- SECOND SECTION -->
+<section class="my-5" style="background-color: #f9f8f3; min-height: 100vh;">
+  <div class="container-fluid">
+    <div class="row g-0" style="min-height: 100vh;">
+
+      <!-- LEFT IMAGE -->
+      <div class="col-lg-6">
+        <div class="p-4 h-100">
+          <img src="./assets/images/img2.jpg" alt="Interior" class="w-100 h-100"
+            style="object-fit: cover; filter: grayscale(10%); border-radius: 0;">
+        </div>
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="col-lg-6">
+        <div class="p-4 h-100">
+          <img src="./assets/images/img3.jpg" alt="Interior" class="w-100 h-100"
+            style="object-fit: cover; filter: grayscale(10%); border-radius: 0;">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+   <!-- FOOTER -->
  <footer id="footerSection" class="bg-light border-top border-muted">
     <div class="container py-5">
       <div class="row">
@@ -198,7 +224,7 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
           <!-- Address -->
           <p class="text-muted small mb-0">
             SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-           Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
+           Suman CHS, 3rd Cross Rd, Lokhandwala Complex,<br>
            Andheri West, Mumbai, Maharashtra 400053
           </p>
         </div>
@@ -214,7 +240,7 @@ $insert->execute([$_SESSION['user_id'], $currentSession]);
           <h5 class="mb-3">Contacts</h5>
           <ul class="list-unstyled small text-muted">
             <li class="mb-2">- SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-              Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
+              Suman CHS, 3rd Cross Rd, Lokhandwala Complex,<br>
               Andheri West, Mumbai, Maharashtra 400053</li>
             <li class="mb-2">- redevelopmentsumanchs@gmail.com</li>
 

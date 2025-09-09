@@ -115,7 +115,7 @@
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/Documents/doc1.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">Circular</h3>
+            <h3 class="fs-5 fw-semibold mb-3">30th august Circular</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc1">
               Open Document
@@ -124,34 +124,7 @@
         </div>
       </div>
       <!-- Card 2 -->
-      <div class="col-md-4">
-        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/Documents/doc2.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
-          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">Feasibility Report Total</h3>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
-              data-bs-toggle="modal" data-bs-target="#may-minutes-modal">
-              Open Document
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- Card 3 -->
-      <div class="col-md-4">
-        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/Documents/doc3.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
-          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 1st Sept,2024</h3>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
-              data-bs-toggle="modal" data-bs-target="#rules-modal">
-              Open Document
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row g-4 mb-4">
-      <!-- Card 4 -->
+   
       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/Documents/doc4.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
@@ -164,7 +137,49 @@
           </div>
         </div>
       </div>
+      <!-- Card 3 -->
+     
+       <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/Documents/doc2.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">Feasibility Report Total</h3>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
+              data-bs-toggle="modal" data-bs-target="#may-minutes-modal">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="row g-4 mb-4">
+       <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/Documents/doc3.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 1st Sept,2024</h3>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
+              data-bs-toggle="modal" data-bs-target="#rules-modal">
+              Open Document
+            </button>
+          </div>
+        
+  
+      </div>
+    </div>
       <!-- Card 5 -->
+       <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/Documents/doc5.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">1st offer letter</h3>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
+              data-bs-toggle="modal" data-bs-target="#fol">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/Documents/doc5.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
@@ -178,21 +193,7 @@
         </div>
       </div>
       <!-- Card 6 -->
-      <div class="col-md-4">
-        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/Documents/doc6.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
-          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 23rd Feb, 2025</h3>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
-              data-bs-toggle="modal" data-bs-target="#doc6">
-              Open Document
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row g-4 mb-4">
-      <!-- Card 7 -->
+   
       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/Documents/doc7.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
@@ -205,21 +206,19 @@
           </div>
         </div>
       </div>
-      <!-- Card 8 -->
-      <div class="col-md-4">
+       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/Documents/doc8.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <img src="assets/Documents/doc6.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 23.03.2025</h3>
+            <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 23rd Feb, 2025</h3>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
-              data-bs-toggle="modal" data-bs-target="#doc8">
+              data-bs-toggle="modal" data-bs-target="#doc6">
               Open Document
             </button>
           </div>
         </div>
       </div>
-      <!-- Card 9 -->
-      <div class="col-md-4">
+       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/Documents/doc9.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
@@ -233,8 +232,25 @@
       </div>
     </div>
     <div class="row g-4 mb-4">
-      <!-- Card 10 -->
-      <div class="col-md-4">
+      <!-- Card 7 -->
+        
+      <!-- Card 8 -->
+     
+     
+      <!-- Card 9 -->
+       <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/Documents/doc8.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 23.03.2025</h3>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
+              data-bs-toggle="modal" data-bs-target="#doc8">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+        <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/Documents/doc10.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
@@ -247,6 +263,7 @@
         </div>
       </div>
     </div>
+    
   </div>
   <!-- Modals -->
   <section>
@@ -255,7 +272,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="sgbmNoticeLabel">Circular</h5>
+            <h5 class="modal-title" id="sgbmNoticeLabel">30th august</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="overflow:auto; max-height:70vh;">
@@ -312,6 +329,23 @@
           </div>
           <div class="modal-body" style="overflow:auto; max-height:70vh;">
             <div id="document4"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----First offer letter modal---->
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="fol" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rulesModalLabel">First offer letter</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="overflow:auto; max-height:70vh;">
+            <div id="fol5"></div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -442,7 +476,7 @@
     // SGBM Notice Modal
      // doc1 Modal
     document.getElementById('doc1').addEventListener('show.bs.modal', function() {
-      renderPDF('assets/Documents/circular doc 1.pdf', 'document1');
+      renderPDF('assets/Documents/30th august.pdf', 'document1');
     });
 
     // May Minutes Modal
@@ -457,6 +491,10 @@
       // doc4 Modal
     document.getElementById('doc4').addEventListener('show.bs.modal', function() {
       renderPDF('assets/Documents/Notice for SGBM Dated 1st Sept,2024.pdf', 'document4');
+    });
+      // first offer letter Modal
+    document.getElementById('fol').addEventListener('show.bs.modal', function() {
+      renderPDF('assets/Documents/1st offer letter.pdf', 'fol5');
     });
       // doc5 Modal
     document.getElementById('doc5').addEventListener('show.bs.modal', function() {
@@ -502,7 +540,7 @@
           <!-- Address -->
           <p class="text-muted small mb-0">
             SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-           Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
+           Suman CHS, 3rd Cross Rd, Lokhandwala Complex,<br>
            Andheri West, Mumbai, Maharashtra 400053
           </p>
         </div>
@@ -518,7 +556,7 @@
           <h5 class="mb-3">Contacts</h5>
           <ul class="list-unstyled small text-muted">
             <li class="mb-2">- SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-              Suman Tower, 3rd Cross Rd, Lokhandwala Complex,<br>
+              Suman CHS, 3rd Cross Rd, Lokhandwala Complex,<br>
               Andheri West, Mumbai, Maharashtra 400053</li>
             <li class="mb-2">-redevelopmentsumanchs@gmail.com</li>
        
