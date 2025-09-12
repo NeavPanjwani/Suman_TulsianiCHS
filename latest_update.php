@@ -97,7 +97,16 @@
     <div class="container-fluid px-5">
       <div class="row align-items-center">
         <!-- LEFT: DOCUMENT CARD WITH OPEN BUTTON -->
-        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+        <div class="col-md-6 d-flex flex-column justify-content-center ps-md-5 mt-n5 mt-md-0" id="updateText">
+          <div class="logo-wrapper text-start mb-4">
+            <h1 class="display-5 mb-3" style="font-weight: 400; letter-spacing: 2.5px; margin-left: 0;">Latest Document</h1>
+          </div>
+          <p class="mb-4 fs-5 text-muted">
+            Our society is committed to transparency and progress. The latest documents are shared here to keep all members informed about important developments and decisions. Stay updated with official communications and key milestones as we move forward together.
+          </p>
+        </div>
+        <!-- RIGHT: HEADING AND DESCRIPTION -->
+         <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
           <div class="card shadow-sm border-0 mb-4" style="max-width: 420px;">
             <img src="assets/images/doc8.png" alt="Document 2" class="card-img-top" style="height: 180px; object-fit: cover;">
             <div class="card-body d-flex flex-column">
@@ -141,15 +150,14 @@
             });
           </script>
         </div>
-        <!-- RIGHT: HEADING AND DESCRIPTION -->
-        <div class="col-md-6 d-flex flex-column justify-content-center ps-md-5 mt-n5 mt-md-0" id="updateText">
+        <!--<div class="col-md-6 d-flex flex-column justify-content-center ps-md-5 mt-n5 mt-md-0" id="updateText">
           <div class="logo-wrapper text-start mb-4">
             <h1 class="display-5 mb-3" style="font-weight: 400; letter-spacing: 2.5px; margin-left: 0;">Latest Document</h1>
           </div>
           <p class="mb-4 fs-5 text-muted">
             Our society is committed to transparency and progress. The latest documents are shared here to keep all members informed about important developments and decisions. Stay updated with official communications and key milestones as we move forward together.
           </p>
-        </div>
+        </div>-->
         <!-- Below Two Documents -->
         <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
           <div class="card shadow-sm border-0 mb-4" style="max-width: 420px;">
