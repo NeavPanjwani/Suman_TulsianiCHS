@@ -96,7 +96,7 @@
           </div>
           <div class="ms-5">
             <p class="fs-6 mb-3">
-              We at Naren Kuwarlekar Project Consultants, (NKPC) conceive and manage the project at hand by
+              We at Naren Kuwadekar Project Consultants, (NKPC) conceive and manage the project at hand by
               applying
               our acquired knowledge, skills, and experience at various stages throughout the project life
               cycle.
