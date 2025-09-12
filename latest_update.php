@@ -262,7 +262,7 @@
         <div class="col-md-5 text-center d-flex flex-column align-items-center justify-content-center">
           <!-- Logo -->
           <div class="mb-3 d-flex justify-content-center align-items-center" style="height: 80px; width: 100%;">
-            <img src="../Suman_TulsianiCHS/assets/images/logo2.png" alt="Logo"
+            <img src="./assets/images/logo2.png" alt="Logo"
               style="height: 100%; object-fit: contain; max-width: 100%;">
           </div>
           <!-- Address -->

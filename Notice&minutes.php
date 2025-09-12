@@ -207,7 +207,7 @@
         </div>
       </div>
       
-      <!-- Card 6 -->
+      <!-- Card 7 -->
    
       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
@@ -223,7 +223,7 @@
         </div>
       </div>
 
-      <!-- Card 7 -->
+      <!-- Card 8 -->
        <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/Documents/doc6.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
@@ -238,7 +238,7 @@
         </div>
       </div>
 
-      <!-- Card 8 -->
+      <!-- Card 9 -->
 
        <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
@@ -256,7 +256,7 @@
     </div>
     <div class="row g-4 mb-4">
      
-      <!-- Card 9 -->
+      <!-- Card 10 -->
        <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/Documents/doc8.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
@@ -265,21 +265,6 @@
             <h5>25th March, 2025</h5>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc8">
-              Open Document
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 10 -->
-        <div class="col-md-4">
-        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/Documents/doc10.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
-          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">Final Offer Letter from Mahindra Lifespaces Developers Limited</h3>
-            <h5>16th July, 2025</h5>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
-              data-bs-toggle="modal" data-bs-target="#doc10">
               Open Document
             </button>
           </div>
@@ -316,9 +301,23 @@
         </div>
       </div>
 
+      <!-- Card 13 -->
+        <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/Documents/doc10.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">Final Offer Letter from Mahindra Lifespaces Developers Limited</h3>
+            <h5>16th July, 2025</h5>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
+              data-bs-toggle="modal" data-bs-target="#doc10">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+
 
     </div>
-    
   </div>
 
 
