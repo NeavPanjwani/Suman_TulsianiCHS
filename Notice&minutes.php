@@ -71,9 +71,11 @@
       <!-- Desktop nav items -->
       <div class="collapse navbar-collapse d-none d-lg-block">
         <ul class="navbar-nav gap-3 ms-auto me-5">
-          <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
-          <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
           <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
+          <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
+          <li class="nav-item"><a class="nav-link" href="./DA.php">Draft D.A</a></li>
+          <li class="nav-item"><a class="nav-link" href="./plans.php">PLANS</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
           <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
           <li class="nav-item"><a class="nav-link" href="./contact_us.php">Contact Us</a></li>
 
@@ -90,9 +92,11 @@
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav gap-3">
-            <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
-            <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
             <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
+          <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
+          <li class="nav-item"><a class="nav-link" href="./DA.php">Draft D.A</a></li>
+          <li class="nav-item"><a class="nav-link" href="./plans.php">PLANS</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
             <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
             <li class="nav-item"><a class="nav-link" href="./contact_us.php">Contact Us</a></li>
 
@@ -111,25 +115,12 @@
     </h1>
     <div class="row g-4 mb-4">
       <!-- Card 1 -->
-      <div class="col-md-4">
-        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/Documents/doc1.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
-          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">30th august Circular</h3>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
-              data-bs-toggle="modal" data-bs-target="#doc1">
-              Open Document
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- Card 2 -->
-   
-      <div class="col-md-4">
+       <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/Documents/doc4.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Notice for SGBM Dated 1st Sept,2024</h3>
+            <h5>17th Aug, 2025</h5>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc4">
               Open Document
@@ -137,13 +128,47 @@
           </div>
         </div>
       </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/Documents/doc1.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">Consent Letter Dated 30th Aug, 2024</h3>
+            <h5>30th Aug, 2024</h5>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
+              data-bs-toggle="modal" data-bs-target="#doc1">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+      
+   
+      
       <!-- Card 3 -->
-     
+
+       <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/Documents/doc3.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 1st Sept,2024</h3>
+            <h5>10th Sept, 2024</h5>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
+              data-bs-toggle="modal" data-bs-target="#rules-modal">
+              Open Document
+            </button>
+          </div>
+      </div>
+    </div>
+
+     <!-- Card 4 -->
        <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/Documents/doc2.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Feasibility Report Total</h3>
+            <h5>14th Jan, 2025</h5>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#may-minutes-modal">
               Open Document
@@ -151,40 +176,14 @@
           </div>
         </div>
       </div>
-      <!-- Card 4 -->
-      <div class="row g-4 mb-4">
-       <div class="col-md-4">
-        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/Documents/doc3.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
-          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 1st Sept,2024</h3>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
-              data-bs-toggle="modal" data-bs-target="#rules-modal">
-              Open Document
-            </button>
-          </div>
-        
-  
-      </div>
-    </div>
+      
       <!-- Card 5 -->
        <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/Documents/doc5.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">1st offer letter</h3>
-            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
-              data-bs-toggle="modal" data-bs-target="#fol">
-              Open Document
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
-          <img src="assets/Documents/doc5.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
-          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">Feasibility report houzer 15.2.25</h3>
+            <h3 class="fs-5 fw-semibold mb-3">Feasibility Report Houzer</h3>
+            <h5>15th Feb, 2025</h5>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc5">
               Open Document
@@ -192,6 +191,22 @@
           </div>
         </div>
       </div>
+
+      <!-- Card 6 -->
+       <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/Documents/doc5.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">EOI from Mahindra Lifespaces Developers Limited</h3>
+            <h5>13th Feb, 2025</h5>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
+              data-bs-toggle="modal" data-bs-target="#fol">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+      
       <!-- Card 6 -->
    
       <div class="col-md-4">
@@ -199,6 +214,7 @@
           <img src="assets/Documents/doc7.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Notice for SGBM Dated 23rd Feb, 2025</h3>
+            <h5>16th Feb, 2025</h5>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc7">
               Open Document
@@ -206,11 +222,14 @@
           </div>
         </div>
       </div>
+
+      <!-- Card 7 -->
        <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/Documents/doc6.png" alt="Document 3" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 23rd Feb, 2025</h3>
+            <h5>25th Feb, 2025</h5>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc6">
               Open Document
@@ -218,11 +237,15 @@
           </div>
         </div>
       </div>
+
+      <!-- Card 8 -->
+
        <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/Documents/doc9.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Notice for SGBM Dated 23.03.2025</h3>
+            <h5>7th March, 2025</h5>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc9">
               Open Document
@@ -232,10 +255,6 @@
       </div>
     </div>
     <div class="row g-4 mb-4">
-      <!-- Card 7 -->
-        
-      <!-- Card 8 -->
-     
      
       <!-- Card 9 -->
        <div class="col-md-4">
@@ -243,6 +262,7 @@
           <img src="assets/Documents/doc8.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 23.03.2025</h3>
+            <h5>25th March, 2025</h5>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc8">
               Open Document
@@ -250,11 +270,14 @@
           </div>
         </div>
       </div>
+
+      <!-- Card 10 -->
         <div class="col-md-4">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
           <img src="assets/Documents/doc10.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-            <h3 class="fs-5 fw-semibold mb-3">Final Offer Letter from Mahindra Lifespaces Developers Limited 16th july</h3>
+            <h3 class="fs-5 fw-semibold mb-3">Final Offer Letter from Mahindra Lifespaces Developers Limited</h3>
+            <h5>16th July, 2025</h5>
             <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
               data-bs-toggle="modal" data-bs-target="#doc10">
               Open Document
@@ -262,9 +285,43 @@
           </div>
         </div>
       </div>
+
+      <!-- Card 11 -->
+        <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/Documents/Time of india public notice.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">Time of india Public Notice</h3>
+            <h5>12th July, 2025</h5>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
+              data-bs-toggle="modal" data-bs-target="#TOInotice">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 12 -->
+        <div class="col-md-4">
+        <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column">
+          <img src="assets/Documents/public notice Maharashtra Time.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+            <h3 class="fs-5 fw-semibold mb-3">Public Notice Maharashtra Times</h3>
+            <h5>12th July, 2025</h5>
+            <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
+              data-bs-toggle="modal" data-bs-target="#MTnotice">
+              Open Document
+            </button>
+          </div>
+        </div>
+      </div>
+
+
     </div>
     
   </div>
+
+
   <!-- Modals -->
   <section>
     <!-- SGBM Notice Modal -->
@@ -272,7 +329,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="sgbmNoticeLabel">30th august</h5>
+            <h5 class="modal-title" id="sgbmNoticeLabel">Consent Letter 30th Aug, 2024</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="overflow:auto; max-height:70vh;">
@@ -358,7 +415,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="rulesModalLabel">Feasibility report houzer 15.2.25</h5>
+            <h5 class="modal-title" id="rulesModalLabel">Feasibility Report Houzer 15th Feb, 2025</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="overflow:auto; max-height:70vh;">
@@ -409,7 +466,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="rulesModalLabel">Minutes for SGBM Dated 23.03.2025</h5>
+            <h5 class="modal-title" id="rulesModalLabel">Minutes for SGBM Dated 23rd March, 2025</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="overflow:auto; max-height:70vh;">
@@ -426,7 +483,7 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="rulesModalLabel">Notice for SGBM Dated 23.03.2025</h5>
+            <h5 class="modal-title" id="rulesModalLabel">Notice for SGBM Dated 23rd March, 2025</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body" style="overflow:auto; max-height:70vh;">
@@ -455,7 +512,40 @@
         </div>
       </div>
     </div>
-    
+    <!-- Doc 11 Modal -->
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="TOInotice" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rulesModalLabel">Time of India Public Notice</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="overflow:auto; max-height:70vh;">
+            <div id="DocTOInotice"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Doc 12 Modal -->
+    <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="MTnotice" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rulesModalLabel">Public Notice Maharashtra Times</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body" style="overflow:auto; max-height:70vh;">
+            <div id="DocMTnotice"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     
   </section>
 
@@ -519,6 +609,14 @@
      // doc10 Modal
     document.getElementById('doc10').addEventListener('show.bs.modal', function() {
       renderPDF('assets/Documents/Final Offer Letter from Mahindra Lifespaces Developers Limited 16th july.pdf', 'document10');
+    });
+    // Doc 11 Modal
+    document.getElementById('TOInotice').addEventListener('show.bs.modal', function() {
+      renderPDF('assets/Documents/Time of india public notice.pdf', 'DocTOInotice');
+    });
+    // Doc 12 Modal
+    document.getElementById('MTnotice').addEventListener('show.bs.modal', function() {
+      renderPDF('assets/Documents/public notice Maharashtra Time.pdf', 'DocMTnotice');
     });
    
     

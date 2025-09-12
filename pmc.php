@@ -46,9 +46,11 @@
       <!-- Desktop nav items -->
       <div class="collapse navbar-collapse d-none d-lg-block">
         <ul class="navbar-nav gap-3 ms-auto me-5">
-          <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
-          <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
           <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
+          <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
+          <li class="nav-item"><a class="nav-link" href="./DA.php">Draft D.A</a></li>
+          <li class="nav-item"><a class="nav-link" href="./plans.php">PLANS</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
           <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
           <li class="nav-item"><a class="nav-link" href="./contact_us.php">Contact Us</a></li>
 
@@ -65,9 +67,11 @@
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav gap-3">
-            <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
-            <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
             <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
+          <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
+          <li class="nav-item"><a class="nav-link" href="./DA.php">Draft D.A</a></li>
+          <li class="nav-item"><a class="nav-link" href="./plans.php">PLANS</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
             <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
             <li class="nav-item"><a class="nav-link" href="./contact_us.php">Contact Us</a></li>
 

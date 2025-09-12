@@ -55,9 +55,11 @@
       <!-- Desktop nav items -->
       <div class="collapse navbar-collapse d-none d-lg-block">
         <ul class="navbar-nav gap-3 ms-auto me-5">
-          <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
-          <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
           <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
+          <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
+          <li class="nav-item"><a class="nav-link" href="./DA.php">Draft D.A</a></li>
+          <li class="nav-item"><a class="nav-link" href="./plans.php">PLANS</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
           <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
           <li class="nav-item"><a class="nav-link" href="./contact_us.php">Contact Us</a></li>
 
@@ -74,13 +76,15 @@
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav gap-3">
-            <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
-            <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
             <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notice & Minutes</a></li>
+          <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
+          <li class="nav-item"><a class="nav-link" href="./DA.php">Draft D.A</a></li>
+          <li class="nav-item"><a class="nav-link" href="./plans.php">PLANS</a></li>
+          <li class="nav-item"><a class="nav-link" href="./pmc.php">PMC</a></li>
             <!-- <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li> -->
             <li class="nav-item"><a class="nav-link" href="./contact_us.php">Contact Us</a></li>
 
-           <li class="nav-item"><a class="nav-link" href="PhpFiles/handle_logout.php">Log Out</a></li>
+            <li class="nav-item"><a class="nav-link" href="PhpFiles/handle_logout.php">Log Out</a></li>
           </ul>
         </div>
       </div>
@@ -98,6 +102,7 @@
             <img src="assets/images/doc8.png" alt="Document 2" class="card-img-top" style="height: 180px; object-fit: cover;">
             <div class="card-body d-flex flex-column">
               <h3 class="fs-5 fw-semibold mb-3">Final Offer Letter from Mahindra Lifespaces Developers Limited</h3>
+              <h5>16th July, 2025</h5>
               <button type="button" class="btn btn-warning text-white mt-auto" style="background-color: #4169e1; border: none;"
                 data-bs-toggle="modal" data-bs-target="#doc8">
                 Open Document
@@ -128,10 +133,10 @@
               const container = document.getElementById(containerId);
               container.innerHTML = `<iframe src="${pdfUrl}#toolbar=0&navpanes=0&scrollbar=1" width="100%" height="600px" style="border:none;"></iframe>`;
             }
-            document.getElementById('doc8').addEventListener('show.bs.modal', function () {
+            document.getElementById('doc8').addEventListener('show.bs.modal', function() {
               renderPDF('assets/Documents/Final Offer Letter from Mahindra Lifespaces Developers Limited 16th july.pdf', 'document8');
             });
-            document.getElementById('doc8').addEventListener('hidden.bs.modal', function () {
+            document.getElementById('doc8').addEventListener('hidden.bs.modal', function() {
               document.getElementById('document8').innerHTML = '<span class="text-muted">Loading document...</span>';
             });
           </script>
@@ -145,12 +150,105 @@
             Our society is committed to transparency and progress. The latest documents are shared here to keep all members informed about important developments and decisions. Stay updated with official communications and key milestones as we move forward together.
           </p>
         </div>
+        <!-- Below Two Documents -->
+        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+          <div class="card shadow-sm border-0 mb-4" style="max-width: 420px;">
+            <img src="assets/Documents/doc8.png" alt="Minutes for SGBM Dated 23.03.2025" class="w-100" style="height: 180px; object-fit: cover;">
+            <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+              <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 23.03.2025</h3>
+              <h5>25th March, 2025</h5>
+              <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
+                data-bs-toggle="modal" data-bs-target="#DocMinutesSGBM23.03.2025">
+                Open Document
+              </button>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="DocMinutesSGBM23.03.2025" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="rulesModalLabel">Minutes for SGBM Dated 23rd March, 2025</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="overflow:auto; max-height:70vh;">
+                  <div id="MinutesSGBM23.03.2025" style="width:100%; min-height:60vh; display:flex; align-items:center; justify-content:center;">
+                    <span class="text-muted">Loading document...</span>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            function renderPDF(pdfUrl, containerId) {
+              const container = document.getElementById(containerId);
+              container.innerHTML = `<iframe src="${pdfUrl}#toolbar=0&navpanes=0&scrollbar=1" width="100%" height="600px" style="border:none;"></iframe>`;
+            }
+            document.getElementById('DocMinutesSGBM23.03.2025').addEventListener('show.bs.modal', function() {
+              renderPDF('assets/Documents/Minutes for SGBM Dated 23.03.2025.pdf', 'MinutesSGBM23.03.2025');
+            });
+            document.getElementById('DocMinutesSGBM23.03.2025').addEventListener('hidden.bs.modal', function() {
+              document.getElementById('MinutesSGBM23.03.2025').innerHTML = '<span class="text-muted">Loading document...</span>';
+            });
+          </script>
+        </div>
+        <!-- RIGHT: HEADING AND DESCRIPTION -->
+        <div class="col-md-6 d-flex flex-column justify-content-center ps-md-5 mt-n5 mt-md-0" id="updateText">
+          <div class="card shadow-sm border-0 mb-4" style="max-width: 420px;">
+            <img src="assets/Documents/doc9.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+            <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
+              <h3 class="fs-5 fw-semibold mb-3">Notice for SGBM Dated 23.03.2025</h3>
+              <h5>7th March, 2025</h5>
+              <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
+                data-bs-toggle="modal" data-bs-target="#NoticeSGBM23rdMarch,2025">
+                Open Document
+              </button>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="NoticeSGBM23rdMarch,2025" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="rulesModalLabel">Notice for SGBM Dated 23rd March, 2025</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="overflow:auto; max-height:70vh;">
+                  <div id="DocNoticeSGBM23rdMarch,2025" style="width:100%; min-height:60vh; display:flex; align-items:center; justify-content:center;">
+                    <span class="text-muted">Loading document...</span>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            function renderPDF(pdfUrl, containerId) {
+              const container = document.getElementById(containerId);
+              container.innerHTML = `<iframe src="${pdfUrl}#toolbar=0&navpanes=0&scrollbar=1" width="100%" height="600px" style="border:none;"></iframe>`;
+            }
+            document.getElementById('NoticeSGBM23rdMarch,2025').addEventListener('show.bs.modal', function() {
+              renderPDF('assets/Documents/Notice for SGBM Dated 23.03.2025.pdf', 'DocNoticeSGBM23rdMarch,2025');
+            });
+            document.getElementById('NoticeSGBM23rdMarch,2025').addEventListener('hidden.bs.modal', function() {
+              document.getElementById('DocNoticeSGBM23rdMarch,2025').innerHTML = '<span class="text-muted">Loading document...</span>';
+            });
+          </script>
+        </div>
       </div>
+    </div>
+    </div>
+
     </div>
   </section>
 
 
- <footer id="footerSection" class="bg-light border-top border-muted">
+  <footer id="footerSection" class="bg-light border-top border-muted">
     <div class="container py-5">
       <div class="row">
         <div class="col-md-5 text-center d-flex flex-column align-items-center justify-content-center">
@@ -162,8 +260,8 @@
           <!-- Address -->
           <p class="text-muted small mb-0">
             SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
-           Suman CHS, 3rd Cross Rd, Lokhandwala Complex,<br>
-           Andheri West, Mumbai, Maharashtra 400053
+            Suman CHS, 3rd Cross Rd, Lokhandwala Complex,<br>
+            Andheri West, Mumbai, Maharashtra 400053
           </p>
         </div>
 
@@ -180,8 +278,8 @@
             <li class="mb-2">- SUMAN TULSANI CO-OPERATIVE HOUSING SOCIETY,<br>
               Suman CHS, 3rd Cross Rd, Lokhandwala Complex,<br>
               Andheri West, Mumbai, Maharashtra 400053</li>
-            <li class="mb-2">-  redevelopmentsumanchs@gmail.com</li>
-           
+            <li class="mb-2">- redevelopmentsumanchs@gmail.com</li>
+
           </ul>
         </div>
       </div>
