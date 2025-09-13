@@ -37,7 +37,7 @@
 
 
                         <!-- FORM START -->
-                        <form name="forgotForm">
+                        <form name="forgotForm"  action="send_otp.php" method="post">
 
                             <!-- Flat No. -->
                             <div class="mb-3">
@@ -49,19 +49,19 @@
                             </div>
 
                             <!-- OTP -->
-                            <div class="mb-3">
+                            <!--<div class="mb-3">
                                 <label class="form-label text-uppercase small">OTP</label>
                                 <div class="position-relative">
                                     <i class="bi bi-lock-fill position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
                                     <input type="password" class="form-control ps-5 pe-1 rounded-pill" placeholder="Enter OTP" name="otp" required id="otpInput">
                                 </div>
-                            </div>
+                            </div>-->
 
 
                             <!-- Go back link -->
-                            <div class="text-end mb-3">
+                            <!--<div class="text-end mb-3">
                                 <a href="./login.php" class="text-decoration-none text-primary slide-underline">Go back to Login!</a>
-                            </div>
+                            </div>-->
 
                             <!-- Verify Button -->
                             <button type="submit" class="btn btn-dark w-100 rounded-pill">Verify</button>

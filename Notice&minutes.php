@@ -253,8 +253,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="row g-4 mb-4">
      
       <!-- Card 10 -->
        <div class="col-md-4">
