@@ -20,11 +20,17 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
+// Generate CSRF token if not exists
+if (!isset($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+
 header('Content-Type: application/json; charset=utf-8');
 
 // includes - adjust paths if your structure differs
-require_once __DIR__ . './PhpFiles/db.php';       // defines $mysqli (MySQLi connection)
-require_once __DIR__ . './PhpFiles/helpers.php';  // safePost() if present, else we'll fallback
+require_once __DIR__ . '/../PhpFiles/db.php';       // defines $pdo (PDO connection)
+require_once __DIR__ . '/../PhpFiles/helpers.php';  // safePost() if present, else we'll fallback
+require_once __DIR__ . '/../PhpFiles/mail.php';     // mail functions
 
 // helper: safePost fallback
 if (!function_exists('safePost')) {
@@ -33,8 +39,14 @@ if (!function_exists('safePost')) {
     }
 }
 
+// Validate CSRF token
+if (!isset($_POST['csrf_token']) || !isset($_SESSION['csrf_token']) || $_POST['csrf_token'] !== $_SESSION['csrf_token']) {
+    echo json_encode(['status' => 'error', 'message' => 'Invalid request. Security token mismatch.']);
+    exit;
+}
+
 // read input
-$flat = safePost('flat_number') ?: safePost('flat_no') ?: safePost('flat'); // flexible keys
+$flat = safePost('flat_no') ?: safePost('flat_number') ?: safePost('flat'); // flexible keys
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     echo json_encode(['status' => 'error', 'message' => 'Invalid request method.']);
@@ -45,18 +57,27 @@ if ($flat === '') {
     exit;
 }
 
+// Function to update user email in database
+function updateUserEmail($pdo, $flatNo, $email) {
+    try {
+        $stmt = $pdo->prepare("UPDATE users SET email = ? WHERE flat_no = ?");
+        return $stmt->execute([$email, $flatNo]);
+    } catch (PDOException $e) {
+        error_log("Database error: " . $e->getMessage());
+        return false;
+    }
+}
+
 // Lookup user by flat_number
-$stmt = $mysqli->prepare("SELECT id, email, name FROM users WHERE flat_number = ?");
-if (!$stmt) {
-    error_log("DB prepare failed: " . $mysqli->error);
+try {
+    $stmt = $pdo->prepare("SELECT id, flat_no, email FROM users WHERE flat_no = ?");
+    $stmt->execute([$flat]);
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+} catch (PDOException $e) {
+    error_log("DB error: " . $e->getMessage());
     echo json_encode(['status' => 'error', 'message' => 'Server error.']);
     exit;
 }
-$stmt->bind_param('s', $flat);
-$stmt->execute();
-$res = $stmt->get_result();
-$user = $res->fetch_assoc();
-$stmt->close();
 
 // If user not found => do a generic response (avoid enumeration)
 if (!$user) {
@@ -64,14 +85,39 @@ if (!$user) {
     exit;
 }
 
-// If email missing, prompt friendly message
-if (empty(trim($user['email'] ?? ''))) {
-    $flat_display = htmlspecialchars($flat, ENT_QUOTES, 'UTF-8');
-    $msg = "No email address is registered for Flat {$flat_display}. Please contact your society administrator to register an email address so you can receive OTPs and reset your password.";
-    // Optional: log event for admin follow-up
-    error_log("OTP requested for flat {$flat} but email missing. IP: " . ($_SERVER['REMOTE_ADDR'] ?? ''));
-    echo json_encode(['status' => 'error', 'message' => $msg]);
-    exit;
+// If email missing or invalid, try to get it from CSV
+if (!isset($user['email']) || empty(trim($user['email'])) || !filter_var($user['email'], FILTER_VALIDATE_EMAIL)) {
+    $csvFile = $_SERVER['DOCUMENT_ROOT'] . '/Suman_TulsianiCHS/users - users.csv';
+    $emailFound = false;
+    
+    if (file_exists($csvFile)) {
+        if (($handle = fopen($csvFile, "r")) !== FALSE) {
+            // Skip header row
+            fgetcsv($handle);
+            
+            while (($data = fgetcsv($handle)) !== FALSE) {
+                // Assuming CSV structure: id, flat_no, email, password
+                if (isset($data[1]) && $data[1] === $flat && isset($data[2]) && filter_var($data[2], FILTER_VALIDATE_EMAIL)) {
+                    $user['email'] = $data[2];
+                    // Update email in database
+                    updateUserEmail($pdo, $flat, $user['email']);
+                    $emailFound = true;
+                    break;
+                }
+            }
+            fclose($handle);
+        }
+    }
+    
+    // If still no valid email
+    if (!$emailFound) {
+        $flat_display = htmlspecialchars($flat, ENT_QUOTES, 'UTF-8');
+        $msg = "No valid email address is registered for Flat {$flat_display}. Please contact your society administrator to register an email address so you can receive OTPs and reset your password.";
+        // Optional: log event for admin follow-up
+        error_log("OTP requested for flat {$flat} but email missing. IP: " . ($_SERVER['REMOTE_ADDR'] ?? ''));
+        echo json_encode(['status' => 'error', 'message' => $msg]);
+        exit;
+    }
 }
 
 // Rate limit: allow 1 request per 60 seconds (session-based)
@@ -83,9 +129,9 @@ if (isset($_SESSION['otp_request_time']) && ($now - $_SESSION['otp_request_time'
 }
 
 // Generate OTP and store hashed OTP in session
-$otp = random_int(100000, 999999); // 6 digit
+$otp = sprintf("%06d", random_int(100000, 999999)); // 6 digit
 $otp_hash = password_hash((string)$otp, PASSWORD_DEFAULT);
-$expiry = $now + 600; // 10 minutes
+$expiry = $now + 1800; // 30 minutes (as per requirements)
 
 $_SESSION['password_reset'] = [
     'user_id'    => (int)$user['id'],
@@ -93,56 +139,45 @@ $_SESSION['password_reset'] = [
     'otp_hash'   => $otp_hash,
     'expires'    => $expiry,
     'attempts'   => 0,
+    'max_attempts' => 5,
     'request_ip' => $_SERVER['REMOTE_ADDR'] ?? '',
     'ua'         => substr($_SERVER['HTTP_USER_AGENT'] ?? '', 0, 200),
 ];
 $_SESSION['otp_request_time'] = $now;
 
-// --- Send OTP via PHPMailer using same Gmail SMTP as your contact file ---
-// You can replace this block with a call to your shared mail wrapper later.
+// Send OTP via email using the mail.php functions
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+// Prepare email content
+$subject = 'Your Password Reset OTP - Suman Tulsiani CHS';
 
-require_once __DIR__ . '/../vendor/autoload.php'; // adjust if vendor is elsewhere
+$body  = "<p>Dear " . htmlspecialchars($user['name'] ?? 'Resident') . ",</p>";
+$body .= "<p>Your OTP to reset your password is: <strong>" . htmlspecialchars((string)$otp) . "</strong></p>";
+$body .= "<p>This OTP will expire in <strong>30 minutes</strong>. If you did not request this, please ignore this email.</p>";
+$body .= "<p>Regards,<br/>Suman Tulsiani CHS</p>";
 
-$mail = new PHPMailer(true);
+$plainText = "Your OTP is: {$otp} - valid for 30 minutes.";
 
 try {
-    // SMTP config - reuse your contact form settings
-    $mail->isSMTP();
-    $mail->Host       = 'smtp.gmail.com';
-    $mail->SMTPAuth   = true;
-    $mail->Username   = 'veenatheveenagroup@gmail.com'; // your smtp username
-    $mail->Password   = 'rdsaakmmgjupqjcl';             // app password or smtp password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;   // or ENCRYPTION_STARTTLS with port 587
-    $mail->Port       = 465;
-
-    $mail->setFrom('veenatheveenagroup@gmail.com', 'Veena Infotech');
-    $mail->addAddress($user['email'], $user['name'] ?? '');
-
-    $mail->isHTML(true);
-    $mail->Subject = 'Your OTP to reset password - Veena Infotech';
-
-    $body  = "<p>Dear " . htmlspecialchars($user['name'] ?? 'Member') . ",</p>";
-    $body .= "<p>Your OTP to reset your password is: <strong>" . htmlspecialchars((string)$otp) . "</strong></p>";
-    $body .= "<p>This OTP will expire in <strong>10 minutes</strong>. If you did not request this, please ignore this email.</p>";
-    $body .= "<p>Regards,<br/>Veena Infotech</p>";
-
-    $mail->Body    = $body;
-    $mail->AltBody = "Your OTP is: {$otp} - valid for 10 minutes.";
-
-    $mail->send();
+    // Use the mail function from mail.php
+    $mailSent = sendOTPEmail($user['email'], $flat, $otp, $flat);
 
     // Security: regenerate session id after storing OTP
     session_regenerate_id(true);
-
-    echo json_encode(['status' => 'success', 'message' => 'OTP sent to the registered email address. Please check your inbox (and spam).']);
+    
+    // Store the time of this OTP request for rate limiting
+    $_SESSION['otp_request_time'] = $now;
+    
+    // Mask email for privacy in the response
+    $maskedEmail = !empty($user['email']) ? preg_replace('/(?<=.{3}).(?=.*@)/', '*', $user['email']) : 'no-email@example.com';
+    
+    // Redirect to OTP verification page
+    $_SESSION['awaiting_otp_verification'] = true;
+    header('Location: ../verify_otp.php?email=' . urlencode($maskedEmail));
     exit;
 } catch (Exception $e) {
     // cleanup on failure
     unset($_SESSION['password_reset'], $_SESSION['otp_request_time']);
     error_log("OTP mail error: " . $e->getMessage());
-    echo json_encode(['status' => 'error', 'message' => 'Failed to send OTP. Please contact support.']);
+    echo json_encode(['status' => 'error', 'message' => 'Failed to send OTP. Please try again later.']);
     exit;
 }

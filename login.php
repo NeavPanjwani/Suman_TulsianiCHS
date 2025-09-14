@@ -41,6 +41,13 @@
   </div>
 <?php endif; ?>
 
+<?php if (isset($_GET['success'])): ?>
+  <div class="alert alert-success alert-dismissible fade show text-center mt-3" role="alert">
+    <?php echo htmlspecialchars($_GET['success']); ?>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+<?php endif; ?>
+
   <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
     <div id="mainContainer" class="container rounded-4 shadow-lg" style="background-color: #ded1bd; max-width: 1000px; width: 100%;">
       <div class="row">
