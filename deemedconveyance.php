@@ -99,37 +99,38 @@
     <div class="container-fluid px-5">
       <div class="row align-items-center">
         <!-- LEFT: DOCUMENT CARD WITH OPEN BUTTON -->
-        <div class="col-md-6 d-flex flex-column justify-content-center ps-md-5 mt-n5 mt-md-0" id="updateText">
+        <div class="col-md-5 d-flex flex-column justify-content-center ps-md-5 mt-n5 mt-md-0" id="updateText">
           <div class="logo-wrapper text-start mb-4">
-            <h1 class="display-5 mb-3" style="font-weight: 400; letter-spacing: 2.5px; margin-left: 0;">Latest Document</h1>
+            <h1 class="display-5 mb-3" style="font-weight: 400; letter-spacing: 2.5px; margin-left: 0;">Deemed Conveyance</h1>
+            <h5><i>Deemed Conveyance secures our society’s future — giving members complete ownership and authority</i></h5>
           </div>
           <p class="mb-4 fs-5 text-muted">
-            Our society is committed to transparency and progress. The latest documents are shared here to keep all members informed about important developments and decisions. Stay updated with official communications and key milestones as we move forward together.
+            Our society is committed to transparency and progress. Below are some important documents and references related to our society’s Deemed Conveyance process.
           </p>
         </div>
         <!-- RIGHT: HEADING AND DESCRIPTION -->
-         <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+         <div class="col-md-3 d-flex flex-column justify-content-center align-items-center" style="border-radius: 20px;">
           <div class="card shadow-sm border-0 mb-4" style="max-width: 420px;">
-            <img src="assets/images/doc8.png" alt="Document 2" class="card-img-top" style="height: 180px; object-fit: cover;">
+            <img src="assets/Documents/DDR order 1.png" alt="Document 2" class="card-img-top" style="height: 180px; object-fit: cover;">
             <div class="card-body d-flex flex-column">
-              <h3 class="fs-5 fw-semibold mb-3">Final Offer Letter from Mahindra Lifespaces Developers Limited</h3>
-              <h5>16th July, 2025</h5>
+              <h3 class="fs-5 fw-semibold mb-3">DDR order 1</h3>
+              <h5>30th June, 2024</h5>
               <button type="button" class="btn btn-warning text-white mt-auto" style="background-color: #4169e1; border: none;"
-                data-bs-toggle="modal" data-bs-target="#doc8">
+                data-bs-toggle="modal" data-bs-target="#DDR1">
                 Open Document
               </button>
             </div>
           </div>
           <!-- Modal -->
-          <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="doc8" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+          <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="DDR1" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="rulesModalLabel">Final Offer Letter from Mahindra Lifespaces Developers Limited</h5>
+                  <h5 class="modal-title" id="rulesModalLabel">DDR order 1</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" style="overflow:auto; max-height:70vh;">
-                  <div id="document8" style="width:100%; min-height:60vh; display:flex; align-items:center; justify-content:center;">
+                  <div id="DocDDR1" style="width:100%; min-height:60vh; display:flex; align-items:center; justify-content:center;">
                     <span class="text-muted">Loading document...</span>
                   </div>
                 </div>
@@ -144,11 +145,11 @@
               const container = document.getElementById(containerId);
               container.innerHTML = `<iframe src="${pdfUrl}#toolbar=0&navpanes=0&scrollbar=1" width="100%" height="600px" style="border:none;"></iframe>`;
             }
-            document.getElementById('doc8').addEventListener('show.bs.modal', function() {
-              renderPDF('assets/Documents/Final Offer Letter from Mahindra Lifespaces Developers Limited 16th july.pdf', 'document8');
+            document.getElementById('DDR1').addEventListener('show.bs.modal', function() {
+              renderPDF('assets/Documents/DDR order 1.pdf', 'DocDDR1');
             });
-            document.getElementById('doc8').addEventListener('hidden.bs.modal', function() {
-              document.getElementById('document8').innerHTML = '<span class="text-muted">Loading document...</span>';
+            document.getElementById('DDR1').addEventListener('hidden.bs.modal', function() {
+              document.getElementById('DocDDR1').innerHTML = '<span class="text-muted">Loading document...</span>';
             });
           </script>
         </div>
@@ -161,28 +162,28 @@
           </p>
         </div>-->
         <!-- Below Two Documents -->
-        <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+        <div class="col-md-3 d-flex flex-column justify-content-center align-items-center" style="border-radius: 20px;">
           <div class="card shadow-sm border-0 mb-4" style="max-width: 420px;">
-            <img src="assets/Documents/doc8.png" alt="Minutes for SGBM Dated 23.03.2025" class="w-100" style="height: 180px; object-fit: cover;">
+            <img src="assets/Documents/DDR order 2.png" alt="DDR 2" class="w-100" style="height: 180px; object-fit: cover;">
             <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
-              <h3 class="fs-5 fw-semibold mb-3">Minutes for SGBM Dated 23.03.2025</h3>
-              <h5>25th March, 2025</h5>
+              <h3 class="fs-5 fw-semibold mb-3">DDR order 2</h3>
+              <h5>21st Oct, 2024</h5>
               <button type="button" class="mt-auto btn btn-warning text-white" style="background-color: #4169e1; border: none;"
-                data-bs-toggle="modal" data-bs-target="#DocMinutesSGBM23.03.2025">
+                data-bs-toggle="modal" data-bs-target="#DDR2">
                 Open Document
               </button>
             </div>
           </div>
           <!-- Modal -->
-          <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="DocMinutesSGBM23.03.2025" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+          <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="DDR2" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="rulesModalLabel">Minutes for SGBM Dated 23rd March, 2025</h5>
+                  <h5 class="modal-title" id="rulesModalLabel">DDR order 2</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" style="overflow:auto; max-height:70vh;">
-                  <div id="MinutesSGBM23.03.2025" style="width:100%; min-height:60vh; display:flex; align-items:center; justify-content:center;">
+                  <div id="DocDDR2" style="width:100%; min-height:60vh; display:flex; align-items:center; justify-content:center;">
                     <span class="text-muted">Loading document...</span>
                   </div>
                 </div>
@@ -197,16 +198,16 @@
               const container = document.getElementById(containerId);
               container.innerHTML = `<iframe src="${pdfUrl}#toolbar=0&navpanes=0&scrollbar=1" width="100%" height="600px" style="border:none;"></iframe>`;
             }
-            document.getElementById('DocMinutesSGBM23.03.2025').addEventListener('show.bs.modal', function() {
-              renderPDF('assets/Documents/Minutes for SGBM Dated 23.03.2025.pdf', 'MinutesSGBM23.03.2025');
+            document.getElementById('DDR2').addEventListener('show.bs.modal', function() {
+              renderPDF('assets/Documents/DDR order 2.pdf', 'DocDDR2');
             });
-            document.getElementById('DocMinutesSGBM23.03.2025').addEventListener('hidden.bs.modal', function() {
-              document.getElementById('MinutesSGBM23.03.2025').innerHTML = '<span class="text-muted">Loading document...</span>';
+            document.getElementById('DDR2').addEventListener('hidden.bs.modal', function() {
+              document.getElementById('DocDDR2').innerHTML = '<span class="text-muted">Loading document...</span>';
             });
           </script>
         </div>
         <!-- RIGHT: HEADING AND DESCRIPTION -->
-        <div class="col-md-6 d-flex flex-column justify-content-center ps-md-5 mt-n5 mt-md-0" id="updateText">
+        <!--<div class="col-md-6 d-flex flex-column justify-content-center ps-md-5 mt-n5 mt-md-0" id="updateText">
           <div class="card shadow-sm border-0 mb-4" style="max-width: 420px;">
             <img src="assets/Documents/doc9.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
             <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
@@ -217,9 +218,9 @@
                 Open Document
               </button>
             </div>
-          </div>
+          </div>-->
           <!-- Modal -->
-          <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="NoticeSGBM23rdMarch,2025" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
+          <!--<div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="NoticeSGBM23rdMarch,2025" tabindex="-1" aria-labelledby="rulesModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
@@ -252,7 +253,7 @@
         </div>
       </div>
     </div>
-    </div>
+    </div>-->
 
     </div>
   </section>

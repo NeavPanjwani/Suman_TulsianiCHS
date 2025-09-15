@@ -45,7 +45,7 @@
       
       <div class="collapse navbar-collapse d-none d-lg-block">
         <ul class="navbar-nav gap-3 ms-auto me-5">
-          <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
+          <li class="nav-item"><a class="nav-link" href="./deemedconveyance.php">Latest Updates</a></li>
           <li class="nav-item"><a class="nav-link" href="./PMC.php">PMC</a></li>
           <li class="nav-item"><a class="nav-link" href="./Notice&minutes.php">Notices & Minutes</a></li>
           <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li>
@@ -64,7 +64,7 @@
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav gap-3">
-            <li class="nav-item"><a class="nav-link" href="./latest_update.php">Latest Updates</a></li>
+            <li class="nav-item"><a class="nav-link" href="./deemedconveyance.php">Latest Updates</a></li>
             <li class="nav-item"><a class="nav-link" href="./PMC.php">PMC</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Notice & Minutes</a></li>
             <li class="nav-item"><a class="nav-link" href="./tender.php">Tender Process</a></li>
