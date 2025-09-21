@@ -197,7 +197,7 @@
       <!-- Card 6 -->
        <div class="col-md-3">
         <div class="bg-white rounded-lg shadow-lg flex flex-column overflow-hidden h-100 d-flex flex-column"  style="border-radius: 20px;">
-          <img src="assets/Documents/doc5.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
+          <img src="assets/Documents/doc10.png" alt="Document 2" class="w-100" style="height: 180px; object-fit: cover;">
           <div class="flex-1 flex flex-column justify-content-between p-4 d-flex flex-column h-100">
             <h3 class="fs-5 fw-semibold mb-3">EOI from Mahindra Lifespaces Developers Limited</h3>
             <h5>13th Feb, 2025</h5>
@@ -570,7 +570,7 @@
 
     // May Minutes Modal
     document.getElementById('may-minutes-modal').addEventListener('show.bs.modal', function() {
-      renderPDF('assets/Documents/Feasibility Report Total.pdf', 'may-minutes-pdf');
+      renderPDF('assets/Documents/Feasibility report Total.pdf', 'may-minutes-pdf');
     });
 
     // Rules Modal
