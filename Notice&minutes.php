@@ -429,7 +429,7 @@
           title: "Feasibility Report Total",
           date: "14th Jan, 2025",
           img: "assets/Documents/doc2.png",
-          pdf: "assets/Documents/Feasibility Report Total.pdf"
+          pdf: "assets/Documents/Feasibility report Total.pdf"
         }],
         "February": [{
             title: "Feasibility Report Houzer",
