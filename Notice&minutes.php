@@ -277,6 +277,7 @@
                     <button class="list-group-item month-item" data-year="2025" data-month="February">February</button>
                     <button class="list-group-item month-item" data-year="2025" data-month="March">March</button>
                     <button class="list-group-item month-item" data-year="2025" data-month="July">July</button>
+                    <button class="list-group-item month-item" data-year="2025" data-month="September">September</button>
                   </div>
                 </div>
               </div>
@@ -487,7 +488,13 @@
             img: "assets/Documents/doc10.png",
             pdf: "assets/Documents/Final Offer Letter from Mahindra Lifespaces Developers Limited 16th july.pdf"
           }
-        ]
+        ],
+        "September": [{
+          title: "Flat Measurements Survey Notice to Members",
+          date: "25th Sept, 2025",
+          img: "assets/Documents/flat Measurements Survey notice to Members.png",
+          pdf: "assets/Documents/flat Measurements Survey notice to Members.pdf"
+        }],
       }
     };
 
